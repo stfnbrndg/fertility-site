@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+	<section class="hero">
+		<div class="container">
+			<h1>Understanding Your Fertility Treatment Options</h1>
+			<p class="lead">A comprehensive guide to fertility treatments in the United States, including costs, success rates, and decision-making tools to help you navigate your journey.</p>
+		</div>
+	</section>
+
+	<section class="content-container">
+		<h2>Getting Started</h2>
+		<p>Navigating fertility treatments can feel overwhelming. This guide is designed to help you understand your options, compare costs, and make informed decisions alongside your healthcare team.</p>
+
+		<div class="info-box">
+			<strong>Before You Begin:</strong> Fertility treatment recommendations depend on your specific diagnosis, age, medical history, and personal preferences. Always work with a reproductive endocrinologist (RE) to develop a personalized treatment plan.
+		</div>
+
+		<h2>Treatment Overview</h2>
+		<div class="treatment-grid">
+			<div class="card">
+				<h3>Lifestyle & Medication</h3>
+				<p>Often the first step. Includes ovulation induction with oral medications like Clomid or Letrozole.</p>
+				<p><strong>Typical cost:</strong> $100 - $1,500/cycle</p>
+				<p><a href="/treatments/medication/">Learn more</a></p>
+			</div>
+
+			<div class="card">
+				<h3>IUI (Intrauterine Insemination)</h3>
+				<p>A less invasive procedure where prepared sperm is placed directly in the uterus during ovulation.</p>
+				<p><strong>Typical cost:</strong> $500 - $4,000/cycle</p>
+				<p><a href="/treatments/iui/">Learn more</a></p>
+			</div>
+
+			<div class="card">
+				<h3>IVF (In Vitro Fertilization)</h3>
+				<p>Eggs are retrieved, fertilized in a lab, and embryos are transferred to the uterus.</p>
+				<p><strong>Typical cost:</strong> $12,000 - $25,000/cycle</p>
+				<p><a href="/treatments/ivf/">Learn more</a></p>
+			</div>
+
+			<div class="card">
+				<h3>Third-Party Reproduction</h3>
+				<p>Includes donor eggs, donor sperm, donor embryos, and gestational surrogacy.</p>
+				<p><strong>Typical cost:</strong> $5,000 - $150,000+</p>
+				<p><a href="/treatments/third-party/">Learn more</a></p>
+			</div>
+
+			<div class="card">
+				<h3>Fertility Preservation</h3>
+				<p>Egg freezing or sperm freezing for future use, often before medical treatment or for elective reasons.</p>
+				<p><strong>Typical cost:</strong> $5,000 - $15,000 + storage</p>
+				<p><a href="/treatments/preservation/">Learn more</a></p>
+			</div>
+
+			<div class="card">
+				<h3>Surgical Options</h3>
+				<p>Procedures to address structural issues like fibroids, endometriosis, or blocked fallopian tubes.</p>
+				<p><strong>Typical cost:</strong> $5,000 - $30,000</p>
+				<p><a href="/treatments/surgical/">Learn more</a></p>
+			</div>
+		</div>
+
+		<h2>Quick Links</h2>
+		<ul>
+			<li><a href="/costs/">Full Cost Comparison</a> - Detailed breakdown of treatment costs</li>
+			<li><a href="/decision-guide/">Decision Guide</a> - Interactive flowcharts to help you understand your options</li>
+			<li><a href="/resources/">Resources</a> - Insurance, financial assistance, and support organizations</li>
+		</ul>
+
+		<h2>Key Factors in Treatment Decisions</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Factor</th>
+					<th>Why It Matters</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Age</td>
+					<td>Egg quality and quantity decline with age, affecting success rates and treatment recommendations</td>
+				</tr>
+				<tr>
+					<td>Diagnosis</td>
+					<td>The underlying cause of infertility guides which treatments are most likely to succeed</td>
+				</tr>
+				<tr>
+					<td>Duration of Infertility</td>
+					<td>Longer duration may indicate need for more advanced treatments</td>
+				</tr>
+				<tr>
+					<td>Previous Treatments</td>
+					<td>Response to prior treatments helps predict success of future options</td>
+				</tr>
+				<tr>
+					<td>Financial Resources</td>
+					<td>Out-of-pocket costs vary significantly; insurance coverage affects treatment access</td>
+				</tr>
+				<tr>
+					<td>Personal Values</td>
+					<td>Religious, ethical, and personal preferences influence treatment choices</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</Layout>
+
+<style>
+	.hero {
+		background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+		color: white;
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.hero h1 {
+		color: white;
+		margin: 0 0 1rem;
+		font-size: 2.5rem;
+	}
+
+	.lead {
+		font-size: 1.25rem;
+		max-width: 700px;
+		margin: 0 auto;
+		opacity: 0.95;
+	}
+
+	.treatment-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 1.5rem;
+		margin: 2rem 0;
+	}
+
+	.treatment-grid .card {
+		margin-bottom: 0;
+	}
+
+	.treatment-grid .card p:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding: 3rem 0;
+		}
+
+		.hero h1 {
+			font-size: 1.875rem;
+		}
+
+		.lead {
+			font-size: 1.125rem;
+		}
+	}
+</style>

@@ -1,0 +1,268 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Decision Guide">
+	<section class="page-header">
+		<div class="container">
+			<h1>Fertility Treatment Decision Guide</h1>
+			<p>Interactive flowcharts to help you understand treatment pathways based on your situation.</p>
+		</div>
+	</section>
+
+	<section class="content-container">
+		<div class="warning-box">
+			<strong>Important:</strong> These flowcharts are educational guides only. Treatment decisions should always be made with your reproductive endocrinologist based on your complete medical evaluation.
+		</div>
+
+		<h2>General Treatment Pathway</h2>
+		<p>This flowchart shows the typical progression of fertility treatments:</p>
+		<pre class="mermaid" is:raw>
+flowchart TD
+    A[Trying to Conceive] --> B{"Been trying 12+ months?<br/>Or 6+ months if age 35+?"}
+    B -->|No| C["Continue trying naturally<br/>Track ovulation"]
+    B -->|Yes| D["See Reproductive<br/>Endocrinologist"]
+    D --> E["Complete fertility workup<br/>Both partners tested"]
+    E --> F{Diagnosis?}
+
+    F -->|Ovulation issues| G["Ovulation induction<br/>Clomid/Letrozole"]
+    F -->|Mild male factor| H[IUI with medications]
+    F -->|Unexplained| I["Start with medications<br/>+ timed intercourse"]
+    F -->|Tubal factor| J[IVF recommended]
+    F -->|Severe male factor| K[IVF with ICSI]
+    F -->|Diminished ovarian reserve| L{Age and reserve?}
+
+    G --> M{"Pregnant after<br/>3-6 cycles?"}
+    H --> M
+    I --> M
+
+    M -->|Yes| N[Pregnancy!]
+    M -->|No| O[Consider IVF]
+
+    L -->|Own eggs viable| O
+    L -->|Own eggs unlikely| P[Donor eggs or embryos]
+
+    J --> O
+    K --> O
+
+    O --> Q{IVF successful?}
+    Q -->|Yes| N
+    Q -->|No, after 2-3 cycles| R["Review options:<br/>Donor gametes?<br/>Surrogacy?<br/>Other paths?"]
+		</pre>
+
+		<h2>Treatment Selection by Diagnosis</h2>
+		<p>Different diagnoses lead to different recommended treatments:</p>
+		<pre class="mermaid" is:raw>
+flowchart LR
+    subgraph Diagnosis
+        A1[PCOS / Anovulation]
+        A2[Unexplained Infertility]
+        A3[Male Factor - Mild]
+        A4[Male Factor - Severe]
+        A5[Tubal Factor]
+        A6[Endometriosis]
+        A7[Diminished Ovarian Reserve]
+        A8[Uterine Factor]
+    end
+
+    subgraph FirstLine[First Line Treatment]
+        B1[Letrozole/Clomid]
+        B2[Meds + Timed Intercourse]
+        B3[IUI]
+        B4[IVF + ICSI]
+        B5[IVF]
+        B6[Surgery or IVF]
+        B7[IVF quickly]
+        B8[Surgery/IVF/Surrogacy]
+    end
+
+    A1 --> B1
+    A2 --> B2
+    A3 --> B3
+    A4 --> B4
+    A5 --> B5
+    A6 --> B6
+    A7 --> B7
+    A8 --> B8
+		</pre>
+
+		<h2>Age-Based Considerations</h2>
+		<p>Age significantly affects treatment recommendations and urgency:</p>
+		<pre class="mermaid" is:raw>
+flowchart TD
+    A[Your Age] --> B{Under 35?}
+    B -->|Yes| C["Good egg quantity<br/>and quality expected"]
+    B -->|No| D{35-37?}
+
+    D -->|Yes| E["Still good prognosis<br/>Consider moving faster"]
+    D -->|No| F{38-40?}
+
+    F -->|Yes| G["Time is important<br/>Consider IVF sooner<br/>May skip IUI"]
+    F -->|No| H{41-42?}
+
+    H -->|Yes| I["Lower success with own eggs<br/>IVF recommended<br/>Consider donor eggs"]
+    H -->|No| J[Over 42]
+
+    J --> K["Donor eggs often<br/>recommended<br/>Own eggs: very low success"]
+
+    C --> L["Can try less invasive<br/>treatments first"]
+    E --> M["3-4 IUI cycles<br/>then IVF"]
+    G --> N["0-3 IUI cycles<br/>IVF recommended"]
+    I --> O["IVF first line<br/>Discuss donor eggs"]
+    K --> P["Donor egg IVF<br/>has best outcomes"]
+		</pre>
+
+		<h2>IVF Decision Points</h2>
+		<p>Key decisions during the IVF process:</p>
+		<pre class="mermaid" is:raw>
+flowchart TD
+    A[Starting IVF] --> B{Fresh vs Freeze-All?}
+
+    B -->|Fresh Transfer| C["Transfer 3-5 days<br/>after retrieval"]
+    B -->|Freeze All| D["Freeze embryos<br/>FET next cycle"]
+
+    D --> E{Do PGT-A testing?}
+    E -->|Yes| F["Biopsy embryos<br/>Wait for results<br/>Transfer tested embryo"]
+    E -->|No| G["Select best embryo<br/>by appearance"]
+
+    F --> H{"How many<br/>to transfer?"}
+    G --> H
+    C --> H
+
+    H -->|1 embryo| I["Single Embryo Transfer<br/>Recommended<br/>Lower multiple risk"]
+    H -->|2 embryos| J["Higher pregnancy rate<br/>Higher twin risk<br/>Consider if older/failed cycles"]
+
+    I --> K{Outcome?}
+    J --> K
+
+    K -->|Positive| L["Pregnancy confirmed!<br/>Continue monitoring"]
+    K -->|Negative| M{"More embryos<br/>frozen?"}
+
+    M -->|Yes| N["FET with<br/>next embryo"]
+    M -->|No| O["Another retrieval?<br/>Donor options?<br/>Other paths?"]
+		</pre>
+
+		<h2>Third-Party Reproduction Paths</h2>
+		<p>When donor gametes or carriers are needed:</p>
+		<pre class="mermaid" is:raw>
+flowchart TD
+    A["Need third-party<br/>reproduction?"] --> B{What do you need?}
+
+    B -->|Sperm| C[Donor Sperm]
+    B -->|Eggs| D[Donor Eggs]
+    B -->|Both| E["Donor Embryos<br/>or Donor Egg + Sperm"]
+    B -->|Uterus| F[Gestational Carrier]
+    B -->|Eggs + Uterus| G["Donor Eggs +<br/>Gestational Carrier"]
+
+    C --> H{Use with?}
+    H -->|IUI| I["Donor sperm IUI<br/>$1,500-3,000/cycle"]
+    H -->|IVF| J["Donor sperm IVF<br/>$15,000-25,000"]
+
+    D --> K{Fresh or Frozen?}
+    K -->|Fresh donor| L["Fresh donor egg cycle<br/>$30,000-50,000"]
+    K -->|Frozen eggs| M["Frozen donor eggs<br/>$20,000-35,000"]
+
+    E --> N["Donor embryo transfer<br/>$8,000-15,000"]
+
+    F --> O["IVF + Gestational carrier<br/>$100,000-200,000"]
+
+    G --> P["Donor eggs + carrier<br/>$130,000-250,000"]
+		</pre>
+
+		<h2>Fertility Preservation Timeline</h2>
+		<p>When to consider freezing eggs, sperm, or embryos:</p>
+		<pre class="mermaid" is:raw>
+flowchart TD
+    A["Considering fertility<br/>preservation?"] --> B{Reason?}
+
+    B -->|Medical - Cancer treatment| C["URGENT: Freeze before<br/>treatment starts<br/>May have 2-4 weeks"]
+    B -->|Medical - Other| D["Consult with RE<br/>about timeline"]
+    B -->|Elective - Not ready yet| E{Your age?}
+
+    E -->|Under 30| F["Good time to freeze<br/>Best egg quality<br/>No rush but benefits clear"]
+    E -->|30-34| G["Optimal time<br/>Good quality + quantity<br/>Recommended if delaying"]
+    E -->|35-37| H["Important window<br/>Quality declining<br/>Strong recommendation"]
+    E -->|38+| I["Time sensitive<br/>May need multiple cycles<br/>Act quickly if interested"]
+
+    C --> J{What to freeze?}
+    D --> J
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+
+    J -->|Have partner| K["Embryo freezing<br/>Highest success rates"]
+    J -->|No partner| L["Egg freezing<br/>Keeps options open"]
+    J -->|Male| M["Sperm freezing<br/>Simple, effective"]
+		</pre>
+
+		<h2>Questions for Your Doctor</h2>
+		<p>Use these questions to guide your consultation:</p>
+		<ul>
+			<li>Based on my test results, what's my diagnosis?</li>
+			<li>What treatment do you recommend and why?</li>
+			<li>What are my chances of success with this treatment?</li>
+			<li>How many cycles should we try before moving to the next step?</li>
+			<li>What are the risks of this treatment?</li>
+			<li>What will this cost, and what does my insurance cover?</li>
+			<li>Are there lifestyle changes that could improve my chances?</li>
+			<li>How long should I expect this process to take?</li>
+		</ul>
+
+		<div class="info-box">
+			<strong>Second Opinions:</strong> It's completely reasonable to seek a second opinion, especially before major decisions like IVF or moving to donor gametes. Different clinics may have different approaches.
+		</div>
+
+		<p><a href="/resources/">View Resources</a> for more information on support groups, financial assistance, and educational materials.</p>
+	</section>
+
+	<script is:inline src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+	<script is:inline>
+		mermaid.initialize({
+			startOnLoad: true,
+			theme: 'base',
+			themeVariables: {
+				primaryColor: '#e2e8f0',
+				primaryTextColor: '#1a365d',
+				primaryBorderColor: '#2c5282',
+				lineColor: '#4a5568',
+				secondaryColor: '#ebf8ff',
+				tertiaryColor: '#f0fff4'
+			},
+			flowchart: {
+				useMaxWidth: true,
+				htmlLabels: true,
+				curve: 'basis'
+			}
+		});
+	</script>
+</Layout>
+
+<style>
+	.page-header {
+		background: #edf2f7;
+		padding: 3rem 0;
+		margin-bottom: 2rem;
+	}
+
+	.page-header h1 {
+		margin: 0 0 0.5rem;
+	}
+
+	.page-header p {
+		margin: 0;
+		color: var(--color-text-light);
+		font-size: 1.125rem;
+	}
+
+	.mermaid {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		margin: 1.5rem 0 2.5rem;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+		overflow-x: auto;
+		font-family: inherit;
+		white-space: pre-wrap;
+	}
+</style>

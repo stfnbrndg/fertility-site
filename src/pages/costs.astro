@@ -1,0 +1,463 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Treatment Costs">
+	<section class="page-header">
+		<div class="container">
+			<h1>Fertility Treatment Costs in the US</h1>
+			<p>A comprehensive breakdown of what to expect financially when pursuing fertility treatment.</p>
+		</div>
+	</section>
+
+	<section class="content-container">
+		<div class="warning-box">
+			<strong>Important:</strong> Costs vary significantly by geographic location, clinic, and individual protocol. These are typical ranges as of 2024. Always get a detailed cost estimate from your specific clinic.
+		</div>
+
+		<h2>Quick Cost Comparison</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Treatment</th>
+					<th>Cost Range Per Cycle</th>
+					<th>Success Rate</th>
+					<th>Typical # of Cycles</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Timed intercourse + oral meds</td>
+					<td>$200-$1,000</td>
+					<td>5-15%</td>
+					<td>3-6</td>
+				</tr>
+				<tr>
+					<td>IUI (oral meds)</td>
+					<td>$500-$2,000</td>
+					<td>10-15%</td>
+					<td>3-6</td>
+				</tr>
+				<tr>
+					<td>IUI (injectable meds)</td>
+					<td>$2,500-$7,000</td>
+					<td>15-20%</td>
+					<td>3-4</td>
+				</tr>
+				<tr>
+					<td>IVF (basic)</td>
+					<td>$15,000-$25,000</td>
+					<td>40-55%</td>
+					<td>1-3</td>
+				</tr>
+				<tr>
+					<td>IVF + ICSI + PGT</td>
+					<td>$22,000-$35,000</td>
+					<td>50-65%</td>
+					<td>1-2</td>
+				</tr>
+				<tr>
+					<td>Donor egg IVF</td>
+					<td>$25,000-$50,000</td>
+					<td>55-70%</td>
+					<td>1-2</td>
+				</tr>
+				<tr>
+					<td>Gestational surrogacy</td>
+					<td>$100,000-$200,000</td>
+					<td>60-75%</td>
+					<td>1-2</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>Detailed Cost Breakdowns</h2>
+
+		<h3>Medications Only (Timed Intercourse)</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td>Clomid (generic clomiphene)</td>
+					<td>$10-$50</td>
+				</tr>
+				<tr>
+					<td>Letrozole (generic)</td>
+					<td>$15-$75</td>
+				</tr>
+				<tr>
+					<td>Monitoring (2-3 ultrasounds)</td>
+					<td>$200-$500</td>
+				</tr>
+				<tr>
+					<td>Trigger shot (Ovidrel)</td>
+					<td>$50-$150</td>
+				</tr>
+				<tr>
+					<td><strong>Total per cycle</strong></td>
+					<td><strong>$275-$775</strong></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>IUI Cycle Costs</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Component</th>
+					<th>With Oral Meds</th>
+					<th>With Injectables</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Medications</td>
+					<td>$25-$150</td>
+					<td>$1,500-$5,000</td>
+				</tr>
+				<tr>
+					<td>Monitoring</td>
+					<td>$200-$500</td>
+					<td>$500-$1,000</td>
+				</tr>
+				<tr>
+					<td>IUI procedure</td>
+					<td>$300-$800</td>
+					<td>$300-$800</td>
+				</tr>
+				<tr>
+					<td>Sperm wash</td>
+					<td>$150-$400</td>
+					<td>$150-$400</td>
+				</tr>
+				<tr>
+					<td>Trigger shot</td>
+					<td>$50-$150</td>
+					<td>$50-$150</td>
+				</tr>
+				<tr>
+					<td><strong>Total</strong></td>
+					<td><strong>$725-$2,000</strong></td>
+					<td><strong>$2,500-$7,350</strong></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>IVF Cycle Costs</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td>Base IVF (stim, retrieval, transfer)</td>
+					<td>$12,000-$17,000</td>
+				</tr>
+				<tr>
+					<td>Medications</td>
+					<td>$3,000-$7,000</td>
+				</tr>
+				<tr>
+					<td>Anesthesia</td>
+					<td>$500-$1,000</td>
+				</tr>
+				<tr>
+					<td>ICSI (if needed)</td>
+					<td>$1,500-$2,500</td>
+				</tr>
+				<tr>
+					<td>Embryo freezing</td>
+					<td>$800-$1,500</td>
+				</tr>
+				<tr>
+					<td>PGT-A testing (per embryo)</td>
+					<td>$250-$500</td>
+				</tr>
+				<tr>
+					<td>PGT-A biopsy fee</td>
+					<td>$1,500-$3,000</td>
+				</tr>
+				<tr>
+					<td>Assisted hatching</td>
+					<td>$500-$800</td>
+				</tr>
+				<tr>
+					<td><strong>Basic IVF total</strong></td>
+					<td><strong>$15,500-$25,500</strong></td>
+				</tr>
+				<tr>
+					<td><strong>IVF + ICSI + PGT</strong></td>
+					<td><strong>$22,000-$35,000</strong></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Frozen Embryo Transfer (FET)</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td>FET cycle</td>
+					<td>$3,000-$5,000</td>
+				</tr>
+				<tr>
+					<td>Medications</td>
+					<td>$500-$1,500</td>
+				</tr>
+				<tr>
+					<td>Monitoring</td>
+					<td>$300-$600</td>
+				</tr>
+				<tr>
+					<td><strong>Total</strong></td>
+					<td><strong>$3,800-$7,100</strong></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Egg Freezing</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td>Egg retrieval cycle</td>
+					<td>$6,000-$12,000</td>
+				</tr>
+				<tr>
+					<td>Medications</td>
+					<td>$3,000-$6,000</td>
+				</tr>
+				<tr>
+					<td>Anesthesia</td>
+					<td>$500-$1,000</td>
+				</tr>
+				<tr>
+					<td>Egg freezing fee</td>
+					<td>$500-$1,000</td>
+				</tr>
+				<tr>
+					<td>Annual storage</td>
+					<td>$500-$1,000/year</td>
+				</tr>
+				<tr>
+					<td><strong>Total first year</strong></td>
+					<td><strong>$10,500-$21,000</strong></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Donor Sperm</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td>Sperm vial (IUI-ready)</td>
+					<td>$500-$1,200</td>
+				</tr>
+				<tr>
+					<td>Extended profile/photos</td>
+					<td>$50-$200</td>
+				</tr>
+				<tr>
+					<td>Shipping</td>
+					<td>$200-$400</td>
+				</tr>
+				<tr>
+					<td>Storage (at clinic)</td>
+					<td>$200-$500/year</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Donor Eggs</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Component</th>
+					<th>Fresh Cycle</th>
+					<th>Frozen Eggs</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Agency fee</td>
+					<td>$5,000-$8,000</td>
+					<td>Included</td>
+				</tr>
+				<tr>
+					<td>Donor compensation</td>
+					<td>$6,000-$15,000</td>
+					<td>Included</td>
+				</tr>
+				<tr>
+					<td>Donor screening</td>
+					<td>$3,000-$5,000</td>
+					<td>Included</td>
+				</tr>
+				<tr>
+					<td>Donor medications</td>
+					<td>$3,000-$6,000</td>
+					<td>N/A</td>
+				</tr>
+				<tr>
+					<td>Egg lot purchase</td>
+					<td>N/A</td>
+					<td>$15,000-$20,000</td>
+				</tr>
+				<tr>
+					<td>Legal fees</td>
+					<td>$1,500-$3,000</td>
+					<td>$500-$1,500</td>
+				</tr>
+				<tr>
+					<td>IVF/ICSI/FET</td>
+					<td>$12,000-$18,000</td>
+					<td>$8,000-$12,000</td>
+				</tr>
+				<tr>
+					<td><strong>Total</strong></td>
+					<td><strong>$30,000-$55,000</strong></td>
+					<td><strong>$24,000-$34,000</strong></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>Gestational Surrogacy</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td>Agency fee</td>
+					<td>$15,000-$30,000</td>
+				</tr>
+				<tr>
+					<td>Surrogate compensation</td>
+					<td>$30,000-$60,000</td>
+				</tr>
+				<tr>
+					<td>Surrogate screening</td>
+					<td>$3,000-$6,000</td>
+				</tr>
+				<tr>
+					<td>Legal fees (both parties)</td>
+					<td>$10,000-$20,000</td>
+				</tr>
+				<tr>
+					<td>IVF + transfer(s)</td>
+					<td>$15,000-$30,000</td>
+				</tr>
+				<tr>
+					<td>Surrogate insurance/premiums</td>
+					<td>$15,000-$35,000</td>
+				</tr>
+				<tr>
+					<td>Surrogate expenses</td>
+					<td>$5,000-$15,000</td>
+				</tr>
+				<tr>
+					<td>Escrow management</td>
+					<td>$1,000-$3,000</td>
+				</tr>
+				<tr>
+					<td><strong>Total</strong></td>
+					<td><strong>$100,000-$200,000+</strong></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>Hidden and Ongoing Costs</h2>
+		<ul>
+			<li><strong>Initial testing:</strong> $2,000-$5,000 (HSG, semen analysis, bloodwork, etc.)</li>
+			<li><strong>Consultations:</strong> $200-$500 per visit</li>
+			<li><strong>Travel:</strong> If your clinic isn't local</li>
+			<li><strong>Time off work:</strong> Appointments, procedures, recovery</li>
+			<li><strong>Embryo storage:</strong> $500-$1,000 per year ongoing</li>
+			<li><strong>Psychological counseling:</strong> Often recommended or required</li>
+			<li><strong>Supplements:</strong> Prenatal vitamins, CoQ10, DHEA, etc.</li>
+		</ul>
+
+		<h2>Insurance Coverage</h2>
+
+		<h3>State Mandates</h3>
+		<p>As of 2024, 21 states have fertility insurance laws, but coverage varies:</p>
+		<ul>
+			<li><strong>Comprehensive IVF coverage:</strong> Illinois, Massachusetts, New Jersey, Rhode Island, Maryland, Delaware, Connecticut, Colorado, New York</li>
+			<li><strong>Partial coverage:</strong> Arkansas, Hawaii, Montana, Ohio, West Virginia, others</li>
+			<li><strong>No mandate:</strong> Most other states</li>
+		</ul>
+
+		<div class="info-box">
+			<strong>Check Your Policy:</strong> Even in mandated states, not all plans are covered. Self-funded employer plans (common in large companies) are exempt from state mandates. Always verify your specific coverage.
+		</div>
+
+		<h3>Common Coverage Limitations</h3>
+		<ul>
+			<li>Lifetime dollar caps or cycle limits</li>
+			<li>Exclusion of certain procedures (PGT, ICSI, donor)</li>
+			<li>Prior authorization requirements</li>
+			<li>In-network clinic requirements</li>
+			<li>Documentation of infertility required</li>
+		</ul>
+
+		<h2>Financial Assistance Options</h2>
+
+		<h3>Clinic Programs</h3>
+		<ul>
+			<li><strong>Multi-cycle packages:</strong> Discounted rates for 2-3 cycles</li>
+			<li><strong>Refund programs:</strong> Partial refund if no live birth (higher upfront cost)</li>
+			<li><strong>Payment plans:</strong> Interest-free or low-interest financing</li>
+		</ul>
+
+		<h3>Fertility Loans</h3>
+		<ul>
+			<li><strong>Prosper Healthcare Lending</strong></li>
+			<li><strong>CapexMD</strong></li>
+			<li><strong>Future Family</strong> - fertility-specific loans</li>
+			<li><strong>LendingClub</strong></li>
+		</ul>
+		<p><em>Interest rates typically range from 5-25% depending on credit.</em></p>
+
+		<h3>Grants and Scholarships</h3>
+		<ul>
+			<li><strong>Baby Quest Foundation</strong> - grants up to $16,000</li>
+			<li><strong>The Cade Foundation</strong> - grants up to $10,000</li>
+			<li><strong>Pay It Forward Fertility Foundation</strong></li>
+			<li><strong>Fertility Within Reach</strong></li>
+			<li><strong>The Samfund</strong> - for cancer survivors</li>
+		</ul>
+
+		<h3>Medication Assistance</h3>
+		<ul>
+			<li><strong>Compassionate Care Program</strong> (EMD Serono) - discounted Gonal-F</li>
+			<li><strong>ReUnite Rx</strong> - discounted medications</li>
+			<li><strong>Ferring Heart to Heart</strong> - free meds for qualifying patients</li>
+			<li><strong>Pharmacy discount cards</strong> and comparison shopping</li>
+		</ul>
+
+		<h2>Cost-Saving Tips</h2>
+		<ul>
+			<li>Shop around - clinic costs vary significantly</li>
+			<li>Ask about cash-pay discounts</li>
+			<li>Compare medication prices across pharmacies (specialty, overseas options)</li>
+			<li>Consider mini-IVF if appropriate for your situation</li>
+			<li>Ask about shared donor egg cycles</li>
+			<li>Look into clinical trials at academic centers</li>
+			<li>Use FSA/HSA funds (pre-tax savings)</li>
+			<li>Review your employer benefits - some offer fertility coverage not required by law</li>
+		</ul>
+
+		<div class="success-box">
+			<strong>Employer Benefits:</strong> More companies are adding fertility benefits. Check with HR or benefits administrators - some cover $15,000-$50,000+ in lifetime fertility benefits even without state mandates.
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.page-header {
+		background: #edf2f7;
+		padding: 3rem 0;
+		margin-bottom: 2rem;
+	}
+
+	.page-header h1 {
+		margin: 0 0 0.5rem;
+	}
+
+	.page-header p {
+		margin: 0;
+		color: var(--color-text-light);
+		font-size: 1.125rem;
+	}
+</style>
