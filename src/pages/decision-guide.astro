@@ -15,6 +15,34 @@ import Layout from '../layouts/Layout.astro';
 			<strong>Important:</strong> These flowcharts are educational guides only. Treatment decisions should always be made with your reproductive endocrinologist based on your complete medical evaluation.
 		</div>
 
+		<h2>Insurance Strategy: When to Use Coverage vs. Pay Cash</h2>
+		<p>If your insurance covers a limited number of treatment cycles (e.g., 3 cycles), you may want to pay cash for less expensive treatments and save your covered cycles for costly ones like IVF.</p>
+		<pre class="mermaid" is:raw>
+flowchart TD
+    A["Insurance covers<br/>limited cycles?"] --> B{Yes or No?}
+
+    B -->|"No / Unlimited"| C["Use insurance<br/>for all treatments"]
+    B -->|"Yes - Limited cycles"| D{What treatment<br/>is recommended?}
+
+    D -->|"Meds + Timed Intercourse<br/>~$200-$1,000"| E["PAY CASH<br/>Save covered cycles"]
+    D -->|"IUI + Oral Meds<br/>~$500-$2,000"| F["PAY CASH<br/>Save covered cycles"]
+    D -->|"IUI + Injectables<br/>~$3,000-$7,000"| G["JUDGMENT CALL<br/>Cash or use 1 cycle"]
+    D -->|"IVF<br/>~$15,000-$25,000"| H["USE INSURANCE<br/>This is what you saved for"]
+    D -->|"IVF + PGT / ICSI<br/>~$20,000-$35,000"| H
+    D -->|"Donor Eggs / FET<br/>~$25,000-$50,000"| H
+    D -->|"Surrogacy<br/>~$100,000+"| I["USE INSURANCE<br/>if applicable"]
+
+    E --> J["Covered cycles<br/>still available: 3"]
+    F --> J
+    G -->|Cash| J
+    G -->|Use coverage| K["Covered cycles<br/>remaining: 2"]
+    H --> L["Use 1-3 covered cycles<br/>for IVF attempts"]
+		</pre>
+
+		<div class="success-box">
+			<strong>Example savings:</strong> If you pay cash for 3 IUI cycles (~$4,500 total) instead of using insurance, you preserve all 3 covered cycles for IVF (~$60,000+ value). Even if IUIs don't work, you haven't used any coverage and can proceed to IVF with full benefits.
+		</div>
+
 		<h2>General Treatment Pathway</h2>
 		<p>This flowchart shows the typical progression of fertility treatments:</p>
 		<pre class="mermaid" is:raw>
