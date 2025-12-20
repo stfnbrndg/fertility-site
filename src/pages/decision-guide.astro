@@ -197,6 +197,47 @@ flowchart TD
     G --> P["Donor eggs + carrier<br/>$130,000-250,000"]
 		</pre>
 
+		<h2>Recurrent Pregnancy Loss Pathway</h2>
+		<p>After 2 or more consecutive miscarriages, a specialized workup and treatment plan is recommended:</p>
+		<pre class="mermaid" is:raw>
+flowchart TD
+    A["2+ consecutive<br/>pregnancy losses"] --> B["RPL Workup"]
+
+    B --> C["Testing:<br/>Karyotype both partners<br/>Uterine evaluation<br/>Clotting panel<br/>Thyroid/hormones"]
+
+    C --> D{Cause found?}
+
+    D -->|"Uterine issue<br/>(septum, fibroids, scarring)"| E["Surgical correction<br/>via hysteroscopy"]
+    D -->|"Clotting disorder<br/>(APS, thrombophilia)"| F["Aspirin + Heparin<br/>during pregnancy"]
+    D -->|"Thyroid disorder"| G["Thyroid medication<br/>Goal: TSH < 2.5"]
+    D -->|"Chromosomal<br/>(parental translocation)"| H["IVF + PGT-SR<br/>Test embryos before transfer"]
+    D -->|"No cause found<br/>(~50% of cases)"| I["Empiric treatment"]
+
+    E --> J{Try again}
+    F --> J
+    G --> J
+    H --> K["Transfer normal<br/>embryos only"]
+
+    I --> L["Options:<br/>- Progesterone support<br/>- Baby aspirin<br/>- Close monitoring"]
+    I --> M["Consider IVF + PGT-A<br/>to select normal embryos"]
+
+    J --> N{Outcome?}
+    K --> N
+    L --> N
+    M --> N
+
+    N -->|"Success"| O["Pregnancy!<br/>Close monitoring"]
+    N -->|"Another loss"| P{Multiple IVF failures<br/>or losses with<br/>normal embryos?}
+
+    P -->|"Egg quality issue"| Q["Consider donor eggs"]
+    P -->|"Possible uterine factor"| R["Consider gestational carrier"]
+    P -->|"Continue trying"| S["60-75% success rate<br/>even after 3 losses"]
+		</pre>
+
+		<div class="info-box">
+			<strong>There is hope:</strong> Even after 3 unexplained consecutive losses, the chance of successful pregnancy is 60-75%. With treatment for identified causes, success rates are even higher. <a href="/treatments/recurrent-loss/">Learn more about recurrent pregnancy loss</a>.
+		</div>
+
 		<h2>Fertility Preservation Timeline</h2>
 		<p>When to consider freezing eggs, sperm, or embryos:</p>
 		<pre class="mermaid" is:raw>
