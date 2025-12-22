@@ -18,7 +18,74 @@ import Layout from '../layouts/Layout.astro';
 			<strong>Before You Begin:</strong> Fertility treatment recommendations depend on your specific diagnosis, age, medical history, and personal preferences. Always work with a reproductive endocrinologist (RE) to develop a personalized treatment plan.
 		</div>
 
-		<h2>Treatment Overview</h2>
+		<h2>Who is Affected?</h2>
+		<p>Infertility affects approximately <strong>1 in 6 couples</strong> trying to conceive. Contrary to common perception, infertility is not primarily a female issue—causes are distributed relatively equally between partners.</p>
+
+		<div class="card stats-card">
+			<h3>Distribution of Infertility Causes</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Attribution</th>
+						<th>Percentage</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Female factors only</td>
+						<td>~35%</td>
+					</tr>
+					<tr>
+						<td>Male factors only</td>
+						<td>~35%</td>
+					</tr>
+					<tr>
+						<td>Combined male and female factors</td>
+						<td>~20%</td>
+					</tr>
+					<tr>
+						<td>Unexplained (no identifiable cause)</td>
+						<td>~10-25%</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="citation">Source: <a href="https://www.reproductivefacts.org/browse-resources/frequently-asked-questions/faq-about-infertility/" target="_blank" rel="noopener">ASRM ReproductiveFacts.org</a>, <a href="https://www.ncbi.nlm.nih.gov/books/NBK556033/" target="_blank" rel="noopener">NCBI StatPearls</a></p>
+		</div>
+
+		<h2>Most Common Causes</h2>
+		<div class="causes-grid">
+			<div class="card">
+				<h3>Ovulatory Disorders</h3>
+				<p class="stat">25% of female infertility</p>
+				<p>Problems with ovulation, most commonly caused by PCOS, which affects 5-20% of women of reproductive age and accounts for 70-80% of anovulatory infertility.</p>
+				<p class="citation">Source: <a href="https://www.ncbi.nlm.nih.gov/books/NBK459251/" target="_blank" rel="noopener">NCBI StatPearls</a></p>
+			</div>
+
+			<div class="card">
+				<h3>Tubal Factor</h3>
+				<p class="stat">20-35% of female infertility</p>
+				<p>Blocked or damaged fallopian tubes, often caused by pelvic inflammatory disease, endometriosis, or prior surgery.</p>
+				<p class="citation">Source: <a href="https://www.ncbi.nlm.nih.gov/books/NBK556033/" target="_blank" rel="noopener">NCBI StatPearls</a></p>
+			</div>
+
+			<div class="card">
+				<h3>Endometriosis</h3>
+				<p class="stat">25-50% of infertile women</p>
+				<p>Tissue similar to the uterine lining grows outside the uterus. Women with endometriosis are 6-8 times more likely to experience infertility.</p>
+				<p class="citation">Source: <a href="https://www.asrm.org/practice-guidance/practice-committee-documents/endometriosis-and-infertility-a-committee-opinion-2012/" target="_blank" rel="noopener">ASRM Committee Opinion</a></p>
+			</div>
+
+			<div class="card">
+				<h3>Male Factor</h3>
+				<p class="stat">~40% involve male factors</p>
+				<p>Varicocele is the most common cause (~40% of infertile men). Other causes include low sperm count, poor motility, and hormonal disorders.</p>
+				<p class="citation">Source: <a href="https://www.ncbi.nlm.nih.gov/books/NBK562258/" target="_blank" rel="noopener">NCBI StatPearls</a></p>
+			</div>
+		</div>
+
+		<p><a href="/causes/">View detailed causes and statistics →</a></p>
+
+		<h2>Treatment Options</h2>
 		<div class="treatment-grid">
 			<div class="card">
 				<h3>Lifestyle & Medication</h3>
@@ -135,6 +202,37 @@ import Layout from '../layouts/Layout.astro';
 		max-width: 700px;
 		margin: 0 auto;
 		opacity: 0.95;
+	}
+
+	.stats-card {
+		background: #f0fff4;
+		border-left: 4px solid var(--color-accent);
+	}
+
+	.causes-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin: 2rem 0;
+	}
+
+	.causes-grid .card {
+		margin-bottom: 0;
+	}
+
+	.causes-grid .stat {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--color-primary);
+		margin: 0 0 0.75rem;
+	}
+
+	.causes-grid .citation {
+		font-size: 0.8rem;
+		color: var(--color-text-light);
+		margin-top: 0.75rem;
+		padding-top: 0.5rem;
+		border-top: 1px solid var(--color-border);
 	}
 
 	.treatment-grid {
