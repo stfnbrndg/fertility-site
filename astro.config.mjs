@@ -4,6 +4,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://fertility-guide.netlify.app',
+	site: 'https://fertilitycentral.netlify.app',
 	integrations: [sitemap()],
 });
