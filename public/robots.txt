@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fertility-guide.netlify.app/sitemap-index.xml
