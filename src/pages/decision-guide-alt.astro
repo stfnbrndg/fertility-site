@@ -1,0 +1,629 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Decision Guide" description="Interactive flowcharts to help you navigate fertility treatment decisions based on your diagnosis, age, insurance coverage, and personal situation.">
+	<section class="hero-mini">
+		<div class="container">
+			<h1>Treatment Decision Guide</h1>
+			<p class="lead">Interactive flowcharts to help you understand your options</p>
+		</div>
+	</section>
+
+	<section class="content-container">
+		<div class="warning-banner">
+			<strong>Educational Only:</strong> These guides help you understand options. Treatment decisions should always be made with your reproductive endocrinologist.
+		</div>
+
+		<div class="guide-nav">
+			<a href="#insurance" class="guide-link">Insurance Strategy</a>
+			<a href="#pathway" class="guide-link">Treatment Pathway</a>
+			<a href="#diagnosis" class="guide-link">By Diagnosis</a>
+			<a href="#age" class="guide-link">By Age</a>
+			<a href="#ivf" class="guide-link">IVF Decisions</a>
+			<a href="#third-party" class="guide-link">Third-Party</a>
+			<a href="#rpl" class="guide-link">Recurrent Loss</a>
+			<a href="#preservation" class="guide-link">Preservation</a>
+		</div>
+
+		<div class="guide-section" id="insurance">
+			<div class="section-header">
+				<span class="section-icon">$</span>
+				<div>
+					<h2>Insurance Strategy</h2>
+					<p>When to use coverage vs. pay cash</p>
+				</div>
+			</div>
+			<div class="section-intro">
+				<p>If your insurance covers a limited number of cycles (e.g., 3), you may want to <strong>pay cash for less expensive treatments</strong> and save covered cycles for costly ones like IVF.</p>
+			</div>
+			<div class="flowchart-container">
+				<pre class="mermaid" is:raw>
+flowchart TD
+    A["Insurance covers<br/>limited cycles?"] --> B{Yes or No?}
+
+    B -->|"No / Unlimited"| C["Use insurance<br/>for all treatments"]
+    B -->|"Yes - Limited cycles"| D{What treatment<br/>is recommended?}
+
+    D -->|"Meds + Timed Intercourse<br/>~$200-$1,000"| E["PAY CASH<br/>Save covered cycles"]
+    D -->|"IUI + Oral Meds<br/>~$500-$2,000"| F["PAY CASH<br/>Save covered cycles"]
+    D -->|"IUI + Injectables<br/>~$3,000-$7,000"| G["JUDGMENT CALL<br/>Cash or use 1 cycle"]
+    D -->|"IVF<br/>~$15,000-$25,000"| H["USE INSURANCE<br/>This is what you saved for"]
+    D -->|"IVF + PGT / ICSI<br/>~$20,000-$35,000"| H
+    D -->|"Donor Eggs / FET<br/>~$25,000-$50,000"| H
+    D -->|"Surrogacy<br/>~$100,000+"| I["USE INSURANCE<br/>if applicable"]
+
+    E --> J["Covered cycles<br/>still available: 3"]
+    F --> J
+    G -->|Cash| J
+    G -->|Use coverage| K["Covered cycles<br/>remaining: 2"]
+    H --> L["Use 1-3 covered cycles<br/>for IVF attempts"]
+				</pre>
+			</div>
+			<div class="tip-box success">
+				<strong>Example savings:</strong> Pay cash for 3 IUI cycles (~$4,500) instead of using insurance, and you preserve all 3 covered cycles for IVF (~$60,000+ value).
+			</div>
+		</div>
+
+		<div class="guide-section" id="pathway">
+			<div class="section-header">
+				<span class="section-icon">→</span>
+				<div>
+					<h2>General Treatment Pathway</h2>
+					<p>Typical progression of fertility treatments</p>
+				</div>
+			</div>
+			<div class="flowchart-container">
+				<pre class="mermaid" is:raw>
+flowchart TD
+    A[Trying to Conceive] --> B{"Been trying 12+ months?<br/>Or 6+ months if age 35+?"}
+    B -->|No| C["Continue trying naturally<br/>Track ovulation"]
+    B -->|Yes| D["See Reproductive<br/>Endocrinologist"]
+    D --> E["Complete fertility workup<br/>Both partners tested"]
+    E --> F{Diagnosis?}
+
+    F -->|Ovulation issues| G["Ovulation induction<br/>Clomid/Letrozole"]
+    F -->|Mild male factor| H[IUI with medications]
+    F -->|Unexplained| I["Start with medications<br/>+ timed intercourse"]
+    F -->|Tubal factor| J[IVF recommended]
+    F -->|Severe male factor| K[IVF with ICSI]
+    F -->|Diminished ovarian reserve| L{Age and reserve?}
+
+    G --> M{"Pregnant after<br/>3-6 cycles?"}
+    H --> M
+    I --> M
+
+    M -->|Yes| N[Pregnancy!]
+    M -->|No| O[Consider IVF]
+
+    L -->|Own eggs viable| O
+    L -->|Own eggs unlikely| P[Donor eggs or embryos]
+
+    J --> O
+    K --> O
+
+    O --> Q{IVF successful?}
+    Q -->|Yes| N
+    Q -->|No, after 2-3 cycles| R["Review options:<br/>Donor gametes?<br/>Surrogacy?<br/>Other paths?"]
+				</pre>
+			</div>
+		</div>
+
+		<div class="guide-section" id="diagnosis">
+			<div class="section-header">
+				<span class="section-icon">Dx</span>
+				<div>
+					<h2>Treatment by Diagnosis</h2>
+					<p>Different diagnoses lead to different treatments</p>
+				</div>
+			</div>
+			<div class="flowchart-container">
+				<pre class="mermaid" is:raw>
+flowchart LR
+    subgraph Diagnosis
+        A1[PCOS / Anovulation]
+        A2[Unexplained Infertility]
+        A3[Male Factor - Mild]
+        A4[Male Factor - Severe]
+        A5[Tubal Factor]
+        A6[Endometriosis]
+        A7[Diminished Ovarian Reserve]
+        A8[Uterine Factor]
+    end
+
+    subgraph FirstLine[First Line Treatment]
+        B1[Letrozole/Clomid]
+        B2[Meds + Timed Intercourse]
+        B3[IUI]
+        B4[IVF + ICSI]
+        B5[IVF]
+        B6[Surgery or IVF]
+        B7[IVF quickly]
+        B8[Surgery/IVF/Surrogacy]
+    end
+
+    A1 --> B1
+    A2 --> B2
+    A3 --> B3
+    A4 --> B4
+    A5 --> B5
+    A6 --> B6
+    A7 --> B7
+    A8 --> B8
+				</pre>
+			</div>
+		</div>
+
+		<div class="guide-section" id="age">
+			<div class="section-header">
+				<span class="section-icon">⏰</span>
+				<div>
+					<h2>Age-Based Considerations</h2>
+					<p>Age significantly affects recommendations and urgency</p>
+				</div>
+			</div>
+			<div class="flowchart-container">
+				<pre class="mermaid" is:raw>
+flowchart TD
+    A[Your Age] --> B{Under 35?}
+    B -->|Yes| C["Good egg quantity<br/>and quality expected"]
+    B -->|No| D{35-37?}
+
+    D -->|Yes| E["Still good prognosis<br/>Consider moving faster"]
+    D -->|No| F{38-40?}
+
+    F -->|Yes| G["Time is important<br/>Consider IVF sooner<br/>May skip IUI"]
+    F -->|No| H{41-42?}
+
+    H -->|Yes| I["Lower success with own eggs<br/>IVF recommended<br/>Consider donor eggs"]
+    H -->|No| J[Over 42]
+
+    J --> K["Donor eggs often<br/>recommended<br/>Own eggs: very low success"]
+
+    C --> L["Can try less invasive<br/>treatments first"]
+    E --> M["3-4 IUI cycles<br/>then IVF"]
+    G --> N["0-3 IUI cycles<br/>IVF recommended"]
+    I --> O["IVF first line<br/>Discuss donor eggs"]
+    K --> P["Donor egg IVF<br/>has best outcomes"]
+				</pre>
+			</div>
+		</div>
+
+		<div class="guide-section" id="ivf">
+			<div class="section-header">
+				<span class="section-icon">IVF</span>
+				<div>
+					<h2>IVF Decision Points</h2>
+					<p>Key decisions during the IVF process</p>
+				</div>
+			</div>
+			<div class="flowchart-container">
+				<pre class="mermaid" is:raw>
+flowchart TD
+    A[Starting IVF] --> B{Fresh vs Freeze-All?}
+
+    B -->|Fresh Transfer| C["Transfer 3-5 days<br/>after retrieval"]
+    B -->|Freeze All| D["Freeze embryos<br/>FET next cycle"]
+
+    D --> E{Do PGT-A testing?}
+    E -->|Yes| F["Biopsy embryos<br/>Wait for results<br/>Transfer tested embryo"]
+    E -->|No| G["Select best embryo<br/>by appearance"]
+
+    F --> H{"How many<br/>to transfer?"}
+    G --> H
+    C --> H
+
+    H -->|1 embryo| I["Single Embryo Transfer<br/>Recommended<br/>Lower multiple risk"]
+    H -->|2 embryos| J["Higher pregnancy rate<br/>Higher twin risk<br/>Consider if older/failed cycles"]
+
+    I --> K{Outcome?}
+    J --> K
+
+    K -->|Positive| L["Pregnancy confirmed!<br/>Continue monitoring"]
+    K -->|Negative| M{"More embryos<br/>frozen?"}
+
+    M -->|Yes| N["FET with<br/>next embryo"]
+    M -->|No| O["Another retrieval?<br/>Donor options?<br/>Other paths?"]
+				</pre>
+			</div>
+		</div>
+
+		<div class="guide-section" id="third-party">
+			<div class="section-header">
+				<span class="section-icon">+</span>
+				<div>
+					<h2>Third-Party Reproduction</h2>
+					<p>When donors or carriers are needed</p>
+				</div>
+			</div>
+			<div class="flowchart-container">
+				<pre class="mermaid" is:raw>
+flowchart TD
+    A["Need third-party<br/>reproduction?"] --> B{What do you need?}
+
+    B -->|Sperm| C[Donor Sperm]
+    B -->|Eggs| D[Donor Eggs]
+    B -->|Both| E["Donor Embryos<br/>or Donor Egg + Sperm"]
+    B -->|Uterus| F[Gestational Carrier]
+    B -->|Eggs + Uterus| G["Donor Eggs +<br/>Gestational Carrier"]
+
+    C --> H{Use with?}
+    H -->|IUI| I["Donor sperm IUI<br/>$1,500-3,000/cycle"]
+    H -->|IVF| J["Donor sperm IVF<br/>$15,000-25,000"]
+
+    D --> K{Fresh or Frozen?}
+    K -->|Fresh donor| L["Fresh donor egg cycle<br/>$30,000-50,000"]
+    K -->|Frozen eggs| M["Frozen donor eggs<br/>$20,000-35,000"]
+
+    E --> N["Donor embryo transfer<br/>$8,000-15,000"]
+
+    F --> O["IVF + Gestational carrier<br/>$100,000-200,000"]
+
+    G --> P["Donor eggs + carrier<br/>$130,000-250,000"]
+				</pre>
+			</div>
+		</div>
+
+		<div class="guide-section" id="rpl">
+			<div class="section-header">
+				<span class="section-icon">♥</span>
+				<div>
+					<h2>Recurrent Pregnancy Loss</h2>
+					<p>After 2+ consecutive miscarriages</p>
+				</div>
+			</div>
+			<div class="flowchart-container">
+				<pre class="mermaid" is:raw>
+flowchart TD
+    A["2+ consecutive<br/>pregnancy losses"] --> B["RPL Workup"]
+
+    B --> C["Testing:<br/>Karyotype both partners<br/>Uterine evaluation<br/>Clotting panel<br/>Thyroid/hormones"]
+
+    C --> D{Cause found?}
+
+    D -->|"Uterine issue<br/>(septum, fibroids, scarring)"| E["Surgical correction<br/>via hysteroscopy"]
+    D -->|"Clotting disorder<br/>(APS, thrombophilia)"| F["Aspirin + Heparin<br/>during pregnancy"]
+    D -->|"Thyroid disorder"| G["Thyroid medication<br/>Goal: TSH < 2.5"]
+    D -->|"Chromosomal<br/>(parental translocation)"| H["IVF + PGT-SR<br/>Test embryos before transfer"]
+    D -->|"No cause found<br/>(~50% of cases)"| I["Empiric treatment"]
+
+    E --> J{Try again}
+    F --> J
+    G --> J
+    H --> K["Transfer normal<br/>embryos only"]
+
+    I --> L["Options:<br/>- Progesterone support<br/>- Baby aspirin<br/>- Close monitoring"]
+    I --> M["Consider IVF + PGT-A<br/>to select normal embryos"]
+
+    J --> N{Outcome?}
+    K --> N
+    L --> N
+    M --> N
+
+    N -->|"Success"| O["Pregnancy!<br/>Close monitoring"]
+    N -->|"Another loss"| P{Multiple IVF failures<br/>or losses with<br/>normal embryos?}
+
+    P -->|"Egg quality issue"| Q["Consider donor eggs"]
+    P -->|"Possible uterine factor"| R["Consider gestational carrier"]
+    P -->|"Continue trying"| S["60-75% success rate<br/>even after 3 losses"]
+				</pre>
+			</div>
+			<div class="tip-box info">
+				<strong>There is hope:</strong> Even after 3 unexplained losses, success rates are 60-75%. <a href="/treatments/recurrent-loss/">Learn more about RPL treatment</a>.
+			</div>
+		</div>
+
+		<div class="guide-section" id="preservation">
+			<div class="section-header">
+				<span class="section-icon">❄</span>
+				<div>
+					<h2>Fertility Preservation</h2>
+					<p>When to consider freezing</p>
+				</div>
+			</div>
+			<div class="flowchart-container">
+				<pre class="mermaid" is:raw>
+flowchart TD
+    A["Considering fertility<br/>preservation?"] --> B{Reason?}
+
+    B -->|Medical - Cancer treatment| C["URGENT: Freeze before<br/>treatment starts<br/>May have 2-4 weeks"]
+    B -->|Medical - Other| D["Consult with RE<br/>about timeline"]
+    B -->|Elective - Not ready yet| E{Your age?}
+
+    E -->|Under 30| F["Good time to freeze<br/>Best egg quality<br/>No rush but benefits clear"]
+    E -->|30-34| G["Optimal time<br/>Good quality + quantity<br/>Recommended if delaying"]
+    E -->|35-37| H["Important window<br/>Quality declining<br/>Strong recommendation"]
+    E -->|38+| I["Time sensitive<br/>May need multiple cycles<br/>Act quickly if interested"]
+
+    C --> J{What to freeze?}
+    D --> J
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+
+    J -->|Have partner| K["Embryo freezing<br/>Highest success rates"]
+    J -->|No partner| L["Egg freezing<br/>Keeps options open"]
+    J -->|Male| M["Sperm freezing<br/>Simple, effective"]
+				</pre>
+			</div>
+		</div>
+
+		<div class="questions-section">
+			<h2>Questions for Your Doctor</h2>
+			<div class="question-list">
+				<div class="question">Based on my test results, what's my diagnosis?</div>
+				<div class="question">What treatment do you recommend and why?</div>
+				<div class="question">What are my chances of success with this treatment?</div>
+				<div class="question">How many cycles should we try before moving to the next step?</div>
+				<div class="question">What are the risks of this treatment?</div>
+				<div class="question">What will this cost, and what does my insurance cover?</div>
+				<div class="question">Are there lifestyle changes that could improve my chances?</div>
+				<div class="question">How long should I expect this process to take?</div>
+			</div>
+			<div class="tip-box info">
+				<strong>Second Opinions:</strong> Completely reasonable before major decisions like IVF or donor gametes. Different clinics may have different approaches.
+			</div>
+		</div>
+
+		<div class="cta-box">
+			<h3>Need more information?</h3>
+			<div class="cta-links">
+				<a href="/treatments/" class="cta-button">Treatment Options</a>
+				<a href="/costs/" class="cta-button secondary">Cost Breakdown</a>
+				<a href="/resources/" class="cta-button secondary">Resources</a>
+			</div>
+		</div>
+	</section>
+
+	<script is:inline src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+	<script is:inline>
+		mermaid.initialize({
+			startOnLoad: true,
+			theme: 'base',
+			themeVariables: {
+				primaryColor: '#e2e8f0',
+				primaryTextColor: '#1a365d',
+				primaryBorderColor: '#2c5282',
+				lineColor: '#4a5568',
+				secondaryColor: '#ebf8ff',
+				tertiaryColor: '#f0fff4'
+			},
+			flowchart: {
+				useMaxWidth: true,
+				htmlLabels: true,
+				curve: 'basis'
+			}
+		});
+	</script>
+</Layout>
+
+<style>
+	.hero-mini {
+		background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+		color: white;
+		padding: 3rem 0;
+		text-align: center;
+	}
+
+	.hero-mini h1 {
+		color: white;
+		margin: 0 0 0.5rem;
+		font-size: 2.5rem;
+	}
+
+	.lead {
+		font-size: 1.15rem;
+		opacity: 0.95;
+		margin: 0;
+	}
+
+	.warning-banner {
+		background: #fffbeb;
+		border: 1px solid #f6e05e;
+		border-radius: 12px;
+		padding: 1rem 1.5rem;
+		margin: -1.5rem 0 1.5rem;
+		position: relative;
+		z-index: 10;
+	}
+
+	.guide-nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		justify-content: center;
+		margin-bottom: 2.5rem;
+		padding-bottom: 1.5rem;
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.guide-link {
+		background: #f7fafc;
+		padding: 0.4rem 0.9rem;
+		border-radius: 20px;
+		text-decoration: none;
+		font-size: 0.85rem;
+		font-weight: 500;
+		color: var(--color-secondary);
+		transition: all 0.2s;
+	}
+
+	.guide-link:hover {
+		background: var(--color-primary);
+		color: white;
+	}
+
+	.guide-section {
+		margin-bottom: 3rem;
+		scroll-margin-top: 2rem;
+	}
+
+	.section-header {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.section-icon {
+		width: 48px;
+		height: 48px;
+		background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+		color: white;
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 1rem;
+		flex-shrink: 0;
+	}
+
+	.section-header h2 {
+		margin: 0;
+		border: none;
+		padding: 0;
+	}
+
+	.section-header p {
+		margin: 0.25rem 0 0;
+		color: var(--color-text-light);
+		font-size: 0.95rem;
+	}
+
+	.section-intro {
+		background: #f7fafc;
+		border-radius: 12px;
+		padding: 1rem 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.section-intro p {
+		margin: 0;
+	}
+
+	.flowchart-container {
+		background: white;
+		border-radius: 16px;
+		padding: 2rem;
+		box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+		border: 1px solid var(--color-border);
+		overflow-x: auto;
+		margin: 1rem 0;
+	}
+
+	.mermaid {
+		font-family: inherit;
+		white-space: pre-wrap;
+	}
+
+	.tip-box {
+		border-radius: 12px;
+		padding: 1rem 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.tip-box.success {
+		background: #f0fff4;
+		border-left: 4px solid var(--color-accent);
+	}
+
+	.tip-box.info {
+		background: #ebf8ff;
+		border-left: 4px solid var(--color-primary);
+	}
+
+	.questions-section {
+		background: #f7fafc;
+		border-radius: 16px;
+		padding: 2rem;
+		margin: 2rem 0;
+	}
+
+	.questions-section h2 {
+		margin-top: 0;
+		border: none;
+	}
+
+	.question-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 0.75rem;
+		margin: 1.5rem 0;
+	}
+
+	.question {
+		background: white;
+		padding: 0.75rem 1rem;
+		border-radius: 8px;
+		font-size: 0.95rem;
+		border-left: 3px solid var(--color-primary);
+	}
+
+	.cta-box {
+		background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+		border-radius: 16px;
+		padding: 2rem;
+		text-align: center;
+		margin: 2rem 0;
+	}
+
+	.cta-box h3 {
+		margin: 0 0 1.25rem;
+	}
+
+	.cta-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		justify-content: center;
+	}
+
+	.cta-button {
+		display: inline-block;
+		background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+		color: white;
+		padding: 0.75rem 1.5rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+
+	.cta-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(44, 82, 130, 0.3);
+		color: white;
+	}
+
+	.cta-button.secondary {
+		background: white;
+		color: var(--color-primary);
+		border: 1px solid var(--color-primary);
+	}
+
+	.cta-button.secondary:hover {
+		background: var(--color-primary);
+		color: white;
+	}
+
+	@media (max-width: 768px) {
+		.hero-mini h1 {
+			font-size: 2rem;
+		}
+
+		.section-header {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.flowchart-container {
+			padding: 1rem;
+		}
+
+		.question-list {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
