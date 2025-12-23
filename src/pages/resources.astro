@@ -3,263 +3,529 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Resources" description="Fertility resources including professional organizations, clinic finders, financial assistance programs, support groups, and educational materials.">
-	<section class="page-header">
+	<section class="hero-mini">
 		<div class="container">
 			<h1>Fertility Resources</h1>
-			<p>Organizations, support groups, financial assistance, and educational materials.</p>
+			<p class="lead">Organizations, support, financial assistance, and educational materials</p>
 		</div>
 	</section>
 
 	<section class="content-container">
-		<h2>Professional Organizations</h2>
-
-		<div class="card">
-			<h3>ASRM - American Society for Reproductive Medicine</h3>
-			<p><a href="https://www.asrm.org" target="_blank" rel="noopener">asrm.org</a></p>
-			<p>Professional organization for fertility specialists. Offers patient resources, fact sheets, and guidelines.</p>
+		<div class="quick-links">
+			<a href="#organizations" class="quick-link">Organizations</a>
+			<a href="#clinics" class="quick-link">Find a Clinic</a>
+			<a href="#financial" class="quick-link">Financial Help</a>
+			<a href="#support" class="quick-link">Support Groups</a>
+			<a href="#education" class="quick-link">Education</a>
 		</div>
 
-		<div class="card">
-			<h3>SART - Society for Assisted Reproductive Technology</h3>
-			<p><a href="https://www.sart.org" target="_blank" rel="noopener">sart.org</a></p>
-			<p>Search clinic success rates, find accredited clinics, and access patient resources.</p>
+		<h2 id="organizations">Professional Organizations</h2>
+
+		<div class="resource-cards">
+			<a href="https://www.asrm.org" target="_blank" rel="noopener" class="resource-card">
+				<div class="resource-icon">ASRM</div>
+				<div class="resource-content">
+					<h3>American Society for Reproductive Medicine</h3>
+					<p>Professional organization for fertility specialists. Patient resources, fact sheets, and guidelines.</p>
+					<span class="resource-link">asrm.org</span>
+				</div>
+			</a>
+
+			<a href="https://www.sart.org" target="_blank" rel="noopener" class="resource-card">
+				<div class="resource-icon">SART</div>
+				<div class="resource-content">
+					<h3>Society for Assisted Reproductive Technology</h3>
+					<p>Search clinic success rates, find accredited clinics, access patient resources.</p>
+					<span class="resource-link">sart.org</span>
+				</div>
+			</a>
+
+			<a href="https://resolve.org" target="_blank" rel="noopener" class="resource-card featured">
+				<div class="resource-icon">R</div>
+				<div class="resource-content">
+					<h3>RESOLVE: The National Infertility Association</h3>
+					<p>Patient advocacy with support groups, educational events, and insurance advocacy.</p>
+					<span class="resource-link">resolve.org</span>
+				</div>
+			</a>
 		</div>
 
-		<div class="card">
-			<h3>RESOLVE: The National Infertility Association</h3>
-			<p><a href="https://resolve.org" target="_blank" rel="noopener">resolve.org</a></p>
-			<p>Patient advocacy organization offering support groups, educational events, and insurance advocacy resources.</p>
+		<h2 id="clinics">Finding a Clinic</h2>
+
+		<div class="resource-cards">
+			<a href="https://www.sart.org/patients/find-a-clinic/" target="_blank" rel="noopener" class="resource-card">
+				<div class="resource-icon">S</div>
+				<div class="resource-content">
+					<h3>SART Clinic Finder</h3>
+					<p>Search clinics by location and compare CDC-reported success rates.</p>
+					<span class="resource-link">sart.org/find-a-clinic</span>
+				</div>
+			</a>
+
+			<a href="https://www.cdc.gov/art/artdata/index.html" target="_blank" rel="noopener" class="resource-card">
+				<div class="resource-icon">CDC</div>
+				<div class="resource-content">
+					<h3>CDC ART Success Rates</h3>
+					<p>Official data on clinic success rates. Use with caution—rates reflect patient population.</p>
+					<span class="resource-link">cdc.gov/art</span>
+				</div>
+			</a>
 		</div>
 
-		<h2>Finding a Clinic</h2>
-
-		<div class="card">
-			<h3>SART Clinic Finder</h3>
-			<p><a href="https://www.sart.org/patients/find-a-clinic/" target="_blank" rel="noopener">sart.org/patients/find-a-clinic</a></p>
-			<p>Search for fertility clinics by location and compare CDC-reported success rates.</p>
+		<div class="tip-box">
+			<strong>Comparing Clinics:</strong> Don't choose based on success rates alone. Consider patient reviews, doctor-patient ratio, location, cost, and insurance acceptance.
 		</div>
 
-		<div class="card">
-			<h3>CDC ART Success Rates</h3>
-			<p><a href="https://www.cdc.gov/art/artdata/index.html" target="_blank" rel="noopener">cdc.gov/art</a></p>
-			<p>Official CDC data on clinic success rates. Use with caution - rates reflect patient population, not just clinic quality.</p>
-		</div>
+		<h2 id="financial">Financial Assistance</h2>
 
-		<div class="info-box">
-			<strong>Comparing Clinics:</strong> Don't choose a clinic based on success rates alone. Consider patient reviews, doctor-patient ratio, location, cost, and whether they accept your insurance.
-		</div>
+		<h3>Grants & Scholarships</h3>
 
-		<h2>Financial Assistance</h2>
+		<div class="resource-grid">
+			<a href="https://www.babyquestfoundation.org" target="_blank" rel="noopener" class="resource-item">
+				<strong>Baby Quest Foundation</strong>
+				<span class="amount">Up to $16,000</span>
+				<span class="desc">IVF, surrogacy, egg/sperm donation</span>
+			</a>
 
-		<h3>Grants and Scholarships</h3>
+			<a href="https://www.cadefoundation.org" target="_blank" rel="noopener" class="resource-item">
+				<strong>The Cade Foundation</strong>
+				<span class="amount">Up to $10,000</span>
+				<span class="desc">Family building grants</span>
+			</a>
 
-		<div class="card">
-			<h3>Baby Quest Foundation</h3>
-			<p><a href="https://www.babyquestfoundation.org" target="_blank" rel="noopener">babyquestfoundation.org</a></p>
-			<p>Grants up to $16,000 for IVF, gestational surrogacy, egg/sperm donation.</p>
-		</div>
+			<a href="https://www.thesamfund.org" target="_blank" rel="noopener" class="resource-item">
+				<strong>The Samfund</strong>
+				<span class="amount">Varies</span>
+				<span class="desc">For young adult cancer survivors</span>
+			</a>
 
-		<div class="card">
-			<h3>The Cade Foundation</h3>
-			<p><a href="https://www.cadefoundation.org" target="_blank" rel="noopener">cadefoundation.org</a></p>
-			<p>Family building grants up to $10,000. Focused on helping those who cannot afford treatment.</p>
-		</div>
+			<a href="https://www.fertilitywithinreach.org" target="_blank" rel="noopener" class="resource-item">
+				<strong>Fertility Within Reach</strong>
+				<span class="amount">Varies</span>
+				<span class="desc">Treatment grants & discounted IVF</span>
+			</a>
 
-		<div class="card">
-			<h3>The Samfund</h3>
-			<p><a href="https://www.thesamfund.org" target="_blank" rel="noopener">thesamfund.org</a></p>
-			<p>Financial assistance for young adult cancer survivors, including fertility preservation.</p>
-		</div>
-
-		<div class="card">
-			<h3>Fertility Within Reach</h3>
-			<p><a href="https://www.fertilitywithinreach.org" target="_blank" rel="noopener">fertilitywithinreach.org</a></p>
-			<p>Fertility treatment grants and discounted IVF programs.</p>
-		</div>
-
-		<div class="card">
-			<h3>Pay It Forward Fertility Foundation</h3>
-			<p><a href="https://www.payitforwardfertility.org" target="_blank" rel="noopener">payitforwardfertility.org</a></p>
-			<p>IVF grants for couples struggling to build their families.</p>
+			<a href="https://www.payitforwardfertility.org" target="_blank" rel="noopener" class="resource-item">
+				<strong>Pay It Forward Fertility</strong>
+				<span class="amount">IVF grants</span>
+				<span class="desc">For couples struggling to build families</span>
+			</a>
 		</div>
 
 		<h3>Medication Assistance</h3>
 
-		<div class="card">
-			<h3>EMD Serono Compassionate Care</h3>
-			<p>Discounts on Gonal-F and other medications for qualifying patients.</p>
+		<div class="resource-grid compact">
+			<div class="resource-item">
+				<strong>EMD Serono Compassionate Care</strong>
+				<span class="desc">Discounts on Gonal-F and other meds</span>
+			</div>
+			<div class="resource-item">
+				<strong>Ferring Heart to Heart</strong>
+				<span class="desc">Free medications for qualifying patients</span>
+			</div>
+			<a href="https://www.reuniterx.com" target="_blank" rel="noopener" class="resource-item">
+				<strong>ReUnite Rx</strong>
+				<span class="desc">Discounted fertility medications</span>
+			</a>
 		</div>
 
-		<div class="card">
-			<h3>Ferring Heart to Heart</h3>
-			<p>Free fertility medications for qualifying patients.</p>
+		<h3>Financing Options</h3>
+
+		<div class="finance-options">
+			<div class="finance-item">Future Family</div>
+			<div class="finance-item">CapexMD</div>
+			<div class="finance-item">Prosper Healthcare Lending</div>
+			<div class="finance-item">LendingClub</div>
 		</div>
 
-		<div class="card">
-			<h3>ReUnite Rx</h3>
-			<p><a href="https://www.reuniterx.com" target="_blank" rel="noopener">reuniterx.com</a></p>
-			<p>Discounted fertility medications.</p>
+		<h2 id="support">Support Groups</h2>
+
+		<div class="resource-cards">
+			<a href="https://resolve.org/support/support-groups/" target="_blank" rel="noopener" class="resource-card">
+				<div class="resource-icon">SG</div>
+				<div class="resource-content">
+					<h3>RESOLVE Support Groups</h3>
+					<p>In-person and online support groups across the US, led by trained volunteers.</p>
+					<span class="resource-link">resolve.org/support</span>
+				</div>
+			</a>
+
+			<div class="resource-card">
+				<div class="resource-icon">OC</div>
+				<div class="resource-content">
+					<h3>Online Communities</h3>
+					<p>Reddit communities (r/infertility, r/IVF), Facebook groups, and other platforms.</p>
+				</div>
+			</div>
+
+			<div class="resource-card">
+				<div class="resource-icon">TC</div>
+				<div class="resource-content">
+					<h3>Therapy & Counseling</h3>
+					<p>Many clinics have counselors on staff. Look for therapists who specialize in infertility through ASRM.</p>
+				</div>
+			</div>
 		</div>
 
-		<h3>Fertility Loans and Financing</h3>
+		<h2 id="education">Educational Resources</h2>
 
-		<ul>
-			<li><strong>Future Family</strong> - Fertility-specific loans and payment plans</li>
-			<li><strong>Prosper Healthcare Lending</strong> - Medical financing</li>
-			<li><strong>CapexMD</strong> - Fertility financing</li>
-			<li><strong>LendingClub</strong> - Personal loans</li>
-		</ul>
+		<div class="resource-cards">
+			<a href="https://www.fertilityiq.com" target="_blank" rel="noopener" class="resource-card">
+				<div class="resource-icon">FIQ</div>
+				<div class="resource-content">
+					<h3>FertilityIQ</h3>
+					<p>In-depth courses, doctor reviews, and clinic comparisons.</p>
+					<span class="resource-link">fertilityiq.com</span>
+				</div>
+			</a>
 
-		<h2>Support Groups</h2>
-
-		<div class="card">
-			<h3>RESOLVE Support Groups</h3>
-			<p><a href="https://resolve.org/support/support-groups/" target="_blank" rel="noopener">resolve.org/support</a></p>
-			<p>In-person and online support groups across the US, led by trained volunteers.</p>
+			<a href="https://www.reproductivefacts.org" target="_blank" rel="noopener" class="resource-card">
+				<div class="resource-icon">RF</div>
+				<div class="resource-content">
+					<h3>ASRM Patient Fact Sheets</h3>
+					<p>Peer-reviewed fact sheets on fertility topics.</p>
+					<span class="resource-link">reproductivefacts.org</span>
+				</div>
+			</a>
 		</div>
 
-		<div class="card">
-			<h3>Fertility Network</h3>
-			<p>Online communities on Reddit (r/infertility, r/IVF), Facebook groups, and other platforms.</p>
+		<div class="two-column">
+			<div class="column">
+				<h3>Recommended Books</h3>
+				<ul class="book-list">
+					<li><strong>"The Infertility Survival Handbook"</strong><br>Elizabeth Swire Falker</li>
+					<li><strong>"It Starts with the Egg"</strong><br>Rebecca Fett</li>
+					<li><strong>"The Whole Life Fertility Plan"</strong><br>Kyra Phillips & Dr. Jamie Grifo</li>
+					<li><strong>"Navigating the Land of IF"</strong><br>Melissa Ford</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Podcasts</h3>
+				<ul class="podcast-list">
+					<li>Beat Infertility</li>
+					<li>The Fertility Podcast</li>
+					<li>Big Fat Negative</li>
+					<li>The Egg Whisperer Show</li>
+				</ul>
+			</div>
 		</div>
 
-		<div class="card">
-			<h3>Therapy and Counseling</h3>
-			<p>Many fertility clinics have counselors on staff. Look for therapists who specialize in infertility through ASRM's mental health professional group.</p>
+		<h2>Specialized Resources</h2>
+
+		<div class="specialized-grid">
+			<div class="specialized-section">
+				<h3>LGBTQ+ Family Building</h3>
+				<a href="https://www.familyequality.org" target="_blank" rel="noopener" class="resource-item">
+					<strong>Family Equality</strong>
+					<span class="desc">Resources for LGBTQ+ parents</span>
+				</a>
+			</div>
+
+			<div class="specialized-section">
+				<h3>Donor Conception</h3>
+				<a href="https://www.donorsiblingregistry.com" target="_blank" rel="noopener" class="resource-item">
+					<strong>Donor Sibling Registry</strong>
+					<span class="desc">Connect with half-siblings and donors</span>
+				</a>
+			</div>
+
+			<div class="specialized-section">
+				<h3>Surrogacy</h3>
+				<a href="https://www.aaartaattorneys.org" target="_blank" rel="noopener" class="resource-item">
+					<strong>AAARTA</strong>
+					<span class="desc">Find reproductive law attorneys</span>
+				</a>
+			</div>
+
+			<div class="specialized-section">
+				<h3>Pregnancy Loss</h3>
+				<a href="https://nationalshare.org" target="_blank" rel="noopener" class="resource-item">
+					<strong>Share</strong>
+					<span class="desc">Pregnancy & infant loss support</span>
+				</a>
+			</div>
+
+			<div class="specialized-section">
+				<h3>Alternative Paths</h3>
+				<a href="https://www.adoptuskids.org" target="_blank" rel="noopener" class="resource-item">
+					<strong>AdoptUSKids</strong>
+					<span class="desc">Adoption from foster care</span>
+				</a>
+				<a href="https://www.embryoadoption.org" target="_blank" rel="noopener" class="resource-item">
+					<strong>Embryo Adoption Awareness</strong>
+					<span class="desc">Embryo donation information</span>
+				</a>
+			</div>
+
+			<div class="specialized-section">
+				<h3>Advocacy</h3>
+				<a href="https://resolve.org/what-we-do/advocacy/" target="_blank" rel="noopener" class="resource-item">
+					<strong>RESOLVE Advocacy</strong>
+					<span class="desc">Insurance coverage advocacy</span>
+				</a>
+			</div>
 		</div>
 
-		<h2>Educational Resources</h2>
-
-		<h3>Websites</h3>
-
-		<div class="card">
-			<h3>FertilityIQ</h3>
-			<p><a href="https://www.fertilityiq.com" target="_blank" rel="noopener">fertilityiq.com</a></p>
-			<p>In-depth courses on fertility treatments, doctor reviews, and clinic comparisons.</p>
-		</div>
-
-		<div class="card">
-			<h3>ASRM Patient Fact Sheets</h3>
-			<p><a href="https://www.reproductivefacts.org" target="_blank" rel="noopener">reproductivefacts.org</a></p>
-			<p>Peer-reviewed fact sheets on fertility topics from the American Society for Reproductive Medicine.</p>
-		</div>
-
-		<h3>Books</h3>
-
-		<ul>
-			<li><strong>"The Infertility Survival Handbook"</strong> by Elizabeth Swire Falker</li>
-			<li><strong>"It Starts with the Egg"</strong> by Rebecca Fett - Research on improving egg quality</li>
-			<li><strong>"The Whole Life Fertility Plan"</strong> by Kyra Phillips and Dr. Jamie Grifo</li>
-			<li><strong>"Navigating the Land of IF"</strong> by Melissa Ford</li>
-		</ul>
-
-		<h3>Podcasts</h3>
-
-		<ul>
-			<li><strong>Beat Infertility</strong></li>
-			<li><strong>The Fertility Podcast</strong></li>
-			<li><strong>Big Fat Negative</strong></li>
-			<li><strong>The Egg Whisperer Show</strong></li>
-		</ul>
-
-		<h2>LGBTQ+ Family Building</h2>
-
-		<div class="card">
-			<h3>Family Equality</h3>
-			<p><a href="https://www.familyequality.org" target="_blank" rel="noopener">familyequality.org</a></p>
-			<p>Resources for LGBTQ+ parents and those looking to start families.</p>
-		</div>
-
-		<div class="card">
-			<h3>Path2Parenthood</h3>
-			<p>LGBTQ+ family building resources and support.</p>
-		</div>
-
-		<h2>Donor Conception</h2>
-
-		<div class="card">
-			<h3>Donor Sibling Registry</h3>
-			<p><a href="https://www.donorsiblingregistry.com" target="_blank" rel="noopener">donorsiblingregistry.com</a></p>
-			<p>Connect donor-conceived people with half-siblings and donors. Resources on disclosure.</p>
-		</div>
-
-		<div class="card">
-			<h3>We Are Donor Conceived</h3>
-			<p>Organization run by donor-conceived adults with resources for families.</p>
-		</div>
-
-		<h2>Gestational Surrogacy</h2>
-
-		<div class="card">
-			<h3>American Academy of Assisted Reproductive Technology Attorneys</h3>
-			<p><a href="https://www.aaartaattorneys.org" target="_blank" rel="noopener">aaartaattorneys.org</a></p>
-			<p>Find lawyers specializing in reproductive law for surrogacy contracts.</p>
-		</div>
-
-		<h2>Pregnancy Loss Support</h2>
-
-		<div class="card">
-			<h3>Share Pregnancy & Infant Loss Support</h3>
-			<p><a href="https://nationalshare.org" target="_blank" rel="noopener">nationalshare.org</a></p>
-			<p>Support for those who have experienced pregnancy loss, stillbirth, or infant death.</p>
-		</div>
-
-		<div class="card">
-			<h3>The Compassionate Friends</h3>
-			<p><a href="https://www.compassionatefriends.org" target="_blank" rel="noopener">compassionatefriends.org</a></p>
-			<p>Support for families grieving the death of a child.</p>
-		</div>
-
-		<h2>Alternative Paths to Parenthood</h2>
-
-		<div class="card">
-			<h3>AdoptUSKids</h3>
-			<p><a href="https://www.adoptuskids.org" target="_blank" rel="noopener">adoptuskids.org</a></p>
-			<p>National resource for adoption from foster care.</p>
-		</div>
-
-		<div class="card">
-			<h3>Embryo Adoption Awareness Center</h3>
-			<p><a href="https://www.embryoadoption.org" target="_blank" rel="noopener">embryoadoption.org</a></p>
-			<p>Information on embryo donation and adoption.</p>
-		</div>
-
-		<h2>Advocacy</h2>
-
-		<div class="card">
-			<h3>RESOLVE Advocacy</h3>
-			<p><a href="https://resolve.org/what-we-do/advocacy/" target="_blank" rel="noopener">resolve.org/advocacy</a></p>
-			<p>Get involved in advocating for fertility insurance coverage and patients' rights.</p>
-		</div>
-
-		<div class="info-box">
-			<strong>Insurance Advocacy:</strong> If your insurance denies coverage, RESOLVE offers resources on appeals and advocacy. Many denials can be overturned with proper documentation and appeal.
+		<div class="tip-box">
+			<strong>Insurance Denials:</strong> RESOLVE offers resources on appeals. Many denials can be overturned with proper documentation.
 		</div>
 	</section>
 </Layout>
 
 <style>
-	.page-header {
-		background: #edf2f7;
+	.hero-mini {
+		background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+		color: white;
 		padding: 3rem 0;
-		margin-bottom: 2rem;
+		text-align: center;
 	}
 
-	.page-header h1 {
+	.hero-mini h1 {
+		color: white;
 		margin: 0 0 0.5rem;
+		font-size: 2.5rem;
 	}
 
-	.page-header p {
+	.lead {
+		font-size: 1.15rem;
+		opacity: 0.95;
 		margin: 0;
+	}
+
+	.quick-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		justify-content: center;
+		margin: -1.5rem 0 2rem;
+		position: relative;
+		z-index: 10;
+	}
+
+	.quick-link {
+		background: white;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 0.9rem;
+		color: var(--color-primary);
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+		transition: all 0.2s;
+	}
+
+	.quick-link:hover {
+		background: var(--color-primary);
+		color: white;
+		transform: translateY(-2px);
+	}
+
+	.resource-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 1.25rem;
+		margin: 1.5rem 0 2rem;
+	}
+
+	.resource-card {
+		background: white;
+		border-radius: 12px;
+		padding: 1.25rem;
+		display: flex;
+		gap: 1rem;
+		text-decoration: none;
+		color: inherit;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+		border: 1px solid var(--color-border);
+		transition: all 0.2s;
+	}
+
+	.resource-card:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+		border-color: var(--color-primary);
+	}
+
+	.resource-card.featured {
+		border-color: var(--color-accent);
+		background: linear-gradient(135deg, white 0%, #f0fff4 100%);
+	}
+
+	.resource-icon {
+		width: 48px;
+		height: 48px;
+		background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+		color: white;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 0.8rem;
+		flex-shrink: 0;
+	}
+
+	.resource-content h3 {
+		margin: 0 0 0.25rem;
+		font-size: 1rem;
+		color: var(--color-primary-dark);
+	}
+
+	.resource-content p {
+		margin: 0 0 0.5rem;
+		font-size: 0.9rem;
 		color: var(--color-text-light);
-		font-size: 1.125rem;
 	}
 
-	.card h3 {
-		margin-bottom: 0.25rem;
+	.resource-link {
+		font-size: 0.8rem;
+		color: var(--color-primary);
+		font-weight: 500;
 	}
 
-	.card p:first-of-type {
+	.tip-box {
+		background: #ebf8ff;
+		border-left: 4px solid var(--color-primary);
+		padding: 1rem 1.5rem;
+		border-radius: 0 12px 12px 0;
+		margin: 1.5rem 0;
+	}
+
+	.resource-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+		gap: 1rem;
+		margin: 1rem 0 2rem;
+	}
+
+	.resource-grid.compact {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+
+	.resource-item {
+		background: white;
+		border-radius: 10px;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+		text-decoration: none;
+		color: inherit;
+		border: 1px solid var(--color-border);
+		transition: all 0.2s;
+	}
+
+	a.resource-item:hover {
+		border-color: var(--color-primary);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	}
+
+	.resource-item strong {
+		font-size: 0.95rem;
+		color: var(--color-primary-dark);
+	}
+
+	.resource-item .amount {
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: var(--color-accent);
+	}
+
+	.resource-item .desc {
+		font-size: 0.8rem;
+		color: var(--color-text-light);
+	}
+
+	.finance-options {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		margin: 1rem 0 2rem;
+	}
+
+	.finance-item {
+		background: #f7fafc;
+		padding: 0.5rem 1rem;
+		border-radius: 6px;
+		font-size: 0.9rem;
+		font-weight: 500;
+		color: var(--color-secondary);
+	}
+
+	.two-column {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin: 1.5rem 0;
+	}
+
+	.column h3 {
+		margin: 0 0 1rem;
+		font-size: 1rem;
+	}
+
+	.book-list, .podcast-list {
+		margin: 0;
+		padding-left: 1rem;
+	}
+
+	.book-list li, .podcast-list li {
+		margin-bottom: 0.75rem;
+		font-size: 0.9rem;
+	}
+
+	.book-list li br + * {
+		color: var(--color-text-light);
+		font-size: 0.85rem;
+	}
+
+	.specialized-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.specialized-section {
+		background: #f7fafc;
+		border-radius: 12px;
+		padding: 1.25rem;
+	}
+
+	.specialized-section h3 {
+		margin: 0 0 0.75rem;
+		font-size: 0.9rem;
+		color: var(--color-text-light);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	.specialized-section .resource-item {
+		background: white;
 		margin-bottom: 0.5rem;
+	}
+
+	.specialized-section .resource-item:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 768px) {
+		.hero-mini h1 {
+			font-size: 2rem;
+		}
+
+		.resource-cards {
+			grid-template-columns: 1fr;
+		}
+
+		.resource-card {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.resource-icon {
+			margin: 0 auto;
+		}
 	}
 </style>

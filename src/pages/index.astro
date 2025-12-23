@@ -5,262 +5,625 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Home" description="Comprehensive guide to fertility treatments in the US. Compare IVF, IUI, medications, and more with costs, success rates, and decision-making tools.">
 	<section class="hero">
 		<div class="container">
-			<h1>Understanding Your Fertility Treatment Options</h1>
-			<p class="lead">A comprehensive guide to fertility treatments in the United States, including costs, success rates, and decision-making tools to help you navigate your journey.</p>
+			<h1>Understanding Your Fertility Journey</h1>
+			<p class="lead">Evidence-based information on causes, treatments, and costs to help you make informed decisions with your healthcare team.</p>
+			<div class="hero-stats">
+				<div class="hero-stat">
+					<span class="hero-stat-number">1 in 6</span>
+					<span class="hero-stat-label">couples affected</span>
+				</div>
+				<div class="hero-stat">
+					<span class="hero-stat-number">7+</span>
+					<span class="hero-stat-label">treatment options</span>
+				</div>
+				<div class="hero-stat">
+					<span class="hero-stat-number">40-55%</span>
+					<span class="hero-stat-label">IVF success rate*</span>
+				</div>
+			</div>
+			<p class="hero-footnote">*For women under 35</p>
 		</div>
 	</section>
 
 	<section class="content-container">
-		<h2>Getting Started</h2>
-		<p>Navigating fertility treatments can feel overwhelming. This guide is designed to help you understand your options, compare costs, and make informed decisions alongside your healthcare team.</p>
-
-		<div class="info-box">
-			<strong>Before You Begin:</strong> Fertility treatment recommendations depend on your specific diagnosis, age, medical history, and personal preferences. Always work with a reproductive endocrinologist (RE) to develop a personalized treatment plan.
+		<div class="intro-box">
+			<p>Fertility treatment recommendations depend on your specific diagnosis, age, and medical history. This guide will help you understand your options—always work with a reproductive endocrinologist (RE) for personalized care.</p>
 		</div>
 
-		<h2>Who is Affected?</h2>
-		<p>Infertility affects approximately <strong>1 in 6 couples</strong> trying to conceive. Contrary to common perception, infertility is not primarily a female issue—causes are distributed relatively equally between partners.</p>
+		<h2>Understanding the Causes</h2>
+		<p class="section-intro">Infertility is not primarily a female issue—causes are distributed relatively equally between partners.</p>
 
-		<div class="card stats-card">
-			<h3>Distribution of Infertility Causes</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>Attribution</th>
-						<th>Percentage</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Female factors only</td>
-						<td>~35%</td>
-					</tr>
-					<tr>
-						<td>Male factors only</td>
-						<td>~35%</td>
-					</tr>
-					<tr>
-						<td>Combined male and female factors</td>
-						<td>~20%</td>
-					</tr>
-					<tr>
-						<td>Unexplained (no identifiable cause)</td>
-						<td>~10-25%</td>
-					</tr>
-				</tbody>
-			</table>
-			<p class="citation">Source: <a href="https://www.reproductivefacts.org/browse-resources/frequently-asked-questions/faq-about-infertility/" target="_blank" rel="noopener">ASRM ReproductiveFacts.org</a>, <a href="https://www.ncbi.nlm.nih.gov/books/NBK556033/" target="_blank" rel="noopener">NCBI StatPearls</a></p>
+		<div class="cause-distribution">
+			<div class="cause-bar">
+				<div class="cause-segment female" style="width: 35%">
+					<span class="cause-label">Female only</span>
+					<span class="cause-pct">35%</span>
+				</div>
+				<div class="cause-segment male" style="width: 35%">
+					<span class="cause-label">Male only</span>
+					<span class="cause-pct">35%</span>
+				</div>
+				<div class="cause-segment combined" style="width: 20%">
+					<span class="cause-label">Both</span>
+					<span class="cause-pct">20%</span>
+				</div>
+				<div class="cause-segment unexplained" style="width: 10%">
+					<span class="cause-label">?</span>
+					<span class="cause-pct">10%</span>
+				</div>
+			</div>
+			<p class="citation">Source: <a href="https://www.reproductivefacts.org/browse-resources/frequently-asked-questions/faq-about-infertility/" target="_blank" rel="noopener">ASRM</a>, <a href="https://www.ncbi.nlm.nih.gov/books/NBK556033/" target="_blank" rel="noopener">NCBI</a></p>
 		</div>
 
-		<h2>Most Common Causes</h2>
 		<div class="causes-grid">
-			<div class="card">
-				<h3>Ovulatory Disorders</h3>
-				<p class="stat">25% of female infertility</p>
-				<p>Problems with ovulation, most commonly caused by PCOS, which affects 5-20% of women of reproductive age and accounts for 70-80% of anovulatory infertility.</p>
-				<p class="citation">Source: <a href="https://www.ncbi.nlm.nih.gov/books/NBK459251/" target="_blank" rel="noopener">NCBI StatPearls</a></p>
+			<div class="cause-card">
+				<div class="cause-icon">O</div>
+				<div class="cause-content">
+					<h3>Ovulatory Disorders</h3>
+					<p class="cause-stat">25% of female infertility</p>
+					<p>Most commonly PCOS, which affects 5-20% of reproductive-age women and causes 70-80% of anovulatory infertility.</p>
+					<a href="https://www.ncbi.nlm.nih.gov/books/NBK459251/" target="_blank" rel="noopener" class="source-link">NCBI StatPearls</a>
+				</div>
 			</div>
 
-			<div class="card">
-				<h3>Tubal Factor</h3>
-				<p class="stat">20-35% of female infertility</p>
-				<p>Blocked or damaged fallopian tubes, often caused by pelvic inflammatory disease, endometriosis, or prior surgery.</p>
-				<p class="citation">Source: <a href="https://www.ncbi.nlm.nih.gov/books/NBK556033/" target="_blank" rel="noopener">NCBI StatPearls</a></p>
+			<div class="cause-card">
+				<div class="cause-icon">T</div>
+				<div class="cause-content">
+					<h3>Tubal Factor</h3>
+					<p class="cause-stat">20-35% of female infertility</p>
+					<p>Blocked or damaged fallopian tubes from PID, endometriosis, or prior surgery.</p>
+					<a href="https://www.ncbi.nlm.nih.gov/books/NBK556033/" target="_blank" rel="noopener" class="source-link">NCBI StatPearls</a>
+				</div>
 			</div>
 
-			<div class="card">
-				<h3>Endometriosis</h3>
-				<p class="stat">25-50% of infertile women</p>
-				<p>Tissue similar to the uterine lining grows outside the uterus. Women with endometriosis are 6-8 times more likely to experience infertility.</p>
-				<p class="citation">Source: <a href="https://www.asrm.org/practice-guidance/practice-committee-documents/endometriosis-and-infertility-a-committee-opinion-2012/" target="_blank" rel="noopener">ASRM Committee Opinion</a></p>
+			<div class="cause-card">
+				<div class="cause-icon">E</div>
+				<div class="cause-content">
+					<h3>Endometriosis</h3>
+					<p class="cause-stat">Present in 25-50% of infertile women</p>
+					<p>Women with endometriosis are 6-8x more likely to experience infertility.</p>
+					<a href="https://www.asrm.org/practice-guidance/practice-committee-documents/endometriosis-and-infertility-a-committee-opinion-2012/" target="_blank" rel="noopener" class="source-link">ASRM Committee Opinion</a>
+				</div>
 			</div>
 
-			<div class="card">
-				<h3>Male Factor</h3>
-				<p class="stat">~40% involve male factors</p>
-				<p>Varicocele is the most common cause (~40% of infertile men). Other causes include low sperm count, poor motility, and hormonal disorders.</p>
-				<p class="citation">Source: <a href="https://www.ncbi.nlm.nih.gov/books/NBK562258/" target="_blank" rel="noopener">NCBI StatPearls</a></p>
+			<div class="cause-card">
+				<div class="cause-icon">M</div>
+				<div class="cause-content">
+					<h3>Male Factor</h3>
+					<p class="cause-stat">Involved in ~50% of cases</p>
+					<p>Varicocele is the leading cause (40% of infertile men). Also: low count, poor motility, hormonal issues.</p>
+					<a href="https://www.ncbi.nlm.nih.gov/books/NBK562258/" target="_blank" rel="noopener" class="source-link">NCBI StatPearls</a>
+				</div>
 			</div>
 		</div>
 
-		<p><a href="/causes/">View detailed causes and statistics →</a></p>
+		<p class="section-link"><a href="/causes/">Explore all causes with detailed statistics →</a></p>
 
 		<h2>Treatment Options</h2>
-		<div class="treatment-grid">
-			<div class="card">
-				<h3>Lifestyle & Medication</h3>
-				<p>Often the first step. Includes ovulation induction with oral medications like Clomid or Letrozole.</p>
-				<p><strong>Typical cost:</strong> $100 - $1,500/cycle</p>
-				<p><a href="/treatments/medication/">Learn more</a></p>
+		<p class="section-intro">Treatment typically progresses from less invasive options to more advanced technologies based on diagnosis and response.</p>
+
+		<div class="treatment-timeline">
+			<div class="timeline-track"></div>
+
+			<div class="treatment-stage first-line">
+				<div class="stage-label">First Line</div>
+				<div class="treatment-cards">
+					<a href="/treatments/medication/" class="treatment-card">
+						<h3>Medications</h3>
+						<p>Clomid, Letrozole, or injectables to induce ovulation</p>
+						<span class="treatment-cost">$100 - $1,500/cycle</span>
+					</a>
+					<a href="/treatments/iui/" class="treatment-card">
+						<h3>IUI</h3>
+						<p>Prepared sperm placed directly in uterus during ovulation</p>
+						<span class="treatment-cost">$500 - $4,000/cycle</span>
+					</a>
+				</div>
 			</div>
 
-			<div class="card">
-				<h3>IUI (Intrauterine Insemination)</h3>
-				<p>A less invasive procedure where prepared sperm is placed directly in the uterus during ovulation.</p>
-				<p><strong>Typical cost:</strong> $500 - $4,000/cycle</p>
-				<p><a href="/treatments/iui/">Learn more</a></p>
+			<div class="treatment-stage advanced">
+				<div class="stage-label">Advanced</div>
+				<div class="treatment-cards">
+					<a href="/treatments/ivf/" class="treatment-card featured">
+						<h3>IVF</h3>
+						<p>Eggs retrieved, fertilized in lab, embryos transferred</p>
+						<span class="treatment-cost">$12,000 - $25,000/cycle</span>
+						<span class="treatment-badge">Most effective</span>
+					</a>
+					<a href="/treatments/surgical/" class="treatment-card">
+						<h3>Surgical</h3>
+						<p>Correct fibroids, endometriosis, or tubal issues</p>
+						<span class="treatment-cost">$5,000 - $30,000</span>
+					</a>
+				</div>
 			</div>
 
-			<div class="card">
-				<h3>IVF (In Vitro Fertilization)</h3>
-				<p>Eggs are retrieved, fertilized in a lab, and embryos are transferred to the uterus.</p>
-				<p><strong>Typical cost:</strong> $12,000 - $25,000/cycle</p>
-				<p><a href="/treatments/ivf/">Learn more</a></p>
-			</div>
-
-			<div class="card">
-				<h3>Third-Party Reproduction</h3>
-				<p>Includes donor eggs, donor sperm, donor embryos, and gestational surrogacy.</p>
-				<p><strong>Typical cost:</strong> $5,000 - $150,000+</p>
-				<p><a href="/treatments/third-party/">Learn more</a></p>
-			</div>
-
-			<div class="card">
-				<h3>Fertility Preservation</h3>
-				<p>Egg freezing or sperm freezing for future use, often before medical treatment or for elective reasons.</p>
-				<p><strong>Typical cost:</strong> $5,000 - $15,000 + storage</p>
-				<p><a href="/treatments/preservation/">Learn more</a></p>
-			</div>
-
-			<div class="card">
-				<h3>Surgical Options</h3>
-				<p>Procedures to address structural issues like fibroids, endometriosis, or blocked fallopian tubes.</p>
-				<p><strong>Typical cost:</strong> $5,000 - $30,000</p>
-				<p><a href="/treatments/surgical/">Learn more</a></p>
-			</div>
-
-			<div class="card">
-				<h3>Recurrent Pregnancy Loss</h3>
-				<p>Specialized testing and treatment after 2+ consecutive miscarriages.</p>
-				<p><strong>Typical cost:</strong> $2,000 - $35,000</p>
-				<p><a href="/treatments/recurrent-loss/">Learn more</a></p>
+			<div class="treatment-stage specialized">
+				<div class="stage-label">Specialized</div>
+				<div class="treatment-cards">
+					<a href="/treatments/third-party/" class="treatment-card">
+						<h3>Third-Party</h3>
+						<p>Donor eggs, sperm, embryos, or surrogacy</p>
+						<span class="treatment-cost">$5,000 - $150,000+</span>
+					</a>
+					<a href="/treatments/preservation/" class="treatment-card">
+						<h3>Preservation</h3>
+						<p>Freeze eggs, sperm, or embryos for future use</p>
+						<span class="treatment-cost">$5,000 - $15,000 + storage</span>
+					</a>
+					<a href="/treatments/recurrent-loss/" class="treatment-card">
+						<h3>Recurrent Loss</h3>
+						<p>Testing and treatment after multiple miscarriages</p>
+						<span class="treatment-cost">$2,000 - $35,000</span>
+					</a>
+				</div>
 			</div>
 		</div>
 
-		<h2>Quick Links</h2>
-		<ul>
-			<li><a href="/causes/">Causes of Infertility</a> - Statistics and research on what causes infertility</li>
-			<li><a href="/costs/">Full Cost Comparison</a> - Detailed breakdown of treatment costs</li>
-			<li><a href="/decision-guide/">Decision Guide</a> - Interactive flowcharts to help you understand your options</li>
-			<li><a href="/resources/">Resources</a> - Insurance, financial assistance, and support organizations</li>
-		</ul>
+		<div class="cta-grid">
+			<a href="/costs/" class="cta-card">
+				<span class="cta-icon">$</span>
+				<h3>Cost Comparison</h3>
+				<p>Detailed breakdown of all treatment costs</p>
+			</a>
+			<a href="/decision-guide/" class="cta-card">
+				<span class="cta-icon">?</span>
+				<h3>Decision Guide</h3>
+				<p>Interactive flowcharts for your situation</p>
+			</a>
+			<a href="/resources/" class="cta-card">
+				<span class="cta-icon">+</span>
+				<h3>Resources</h3>
+				<p>Insurance, financial aid, support groups</p>
+			</a>
+		</div>
 
-		<h2>Key Factors in Treatment Decisions</h2>
-		<table>
-			<thead>
-				<tr>
-					<th>Factor</th>
-					<th>Why It Matters</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Age</td>
-					<td>Egg quality and quantity decline with age, affecting success rates and treatment recommendations</td>
-				</tr>
-				<tr>
-					<td>Diagnosis</td>
-					<td>The underlying cause of infertility guides which treatments are most likely to succeed</td>
-				</tr>
-				<tr>
-					<td>Duration of Infertility</td>
-					<td>Longer duration may indicate need for more advanced treatments</td>
-				</tr>
-				<tr>
-					<td>Previous Treatments</td>
-					<td>Response to prior treatments helps predict success of future options</td>
-				</tr>
-				<tr>
-					<td>Financial Resources</td>
-					<td>Out-of-pocket costs vary significantly; insurance coverage affects treatment access</td>
-				</tr>
-				<tr>
-					<td>Personal Values</td>
-					<td>Religious, ethical, and personal preferences influence treatment choices</td>
-				</tr>
-			</tbody>
-		</table>
+		<h2>Key Factors in Your Journey</h2>
+		<div class="factors-grid">
+			<div class="factor">
+				<span class="factor-name">Age</span>
+				<span class="factor-desc">Egg quality declines with age, affecting success rates</span>
+			</div>
+			<div class="factor">
+				<span class="factor-name">Diagnosis</span>
+				<span class="factor-desc">The cause guides which treatments will work best</span>
+			</div>
+			<div class="factor">
+				<span class="factor-name">Duration</span>
+				<span class="factor-desc">Longer infertility may need more advanced treatment</span>
+			</div>
+			<div class="factor">
+				<span class="factor-name">History</span>
+				<span class="factor-desc">Prior treatment response predicts future success</span>
+			</div>
+			<div class="factor">
+				<span class="factor-name">Finances</span>
+				<span class="factor-desc">Insurance coverage significantly affects access</span>
+			</div>
+			<div class="factor">
+				<span class="factor-name">Values</span>
+				<span class="factor-desc">Personal and ethical preferences matter</span>
+			</div>
+		</div>
 	</section>
 </Layout>
 
 <style>
 	.hero {
-		background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+		background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #2b6cb0 100%);
 		color: white;
-		padding: 4rem 0;
+		padding: 4rem 0 3rem;
 		text-align: center;
 	}
 
 	.hero h1 {
 		color: white;
 		margin: 0 0 1rem;
-		font-size: 2.5rem;
+		font-size: 2.75rem;
+		font-weight: 700;
 	}
 
 	.lead {
 		font-size: 1.25rem;
-		max-width: 700px;
-		margin: 0 auto;
+		max-width: 600px;
+		margin: 0 auto 2.5rem;
 		opacity: 0.95;
 	}
 
-	.stats-card {
-		background: #f0fff4;
-		border-left: 4px solid var(--color-accent);
+	.hero-stats {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+		margin-bottom: 0.5rem;
 	}
 
+	.hero-stat {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.hero-stat-number {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	.hero-stat-label {
+		font-size: 0.875rem;
+		opacity: 0.85;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	.hero-footnote {
+		font-size: 0.75rem;
+		opacity: 0.7;
+		margin: 0;
+	}
+
+	.intro-box {
+		background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+		border-radius: 12px;
+		padding: 1.5rem 2rem;
+		margin: -2rem 0 3rem;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+		position: relative;
+		z-index: 10;
+	}
+
+	.intro-box p {
+		margin: 0;
+		color: var(--color-text);
+	}
+
+	.section-intro {
+		color: var(--color-text-light);
+		font-size: 1.1rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.section-link {
+		text-align: center;
+		margin: 2rem 0 3rem;
+	}
+
+	.section-link a {
+		font-weight: 500;
+	}
+
+	/* Cause Distribution Bar */
+	.cause-distribution {
+		margin: 1.5rem 0 2rem;
+	}
+
+	.cause-bar {
+		display: flex;
+		height: 60px;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	}
+
+	.cause-segment {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-weight: 500;
+		transition: transform 0.2s;
+	}
+
+	.cause-segment:hover {
+		transform: scaleY(1.05);
+	}
+
+	.cause-segment.female { background: #e53e3e; }
+	.cause-segment.male { background: #3182ce; }
+	.cause-segment.combined { background: #805ad5; }
+	.cause-segment.unexplained { background: #718096; }
+
+	.cause-label {
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		opacity: 0.9;
+	}
+
+	.cause-pct {
+		font-size: 1rem;
+		font-weight: 700;
+	}
+
+	.cause-distribution .citation {
+		text-align: right;
+		font-size: 0.75rem;
+		margin-top: 0.5rem;
+	}
+
+	/* Cause Cards */
 	.causes-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-		gap: 1.5rem;
-		margin: 2rem 0;
+		gap: 1.25rem;
+		margin: 1.5rem 0;
 	}
 
-	.causes-grid .card {
-		margin-bottom: 0;
+	.cause-card {
+		display: flex;
+		gap: 1rem;
+		background: white;
+		border-radius: 12px;
+		padding: 1.25rem;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+		border: 1px solid var(--color-border);
+		transition: box-shadow 0.2s, transform 0.2s;
 	}
 
-	.causes-grid .stat {
+	.cause-card:hover {
+		box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+		transform: translateY(-2px);
+	}
+
+	.cause-icon {
+		width: 44px;
+		height: 44px;
+		background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+		color: white;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
 		font-size: 1.25rem;
-		font-weight: 600;
+		flex-shrink: 0;
+	}
+
+	.cause-content h3 {
+		margin: 0 0 0.25rem;
+		font-size: 1.1rem;
+	}
+
+	.cause-stat {
 		color: var(--color-primary);
-		margin: 0 0 0.75rem;
+		font-weight: 600;
+		font-size: 0.9rem;
+		margin: 0 0 0.5rem;
 	}
 
-	.causes-grid .citation {
-		font-size: 0.8rem;
+	.cause-content p {
+		margin: 0;
+		font-size: 0.9rem;
 		color: var(--color-text-light);
-		margin-top: 0.75rem;
-		padding-top: 0.5rem;
-		border-top: 1px solid var(--color-border);
+		line-height: 1.5;
 	}
 
-	.treatment-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		gap: 1.5rem;
+	.source-link {
+		display: inline-block;
+		margin-top: 0.5rem;
+		font-size: 0.75rem;
+		color: var(--color-text-light);
+	}
+
+	/* Treatment Timeline */
+	.treatment-timeline {
+		position: relative;
 		margin: 2rem 0;
 	}
 
-	.treatment-grid .card {
-		margin-bottom: 0;
+	.timeline-track {
+		display: none;
 	}
 
-	.treatment-grid .card p:last-child {
-		margin-bottom: 0;
+	.treatment-stage {
+		margin-bottom: 2rem;
 	}
 
+	.stage-label {
+		font-size: 0.75rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--color-text-light);
+		margin-bottom: 0.75rem;
+		padding-left: 0.5rem;
+		border-left: 3px solid var(--color-primary);
+	}
+
+	.treatment-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+		gap: 1rem;
+	}
+
+	.treatment-card {
+		background: white;
+		border-radius: 12px;
+		padding: 1.25rem;
+		text-decoration: none;
+		color: inherit;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+		border: 1px solid var(--color-border);
+		transition: all 0.2s;
+		position: relative;
+	}
+
+	.treatment-card:hover {
+		box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+		transform: translateY(-3px);
+		border-color: var(--color-primary);
+	}
+
+	.treatment-card.featured {
+		border-color: var(--color-accent);
+		background: linear-gradient(135deg, white 0%, #f0fff4 100%);
+	}
+
+	.treatment-card h3 {
+		margin: 0 0 0.5rem;
+		font-size: 1.1rem;
+		color: var(--color-primary-dark);
+	}
+
+	.treatment-card p {
+		margin: 0 0 0.75rem;
+		font-size: 0.9rem;
+		color: var(--color-text-light);
+		line-height: 1.4;
+	}
+
+	.treatment-cost {
+		display: inline-block;
+		background: #edf2f7;
+		padding: 0.25rem 0.6rem;
+		border-radius: 4px;
+		font-size: 0.8rem;
+		font-weight: 500;
+		color: var(--color-secondary);
+	}
+
+	.treatment-badge {
+		position: absolute;
+		top: -8px;
+		right: 12px;
+		background: var(--color-accent);
+		color: white;
+		font-size: 0.7rem;
+		font-weight: 600;
+		padding: 0.2rem 0.5rem;
+		border-radius: 4px;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+	}
+
+	/* CTA Grid */
+	.cta-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1rem;
+		margin: 3rem 0;
+	}
+
+	.cta-card {
+		background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+		border-radius: 12px;
+		padding: 1.5rem;
+		text-align: center;
+		text-decoration: none;
+		color: inherit;
+		border: 1px solid var(--color-border);
+		transition: all 0.2s;
+	}
+
+	.cta-card:hover {
+		background: linear-gradient(135deg, #edf2f7 0%, #e2e8f0 100%);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	}
+
+	.cta-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		background: var(--color-primary);
+		color: white;
+		border-radius: 50%;
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-bottom: 0.75rem;
+	}
+
+	.cta-card h3 {
+		margin: 0 0 0.25rem;
+		font-size: 1rem;
+		color: var(--color-primary-dark);
+	}
+
+	.cta-card p {
+		margin: 0;
+		font-size: 0.85rem;
+		color: var(--color-text-light);
+	}
+
+	/* Factors Grid */
+	.factors-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+		gap: 1rem;
+		margin: 1.5rem 0;
+	}
+
+	.factor {
+		background: white;
+		border-radius: 8px;
+		padding: 1rem;
+		border-left: 3px solid var(--color-primary);
+		box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+	}
+
+	.factor-name {
+		display: block;
+		font-weight: 600;
+		color: var(--color-primary-dark);
+		margin-bottom: 0.25rem;
+	}
+
+	.factor-desc {
+		font-size: 0.85rem;
+		color: var(--color-text-light);
+		line-height: 1.4;
+	}
+
+	/* Responsive */
 	@media (max-width: 768px) {
 		.hero {
-			padding: 3rem 0;
+			padding: 3rem 0 2rem;
 		}
 
 		.hero h1 {
-			font-size: 1.875rem;
+			font-size: 2rem;
 		}
 
 		.lead {
-			font-size: 1.125rem;
+			font-size: 1.1rem;
+		}
+
+		.hero-stats {
+			flex-wrap: wrap;
+			gap: 1.5rem;
+		}
+
+		.hero-stat-number {
+			font-size: 1.5rem;
+		}
+
+		.intro-box {
+			margin-top: -1.5rem;
+			padding: 1.25rem;
+		}
+
+		.cause-bar {
+			height: 50px;
+		}
+
+		.cause-label {
+			font-size: 0.6rem;
+		}
+
+		.cause-card {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.cause-icon {
+			margin: 0 auto;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.cause-segment .cause-label {
+			display: none;
 		}
 	}
 </style>
