@@ -2,6 +2,8 @@
 
 A comprehensive static website providing information about fertility treatments, costs, and decision-making resources for patients and couples in the United States.
 
+**Live Site:** [fertilitycentral.netlify.app](https://fertilitycentral.netlify.app)
+
 ## Overview
 
 This site helps people navigating fertility treatments understand their options, compare costs, and make informed decisions. It includes:
@@ -31,12 +33,29 @@ This site helps people navigating fertility treatments understand their options,
 /resources/                    Support organizations, financial assistance
 ```
 
+## Design System
+
+The site features a modern, accessible design with:
+
+- **Color Palette:** Purple gradient theme (#667eea to #764ba2)
+- **Typography:** System font stack for optimal performance
+- **Components:**
+  - Gradient hero sections with breadcrumb navigation
+  - Card-based layouts with shadows and borders
+  - Styled tables with gradient headers
+  - Callout boxes (info, warning, success variants)
+  - Stats cards with icons and metrics
+  - Process timelines with numbered steps
+  - Navigation footers linking between pages
+- **Responsive:** Mobile-first design with breakpoints at 768px
+
 ## Tech Stack
 
 - **Framework:** [Astro](https://astro.build/) v5.9
 - **Flowcharts:** [Mermaid.js](https://mermaid.js.org/) via CDN
 - **Styling:** Vanilla CSS with CSS custom properties
-- **Deployment:** Netlify (static hosting)
+- **Deployment:** Netlify (Git integration with auto-deploy)
+- **Repository:** GitHub
 
 ## Development
 
@@ -74,18 +93,15 @@ npm run preview
 
 ## Deployment
 
-### Netlify (Drag & Drop)
+The site auto-deploys to Netlify on push to main branch.
 
-1. Build the site: `npm run build`
-2. Create zip: `zip -r netlify-deploy.zip dist/`
-3. Go to [Netlify Drop](https://app.netlify.com/drop)
-4. Drag and drop `netlify-deploy.zip`
+### Manual Deployment
 
-### Netlify (Git Integration)
-
-Connect your repository to Netlify with these settings:
-- Build command: `npm run build`
-- Publish directory: `dist`
+```bash
+# Build and deploy
+npm run build
+netlify deploy --prod --dir=dist
+```
 
 ## Versioning
 
@@ -102,12 +118,13 @@ npm version minor -m "v%s - Description"
 npm version major -m "v%s - Description"
 ```
 
-Current version: **v1.3.0**
+Current version: **v1.4.0**
 
 ### Version History
 
 | Version | Description |
 |---------|-------------|
+| v1.4.0  | Visual redesign of all pages with modern gradient theme |
 | v1.3.0  | Add miscarriage and recurrent loss statistics |
 | v1.2.0  | Add infertility causes and treatment statistics with citations |
 | v1.1.0  | Add recurrent pregnancy loss content |
@@ -138,10 +155,10 @@ fertility-site/
 ├── public/
 │   └── favicon.svg
 ├── dist/                         # Build output
-├── netlify-deploy.zip            # Ready-to-deploy zip
 ├── netlify.toml                  # Netlify configuration
 ├── astro.config.mjs
 ├── package.json
+├── goals.md                      # Project goals and roadmap
 └── README.md
 ```
 
@@ -158,6 +175,14 @@ Statistics and success rates are cited from peer-reviewed sources:
 - **PubMed/PMC** - Various studies
 
 ## Key Features
+
+### Visual Design
+
+Modern, calming aesthetic designed for users during a stressful time:
+- Soft purple gradients convey professionalism and calm
+- Card-based layouts make dense medical information digestible
+- Clear visual hierarchy guides users through complex topics
+- Consistent styling across all pages for seamless navigation
 
 ### Insurance Strategy Flowchart
 
