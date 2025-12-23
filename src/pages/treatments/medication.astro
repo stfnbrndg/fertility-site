@@ -3,166 +3,699 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout title="Fertility Medications" description="Guide to fertility medications including Clomid, Letrozole, and gonadotropins. Learn about oral and injectable options, costs, success rates, and side effects.">
-	<section class="page-header">
+	<section class="hero-mini">
 		<div class="container">
+			<nav class="breadcrumb">
+				<a href="/treatments/">Treatments</a> <span>/</span> Medications
+			</nav>
 			<h1>Fertility Medications</h1>
-			<p>Oral and injectable medications used to induce or enhance ovulation.</p>
+			<p class="lead">Oral and injectable medications used to induce or enhance ovulation</p>
 		</div>
 	</section>
 
 	<section class="content-container">
-		<h2>Overview</h2>
-		<p>Fertility medications are often the first-line treatment for women who have irregular ovulation or unexplained infertility. These medications work by stimulating the ovaries to produce one or more eggs.</p>
+		<div class="intro-box">
+			<p>Fertility medications are often the first-line treatment for women with irregular ovulation or unexplained infertility. These medications work by stimulating the ovaries to produce one or more eggs.</p>
+		</div>
 
 		<h2>Oral Medications</h2>
 
-		<h3>Clomiphene Citrate (Clomid, Serophene)</h3>
-		<div class="card">
-			<p><strong>How it works:</strong> Blocks estrogen receptors in the brain, causing increased FSH production and ovulation.</p>
-			<p><strong>Typical protocol:</strong> 50-150mg daily for 5 days, starting on cycle day 3-5.</p>
-			<p><strong>Success rates:</strong> 80% will ovulate; 10-12% pregnancy rate per cycle.</p>
-			<p><strong>Side effects:</strong> Hot flashes, mood changes, headaches, visual disturbances, ovarian cysts.</p>
-			<p><strong>Cost:</strong> $10-$100 per cycle (generic available).</p>
-			<p><strong>Multiple pregnancy risk:</strong> 5-10% twins, &lt;1% higher-order multiples.</p>
+		<div class="med-cards">
+			<div class="med-card">
+				<div class="med-header">
+					<span class="med-icon">C</span>
+					<div>
+						<h3>Clomiphene Citrate</h3>
+						<span class="brand-names">Clomid, Serophene</span>
+					</div>
+				</div>
+				<div class="med-body">
+					<div class="med-detail">
+						<span class="label">How it works</span>
+						<p>Blocks estrogen receptors in the brain, causing increased FSH production and ovulation.</p>
+					</div>
+					<div class="med-detail">
+						<span class="label">Protocol</span>
+						<p>50-150mg daily for 5 days, starting on cycle day 3-5.</p>
+					</div>
+					<div class="med-stats">
+						<div class="stat">
+							<span class="value">80%</span>
+							<span class="label">will ovulate</span>
+						</div>
+						<div class="stat">
+							<span class="value">10-12%</span>
+							<span class="label">pregnancy/cycle</span>
+						</div>
+						<div class="stat">
+							<span class="value">$10-$100</span>
+							<span class="label">per cycle</span>
+						</div>
+					</div>
+					<div class="med-notes">
+						<p><strong>Side effects:</strong> Hot flashes, mood changes, headaches, visual disturbances</p>
+						<p><strong>Multiple risk:</strong> 5-10% twins, &lt;1% higher-order</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="med-card featured">
+				<div class="med-badge">First-Line for PCOS</div>
+				<div class="med-header">
+					<span class="med-icon">L</span>
+					<div>
+						<h3>Letrozole</h3>
+						<span class="brand-names">Femara</span>
+					</div>
+				</div>
+				<div class="med-body">
+					<div class="med-detail">
+						<span class="label">How it works</span>
+						<p>Aromatase inhibitor that lowers estrogen, triggering FSH release.</p>
+					</div>
+					<div class="med-detail">
+						<span class="label">Protocol</span>
+						<p>2.5-7.5mg daily for 5 days, starting on cycle day 3-5.</p>
+					</div>
+					<div class="med-stats">
+						<div class="stat">
+							<span class="value good">27.5%</span>
+							<span class="label">live birth (PCOS)</span>
+						</div>
+						<div class="stat">
+							<span class="value">Fewer</span>
+							<span class="label">side effects</span>
+						</div>
+						<div class="stat">
+							<span class="value">$20-$150</span>
+							<span class="label">per cycle</span>
+						</div>
+					</div>
+					<div class="med-notes">
+						<p><strong>Advantages:</strong> Lower multiple pregnancy rate, better endometrial lining</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<h3>Letrozole (Femara)</h3>
-		<div class="card">
-			<p><strong>How it works:</strong> Aromatase inhibitor that lowers estrogen, triggering FSH release.</p>
-			<p><strong>Typical protocol:</strong> 2.5-7.5mg daily for 5 days, starting on cycle day 3-5.</p>
-			<p><strong>Success rates:</strong> Similar or slightly better than Clomid, especially for PCOS.</p>
-			<p><strong>Side effects:</strong> Fewer side effects than Clomid; fatigue, hot flashes, headache.</p>
-			<p><strong>Cost:</strong> $20-$150 per cycle (generic available).</p>
-			<p><strong>Advantages:</strong> Lower multiple pregnancy rate, better endometrial lining.</p>
-		</div>
-
-		<div class="info-box">
-			<strong>Letrozole vs. Clomid (NEJM Study):</strong> A landmark multicenter trial of 750 women with PCOS found letrozole resulted in significantly higher live birth rates (<strong>27.5% vs. 19.1%</strong>) compared to clomiphene. Letrozole is now considered first-line treatment for PCOS.
-			<p class="citation" style="margin-bottom:0;">Source: <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1313517" target="_blank" rel="noopener">Legro RS, et al. NEJM 2014</a></p>
+		<div class="callout-box study">
+			<div class="callout-header">
+				<span class="callout-icon">S</span>
+				<strong>Letrozole vs. Clomid (NEJM Study)</strong>
+			</div>
+			<p>A landmark multicenter trial of 750 women with PCOS found letrozole resulted in significantly higher live birth rates (<strong>27.5% vs. 19.1%</strong>) compared to clomiphene. Letrozole is now considered first-line treatment for PCOS.</p>
+			<a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1313517" target="_blank" rel="noopener" class="source-link">Legro RS, et al. NEJM 2014</a>
 		</div>
 
 		<h2>Injectable Medications (Gonadotropins)</h2>
 
-		<h3>FSH Medications</h3>
-		<div class="card">
-			<p><strong>Brand names:</strong> Follistim, Gonal-F, Bravelle</p>
-			<p><strong>How it works:</strong> Directly stimulates the ovaries to produce follicles.</p>
-			<p><strong>Typical protocol:</strong> Daily injections for 8-14 days with monitoring.</p>
-			<p><strong>Cost:</strong> $1,500-$6,000+ per cycle depending on dosage.</p>
-			<p><strong>Requires:</strong> Frequent ultrasound and blood monitoring.</p>
-		</div>
+		<div class="med-cards">
+			<div class="med-card">
+				<div class="med-header">
+					<span class="med-icon">F</span>
+					<div>
+						<h3>FSH Medications</h3>
+						<span class="brand-names">Follistim, Gonal-F, Bravelle</span>
+					</div>
+				</div>
+				<div class="med-body">
+					<div class="med-detail">
+						<span class="label">How it works</span>
+						<p>Directly stimulates the ovaries to produce follicles.</p>
+					</div>
+					<div class="med-detail">
+						<span class="label">Protocol</span>
+						<p>Daily injections for 8-14 days with monitoring.</p>
+					</div>
+					<div class="med-stats">
+						<div class="stat">
+							<span class="value">$1,500-$6,000+</span>
+							<span class="label">per cycle</span>
+						</div>
+					</div>
+					<div class="med-notes">
+						<p><strong>Requires:</strong> Frequent ultrasound and blood monitoring</p>
+					</div>
+				</div>
+			</div>
 
-		<h3>hCG Trigger Shots</h3>
-		<div class="card">
-			<p><strong>Brand names:</strong> Ovidrel, Pregnyl, Novarel</p>
-			<p><strong>How it works:</strong> Triggers final egg maturation and ovulation.</p>
-			<p><strong>Timing:</strong> Ovulation occurs 36-40 hours after injection.</p>
-			<p><strong>Cost:</strong> $50-$200 per injection.</p>
-		</div>
+			<div class="med-card compact">
+				<div class="med-header">
+					<span class="med-icon">T</span>
+					<div>
+						<h3>hCG Trigger Shots</h3>
+						<span class="brand-names">Ovidrel, Pregnyl, Novarel</span>
+					</div>
+				</div>
+				<div class="med-body">
+					<p>Triggers final egg maturation and ovulation. Ovulation occurs 36-40 hours after injection.</p>
+					<div class="med-stats inline">
+						<div class="stat">
+							<span class="value">$50-$200</span>
+							<span class="label">per injection</span>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		<h3>GnRH Agonists and Antagonists</h3>
-		<div class="card">
-			<p><strong>Brand names:</strong> Lupron (agonist), Ganirelix, Cetrotide (antagonists)</p>
-			<p><strong>How it works:</strong> Prevents premature ovulation during IVF cycles.</p>
-			<p><strong>Use:</strong> Typically part of IVF protocols, not standalone treatment.</p>
+			<div class="med-card compact">
+				<div class="med-header">
+					<span class="med-icon">G</span>
+					<div>
+						<h3>GnRH Agonists & Antagonists</h3>
+						<span class="brand-names">Lupron, Ganirelix, Cetrotide</span>
+					</div>
+				</div>
+				<div class="med-body">
+					<p>Prevents premature ovulation during IVF cycles. Typically part of IVF protocols, not standalone treatment.</p>
+				</div>
+			</div>
 		</div>
 
 		<h2>Medication Protocols</h2>
 
-		<h3>Timed Intercourse</h3>
-		<p>Oral medications + monitoring + timed intercourse at home.</p>
-		<ul>
-			<li>Least invasive approach</li>
-			<li>Good first step for unexplained infertility</li>
-			<li>Lower cost than IUI or IVF</li>
-		</ul>
-
-		<h3>Superovulation + IUI</h3>
-		<p>Oral or injectable medications + IUI procedure.</p>
-		<ul>
-			<li>Increases number of eggs available</li>
-			<li>Combined with IUI for better sperm delivery</li>
-			<li>Higher success rates than timed intercourse</li>
-		</ul>
+		<div class="protocol-grid">
+			<div class="protocol-card">
+				<h3>Timed Intercourse</h3>
+				<p>Oral medications + monitoring + timed intercourse at home</p>
+				<ul>
+					<li>Least invasive approach</li>
+					<li>Good first step for unexplained infertility</li>
+					<li>Lower cost than IUI or IVF</li>
+				</ul>
+			</div>
+			<div class="protocol-card">
+				<h3>Superovulation + IUI</h3>
+				<p>Oral or injectable medications + IUI procedure</p>
+				<ul>
+					<li>Increases number of eggs available</li>
+					<li>Combined with IUI for better sperm delivery</li>
+					<li>Higher success rates than timed intercourse</li>
+				</ul>
+			</div>
+		</div>
 
 		<h2>Monitoring During Treatment</h2>
-		<p>Most medication cycles require monitoring to:</p>
-		<ul>
-			<li><strong>Track follicle development</strong> via transvaginal ultrasound</li>
-			<li><strong>Measure hormone levels</strong> (estradiol, LH, progesterone)</li>
-			<li><strong>Time ovulation</strong> for intercourse or IUI</li>
-			<li><strong>Prevent complications</strong> like ovarian hyperstimulation (OHSS)</li>
-		</ul>
 
-		<div class="warning-box">
-			<strong>Ovarian Hyperstimulation Syndrome (OHSS):</strong> A potential complication of fertility medications where ovaries become swollen and painful. Mild cases are common; severe cases are rare but require medical attention. Risk is higher with injectable medications.
+		<div class="monitoring-box">
+			<p>Most medication cycles require monitoring to:</p>
+			<div class="monitoring-grid">
+				<div class="monitoring-item">
+					<span class="icon">U</span>
+					<strong>Track follicle development</strong>
+					<span>via transvaginal ultrasound</span>
+				</div>
+				<div class="monitoring-item">
+					<span class="icon">H</span>
+					<strong>Measure hormone levels</strong>
+					<span>estradiol, LH, progesterone</span>
+				</div>
+				<div class="monitoring-item">
+					<span class="icon">T</span>
+					<strong>Time ovulation</strong>
+					<span>for intercourse or IUI</span>
+				</div>
+				<div class="monitoring-item">
+					<span class="icon">!</span>
+					<strong>Prevent complications</strong>
+					<span>like OHSS</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="callout-box warning">
+			<div class="callout-header">
+				<span class="callout-icon">!</span>
+				<strong>Ovarian Hyperstimulation Syndrome (OHSS)</strong>
+			</div>
+			<p>A potential complication where ovaries become swollen and painful. Mild cases are common; severe cases are rare but require medical attention. Risk is higher with injectable medications.</p>
 		</div>
 
 		<h2>Cost Summary</h2>
-		<table>
-			<thead>
-				<tr>
-					<th>Treatment</th>
-					<th>Medication Cost</th>
-					<th>Monitoring Cost</th>
-					<th>Total Per Cycle</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Clomid/Letrozole + timed intercourse</td>
-					<td>$10-$150</td>
-					<td>$200-$500</td>
-					<td>$200-$650</td>
-				</tr>
-				<tr>
-					<td>Clomid/Letrozole + IUI</td>
-					<td>$10-$150</td>
-					<td>$200-$500</td>
-					<td>$500-$1,500</td>
-				</tr>
-				<tr>
-					<td>Injectables + timed intercourse</td>
-					<td>$1,500-$5,000</td>
-					<td>$500-$1,000</td>
-					<td>$2,000-$6,000</td>
-				</tr>
-				<tr>
-					<td>Injectables + IUI</td>
-					<td>$1,500-$5,000</td>
-					<td>$500-$1,000</td>
-					<td>$2,500-$7,000</td>
-				</tr>
-			</tbody>
-		</table>
+
+		<div class="cost-table-wrapper">
+			<table class="styled-table">
+				<thead>
+					<tr>
+						<th>Treatment</th>
+						<th>Medication</th>
+						<th>Monitoring</th>
+						<th>Total/Cycle</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Clomid/Letrozole + timed intercourse</td>
+						<td>$10-$150</td>
+						<td>$200-$500</td>
+						<td><strong>$200-$650</strong></td>
+					</tr>
+					<tr>
+						<td>Clomid/Letrozole + IUI</td>
+						<td>$10-$150</td>
+						<td>$200-$500</td>
+						<td><strong>$500-$1,500</strong></td>
+					</tr>
+					<tr>
+						<td>Injectables + timed intercourse</td>
+						<td>$1,500-$5,000</td>
+						<td>$500-$1,000</td>
+						<td><strong>$2,000-$6,000</strong></td>
+					</tr>
+					<tr>
+						<td>Injectables + IUI</td>
+						<td>$1,500-$5,000</td>
+						<td>$500-$1,000</td>
+						<td><strong>$2,500-$7,000</strong></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 
 		<h2>When to Move On</h2>
-		<p>If you haven't conceived after 3-6 cycles of oral medications with or without IUI, your doctor may recommend:</p>
-		<ul>
-			<li>Switching medications</li>
-			<li>Adding injectable medications</li>
-			<li>Moving to IVF</li>
-			<li>Additional testing</li>
-		</ul>
 
-		<p><a href="/treatments/">← Back to Treatment Options</a></p>
+		<div class="next-steps">
+			<p>If you haven't conceived after 3-6 cycles of oral medications with or without IUI, your doctor may recommend:</p>
+			<div class="next-steps-grid">
+				<div class="step">Switching medications</div>
+				<div class="step">Adding injectable medications</div>
+				<div class="step">Moving to IVF</div>
+				<div class="step">Additional testing</div>
+			</div>
+		</div>
+
+		<div class="nav-footer">
+			<a href="/treatments/" class="back-link">← Back to Treatment Options</a>
+			<a href="/treatments/iui/" class="next-link">IUI Treatment →</a>
+		</div>
 	</section>
 </Layout>
 
 <style>
-	.page-header {
-		background: #edf2f7;
-		padding: 3rem 0;
-		margin-bottom: 2rem;
+	.hero-mini {
+		background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+		color: white;
+		padding: 2.5rem 0;
 	}
 
-	.page-header h1 {
+	.breadcrumb {
+		font-size: 0.85rem;
+		margin-bottom: 0.5rem;
+		opacity: 0.8;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.breadcrumb span {
+		margin: 0 0.5rem;
+	}
+
+	.hero-mini h1 {
+		color: white;
 		margin: 0 0 0.5rem;
+		font-size: 2.25rem;
 	}
 
-	.page-header p {
+	.lead {
+		font-size: 1.1rem;
+		opacity: 0.95;
 		margin: 0;
+	}
+
+	.intro-box {
+		background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+		border-radius: 12px;
+		padding: 1.25rem 1.5rem;
+		margin: -1.5rem 0 2rem;
+		position: relative;
+		z-index: 10;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	}
+
+	.intro-box p {
+		margin: 0;
+	}
+
+	.med-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0 2rem;
+	}
+
+	.med-card {
+		background: white;
+		border-radius: 16px;
+		overflow: hidden;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+		border: 1px solid var(--color-border);
+		position: relative;
+	}
+
+	.med-card.featured {
+		border-color: var(--color-accent);
+	}
+
+	.med-card.compact .med-body {
+		padding-top: 0;
+	}
+
+	.med-badge {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		background: var(--color-accent);
+		color: white;
+		font-size: 0.7rem;
+		font-weight: 600;
+		padding: 0.25rem 0.6rem;
+		border-radius: 4px;
+		text-transform: uppercase;
+	}
+
+	.med-header {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 1.25rem 1.25rem 0;
+	}
+
+	.med-icon {
+		width: 48px;
+		height: 48px;
+		background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+		color: white;
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 1.25rem;
+		flex-shrink: 0;
+	}
+
+	.med-header h3 {
+		margin: 0;
+		font-size: 1.15rem;
+	}
+
+	.brand-names {
+		font-size: 0.85rem;
 		color: var(--color-text-light);
-		font-size: 1.125rem;
+	}
+
+	.med-body {
+		padding: 1rem 1.25rem 1.25rem;
+	}
+
+	.med-detail {
+		margin-bottom: 0.75rem;
+	}
+
+	.med-detail .label {
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		color: var(--color-text-light);
+		letter-spacing: 0.03em;
+	}
+
+	.med-detail p {
+		margin: 0.25rem 0 0;
+		font-size: 0.9rem;
+	}
+
+	.med-stats {
+		display: flex;
+		gap: 1rem;
+		padding: 0.75rem 0;
+		border-top: 1px solid var(--color-border);
+		border-bottom: 1px solid var(--color-border);
+		margin: 0.75rem 0;
+	}
+
+	.med-stats.inline {
+		border: none;
+		margin: 0.5rem 0 0;
+		padding: 0;
+	}
+
+	.med-stats .stat {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.med-stats .value {
+		font-size: 1.1rem;
+		font-weight: 700;
+		color: var(--color-primary-dark);
+	}
+
+	.med-stats .value.good {
+		color: var(--color-accent);
+	}
+
+	.med-stats .label {
+		font-size: 0.7rem;
+		color: var(--color-text-light);
+		text-transform: uppercase;
+	}
+
+	.med-notes {
+		font-size: 0.85rem;
+	}
+
+	.med-notes p {
+		margin: 0.25rem 0;
+	}
+
+	.callout-box {
+		border-radius: 12px;
+		padding: 1.25rem 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.callout-box.study {
+		background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+		border-left: 4px solid var(--color-primary);
+	}
+
+	.callout-box.warning {
+		background: #fffbeb;
+		border-left: 4px solid #d69e2e;
+	}
+
+	.callout-header {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.callout-icon {
+		width: 28px;
+		height: 28px;
+		background: var(--color-primary);
+		color: white;
+		border-radius: 6px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 0.8rem;
+	}
+
+	.callout-box.warning .callout-icon {
+		background: #d69e2e;
+	}
+
+	.callout-box p {
+		margin: 0 0 0.5rem;
+		font-size: 0.95rem;
+	}
+
+	.source-link {
+		font-size: 0.8rem;
+		color: var(--color-primary);
+	}
+
+	.protocol-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.25rem;
+		margin: 1.5rem 0;
+	}
+
+	.protocol-card {
+		background: white;
+		border-radius: 12px;
+		padding: 1.25rem;
+		border: 1px solid var(--color-border);
+		box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+	}
+
+	.protocol-card h3 {
+		margin: 0 0 0.5rem;
+		font-size: 1.1rem;
+		color: var(--color-primary-dark);
+	}
+
+	.protocol-card > p {
+		font-size: 0.9rem;
+		color: var(--color-text-light);
+		margin: 0 0 0.75rem;
+	}
+
+	.protocol-card ul {
+		margin: 0;
+		padding-left: 1.25rem;
+		font-size: 0.9rem;
+	}
+
+	.protocol-card li {
+		margin-bottom: 0.25rem;
+	}
+
+	.monitoring-box {
+		background: #f7fafc;
+		border-radius: 16px;
+		padding: 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.monitoring-box > p {
+		margin: 0 0 1rem;
+		font-weight: 500;
+	}
+
+	.monitoring-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 1rem;
+	}
+
+	.monitoring-item {
+		background: white;
+		border-radius: 8px;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.monitoring-item .icon {
+		width: 32px;
+		height: 32px;
+		background: var(--color-primary);
+		color: white;
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 0.8rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.monitoring-item strong {
+		font-size: 0.9rem;
+	}
+
+	.monitoring-item span:last-child {
+		font-size: 0.8rem;
+		color: var(--color-text-light);
+	}
+
+	.cost-table-wrapper {
+		overflow-x: auto;
+		margin: 1.5rem 0;
+	}
+
+	.styled-table {
+		border-radius: 12px;
+		overflow: hidden;
+	}
+
+	.styled-table th {
+		background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+	}
+
+	.next-steps {
+		background: white;
+		border-radius: 12px;
+		padding: 1.5rem;
+		border: 1px solid var(--color-border);
+		margin: 1.5rem 0;
+	}
+
+	.next-steps > p {
+		margin: 0 0 1rem;
+	}
+
+	.next-steps-grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+	}
+
+	.next-steps .step {
+		background: #f7fafc;
+		padding: 0.5rem 1rem;
+		border-radius: 6px;
+		font-size: 0.9rem;
+		border-left: 3px solid var(--color-primary);
+	}
+
+	.nav-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2rem 0;
+		border-top: 1px solid var(--color-border);
+		margin-top: 2rem;
+	}
+
+	.back-link, .next-link {
+		font-weight: 500;
+		font-size: 0.95rem;
+	}
+
+	.next-link {
+		background: var(--color-primary);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 6px;
+		text-decoration: none;
+	}
+
+	.next-link:hover {
+		background: var(--color-primary-dark);
+		color: white;
+	}
+
+	@media (max-width: 768px) {
+		.hero-mini h1 {
+			font-size: 1.75rem;
+		}
+
+		.med-cards {
+			grid-template-columns: 1fr;
+		}
+
+		.med-stats {
+			flex-wrap: wrap;
+		}
+
+		.nav-footer {
+			flex-direction: column;
+			gap: 1rem;
+			text-align: center;
+		}
 	}
 </style>

@@ -3,257 +3,1073 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout title="Fertility Preservation" description="Guide to fertility preservation including egg freezing, sperm freezing, and embryo freezing. Learn about costs, success rates, and storage considerations.">
-	<section class="page-header">
+	<section class="hero-mini">
 		<div class="container">
+			<nav class="breadcrumb">
+				<a href="/">Home</a>
+				<span>→</span>
+				<a href="/treatments/">Treatments</a>
+				<span>→</span>
+				<span>Fertility Preservation</span>
+			</nav>
 			<h1>Fertility Preservation</h1>
 			<p>Freezing eggs, sperm, or embryos to protect future fertility options.</p>
 		</div>
 	</section>
 
-	<section class="content-container">
-		<h2>Overview</h2>
-		<p>Fertility preservation allows you to freeze reproductive cells for future use. This can be for medical reasons (before cancer treatment) or elective reasons (delaying parenthood). Modern vitrification techniques have dramatically improved survival rates for frozen eggs and embryos.</p>
+	<section class="content-section">
+		<div class="container">
+			<div class="intro-box">
+				<h2>Overview</h2>
+				<p>Fertility preservation allows you to freeze reproductive cells for future use. This can be for medical reasons (before cancer treatment) or elective reasons (delaying parenthood). Modern vitrification techniques have dramatically improved survival rates for frozen eggs and embryos.</p>
+			</div>
 
-		<h2>Egg Freezing (Oocyte Cryopreservation)</h2>
+			<h2 class="section-title">Egg Freezing (Oocyte Cryopreservation)</h2>
 
-		<h3>Who Should Consider Egg Freezing</h3>
-		<ul>
-			<li><strong>Medical reasons:</strong> Before chemotherapy, radiation, or other gonadotoxic treatments</li>
-			<li><strong>Elective reasons:</strong> Delaying parenthood for career, education, or personal reasons</li>
-			<li><strong>Gender transition:</strong> Before hormone therapy</li>
-			<li><strong>Family history:</strong> Of early menopause</li>
-			<li><strong>Endometriosis:</strong> Which can damage ovarian reserve over time</li>
-		</ul>
+			<div class="preservation-card main">
+				<div class="card-icon">🥚</div>
 
-		<h3>When to Freeze</h3>
-		<div class="info-box">
-			<strong>Age matters significantly:</strong> Egg quality declines with age. For best outcomes, freeze before age 35-36. Freezing after 38 results in lower success rates per egg.
+				<div class="who-should">
+					<h3>Who Should Consider Egg Freezing</h3>
+					<div class="reasons-grid">
+						<div class="reason-item medical">
+							<span class="label">Medical</span>
+							<span class="text">Before chemotherapy, radiation, or gonadotoxic treatments</span>
+						</div>
+						<div class="reason-item elective">
+							<span class="label">Elective</span>
+							<span class="text">Delaying parenthood for career, education, or personal reasons</span>
+						</div>
+						<div class="reason-item medical">
+							<span class="label">Transition</span>
+							<span class="text">Before hormone therapy for gender transition</span>
+						</div>
+						<div class="reason-item medical">
+							<span class="label">Family History</span>
+							<span class="text">Of early menopause</span>
+						</div>
+						<div class="reason-item medical">
+							<span class="label">Endometriosis</span>
+							<span class="text">Which can damage ovarian reserve over time</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="callout-box warning">
+					<div class="callout-icon">⏰</div>
+					<div class="callout-content">
+						<h4>Age Matters Significantly</h4>
+						<p>Egg quality declines with age. For best outcomes, freeze before age 35-36. Freezing after 38 results in lower success rates per egg.</p>
+					</div>
+				</div>
+
+				<div class="age-table">
+					<h3>Egg Freezing by Age</h3>
+					<div class="table-container">
+						<table>
+							<thead>
+								<tr>
+									<th>Age at Freezing</th>
+									<th>Eggs Retrieved</th>
+									<th>Eggs Needed for ~1 Baby</th>
+									<th>Success Rate</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="optimal">
+									<td>&lt;35</td>
+									<td>10-20</td>
+									<td>10-15 eggs</td>
+									<td><span class="rate excellent">70-80%</span></td>
+								</tr>
+								<tr>
+									<td>35-37</td>
+									<td>8-15</td>
+									<td>15-20 eggs</td>
+									<td><span class="rate good">50-60%</span></td>
+								</tr>
+								<tr>
+									<td>38-40</td>
+									<td>5-10</td>
+									<td>20-30 eggs</td>
+									<td><span class="rate moderate">30-40%</span></td>
+								</tr>
+								<tr>
+									<td>&gt;40</td>
+									<td>3-8</td>
+									<td>30+ eggs</td>
+									<td><span class="rate low">15-25%</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p class="table-note">Multiple cycles may be needed to bank sufficient eggs.</p>
+				</div>
+
+				<div class="process-section">
+					<h3>The Process</h3>
+					<div class="process-steps">
+						<div class="step">
+							<div class="step-num">1</div>
+							<div class="step-content">
+								<strong>Initial consultation and testing</strong>
+								<span>AMH, antral follicle count, general health</span>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step-num">2</div>
+							<div class="step-content">
+								<strong>Ovarian stimulation</strong>
+								<span>10-14 days of hormone injections</span>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step-num">3</div>
+							<div class="step-content">
+								<strong>Monitoring</strong>
+								<span>Ultrasounds and bloodwork every 2-3 days</span>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step-num">4</div>
+							<div class="step-content">
+								<strong>Trigger shot</strong>
+								<span>36 hours before retrieval</span>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step-num">5</div>
+							<div class="step-content">
+								<strong>Egg retrieval</strong>
+								<span>Outpatient procedure under sedation</span>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step-num">6</div>
+							<div class="step-content">
+								<strong>Vitrification</strong>
+								<span>Eggs flash-frozen and stored in liquid nitrogen</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="costs-section">
+					<h3>Costs</h3>
+					<div class="cost-grid">
+						<div class="cost-item">
+							<span class="name">Egg freezing cycle</span>
+							<span class="price">$6,000-$12,000</span>
+						</div>
+						<div class="cost-item">
+							<span class="name">Medications</span>
+							<span class="price">$3,000-$6,000</span>
+						</div>
+						<div class="cost-item">
+							<span class="name">Anesthesia</span>
+							<span class="price">$500-$1,000</span>
+						</div>
+						<div class="cost-item">
+							<span class="name">Annual storage</span>
+							<span class="price">$500-$1,000/year</span>
+						</div>
+						<div class="cost-item total">
+							<span class="name">Total per cycle</span>
+							<span class="price">$10,000-$18,000</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="future-use">
+					<h3>Future Use</h3>
+					<p>When ready to use frozen eggs:</p>
+					<ul>
+						<li>Eggs are thawed (<span class="highlight">85-95% survival rate</span>)</li>
+						<li>Fertilized with sperm via ICSI</li>
+						<li>Embryos cultured and transferred</li>
+						<li>Additional cost: $4,000-$8,000 for thaw + transfer cycle</li>
+					</ul>
+				</div>
+			</div>
+
+			<h2 class="section-title">Sperm Freezing (Sperm Cryopreservation)</h2>
+
+			<div class="preservation-card simple">
+				<div class="card-icon">🔬</div>
+
+				<div class="card-header-content">
+					<div class="callout-box success inline">
+						<div class="callout-icon">✓</div>
+						<div class="callout-content">
+							<h4>Good News</h4>
+							<p>Sperm freezing is simpler and less expensive than egg freezing. Sperm survive freezing well with 50-75% post-thaw survival. One sample can produce multiple vials for multiple attempts.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="who-should">
+					<h3>Who Should Consider Sperm Freezing</h3>
+					<div class="uses-grid">
+						<div class="use-item">Before cancer treatment</div>
+						<div class="use-item">Before vasectomy (backup)</div>
+						<div class="use-item">Military deployment</div>
+						<div class="use-item">Work travel</div>
+						<div class="use-item">Gender transition</div>
+						<div class="use-item">Declining sperm quality</div>
+						<div class="use-item">Before high-risk activities</div>
+					</div>
+				</div>
+
+				<div class="process-section compact">
+					<h3>The Process</h3>
+					<ol class="simple-steps">
+						<li>Provide sample at clinic or sperm bank</li>
+						<li>Sample analyzed for count, motility, morphology</li>
+						<li>Sample divided into vials and frozen</li>
+						<li>Stored in liquid nitrogen indefinitely</li>
+					</ol>
+				</div>
+
+				<div class="costs-section">
+					<h3>Costs</h3>
+					<div class="cost-grid">
+						<div class="cost-item">
+							<span class="name">Initial freezing and analysis</span>
+							<span class="price">$300-$1,000</span>
+						</div>
+						<div class="cost-item">
+							<span class="name">Annual storage</span>
+							<span class="price">$200-$500/year</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="section-title">Embryo Freezing</h2>
+
+			<div class="preservation-card">
+				<div class="card-icon">🧬</div>
+
+				<div class="who-should">
+					<h3>Why Freeze Embryos</h3>
+					<div class="uses-grid">
+						<div class="use-item">Extra embryos from IVF cycle</div>
+						<div class="use-item">Before medical treatment</div>
+						<div class="use-item">Both partners' gametes available</div>
+						<div class="use-item">Waiting for PGT results</div>
+					</div>
+				</div>
+
+				<div class="success-highlight">
+					<h3>Success Rates</h3>
+					<p>Embryo freezing has the <strong>highest success rates</strong> of all fertility preservation methods:</p>
+					<div class="success-stats">
+						<div class="stat">
+							<span class="value">95-99%</span>
+							<span class="label">Embryo survival after thaw</span>
+						</div>
+						<div class="stat">
+							<span class="value">Same</span>
+							<span class="label">Success rates as fresh embryos</span>
+						</div>
+					</div>
+					<p class="note">Success rates based on age at time of embryo creation</p>
+				</div>
+
+				<div class="costs-section">
+					<h3>Costs</h3>
+					<div class="cost-grid">
+						<div class="cost-item">
+							<span class="name">IVF cycle (to create embryos)</span>
+							<span class="price">$12,000-$17,000</span>
+						</div>
+						<div class="cost-item">
+							<span class="name">Medications</span>
+							<span class="price">$3,000-$6,000</span>
+						</div>
+						<div class="cost-item">
+							<span class="name">Embryo freezing</span>
+							<span class="price">$1,000-$2,000</span>
+						</div>
+						<div class="cost-item">
+							<span class="name">Annual storage</span>
+							<span class="price">$500-$1,000/year</span>
+						</div>
+						<div class="cost-item">
+							<span class="name">Future FET cycle</span>
+							<span class="price">$3,000-$5,000</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="section-title">Ovarian Tissue Freezing</h2>
+
+			<div class="preservation-card experimental">
+				<div class="experimental-badge">Experimental Option</div>
+				<div class="card-icon">🔬</div>
+
+				<p>Ovarian tissue is surgically removed, frozen, and later re-implanted. This option is:</p>
+				<ul>
+					<li>Used primarily for prepubescent girls before cancer treatment</li>
+					<li>An option when there's no time for egg freezing</li>
+					<li>Still considered experimental at some centers</li>
+					<li>Has resulted in live births when tissue is reimplanted</li>
+				</ul>
+			</div>
+
+			<h2 class="section-title">Insurance Coverage</h2>
+
+			<div class="insurance-info">
+				<div class="insurance-item covered">
+					<div class="icon">✓</div>
+					<div class="content">
+						<h4>Medical fertility preservation</h4>
+						<p>Many states require coverage before cancer treatment</p>
+					</div>
+				</div>
+				<div class="insurance-item not-covered">
+					<div class="icon">✗</div>
+					<div class="content">
+						<h4>Elective freezing</h4>
+						<p>Rarely covered; some employers offer this benefit</p>
+					</div>
+				</div>
+				<div class="insurance-note">Check your specific plan details</div>
+			</div>
+
+			<h2 class="section-title">How Long Can Cells Be Stored?</h2>
+
+			<div class="storage-info">
+				<div class="storage-fact">
+					<span class="icon">❄️</span>
+					<p>Eggs, sperm, and embryos can be stored <strong>indefinitely</strong> in liquid nitrogen</p>
+				</div>
+				<div class="storage-fact">
+					<span class="icon">👶</span>
+					<p>Babies have been born from embryos frozen <strong>20+ years</strong></p>
+				</div>
+				<div class="storage-fact">
+					<span class="icon">📊</span>
+					<p><strong>No evidence</strong> of declining quality over time in storage</p>
+				</div>
+			</div>
+
+			<h2 class="section-title">Considerations</h2>
+
+			<div class="callout-box warning important">
+				<div class="callout-icon">⚠️</div>
+				<div class="callout-content">
+					<h4>Important</h4>
+					<p>Freezing eggs or embryos does not guarantee a future baby. It's best thought of as insurance - improving your chances, but not a certainty.</p>
+				</div>
+			</div>
+
+			<div class="questions-section">
+				<h3>Questions to Consider</h3>
+				<div class="questions-grid">
+					<div class="question-item">
+						<span class="q-icon">?</span>
+						<span>How many eggs/embryos should I bank?</span>
+					</div>
+					<div class="question-item">
+						<span class="q-icon">?</span>
+						<span>What happens if I don't use them?</span>
+					</div>
+					<div class="question-item">
+						<span class="q-icon">?</span>
+						<span>What's my clinic's thaw survival rate?</span>
+					</div>
+					<div class="question-item">
+						<span class="q-icon">?</span>
+						<span>What are the storage costs long-term?</span>
+					</div>
+					<div class="question-item">
+						<span class="q-icon">?</span>
+						<span>If freezing embryos: What happens in case of divorce or death?</span>
+					</div>
+				</div>
+			</div>
+
+			<nav class="nav-footer">
+				<a href="/treatments/third-party/" class="nav-prev">
+					<span class="nav-label">Previous</span>
+					<span class="nav-title">← Third-Party Reproduction</span>
+				</a>
+				<a href="/treatments/surgical/" class="nav-next">
+					<span class="nav-label">Next</span>
+					<span class="nav-title">Surgical Treatments →</span>
+				</a>
+			</nav>
 		</div>
-
-		<table>
-			<thead>
-				<tr>
-					<th>Age at Freezing</th>
-					<th>Eggs Typically Retrieved</th>
-					<th>Eggs Needed for ~1 Baby</th>
-					<th>Estimated Success Rate</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>&lt;35</td>
-					<td>10-20</td>
-					<td>10-15 eggs</td>
-					<td>70-80% per batch</td>
-				</tr>
-				<tr>
-					<td>35-37</td>
-					<td>8-15</td>
-					<td>15-20 eggs</td>
-					<td>50-60% per batch</td>
-				</tr>
-				<tr>
-					<td>38-40</td>
-					<td>5-10</td>
-					<td>20-30 eggs</td>
-					<td>30-40% per batch</td>
-				</tr>
-				<tr>
-					<td>&gt;40</td>
-					<td>3-8</td>
-					<td>30+ eggs</td>
-					<td>15-25% per batch</td>
-				</tr>
-			</tbody>
-		</table>
-		<p><em>Note: Multiple cycles may be needed to bank sufficient eggs.</em></p>
-
-		<h3>The Process</h3>
-		<ol>
-			<li><strong>Initial consultation and testing:</strong> AMH, antral follicle count, general health</li>
-			<li><strong>Ovarian stimulation:</strong> 10-14 days of hormone injections</li>
-			<li><strong>Monitoring:</strong> Ultrasounds and bloodwork every 2-3 days</li>
-			<li><strong>Trigger shot:</strong> 36 hours before retrieval</li>
-			<li><strong>Egg retrieval:</strong> Outpatient procedure under sedation</li>
-			<li><strong>Vitrification:</strong> Eggs flash-frozen and stored in liquid nitrogen</li>
-		</ol>
-
-		<h3>Costs</h3>
-		<table>
-			<tbody>
-				<tr>
-					<td>Egg freezing cycle</td>
-					<td>$6,000-$12,000</td>
-				</tr>
-				<tr>
-					<td>Medications</td>
-					<td>$3,000-$6,000</td>
-				</tr>
-				<tr>
-					<td>Anesthesia</td>
-					<td>$500-$1,000</td>
-				</tr>
-				<tr>
-					<td>Annual storage</td>
-					<td>$500-$1,000/year</td>
-				</tr>
-				<tr>
-					<td><strong>Total per cycle</strong></td>
-					<td><strong>$10,000-$18,000</strong></td>
-				</tr>
-			</tbody>
-		</table>
-
-		<h3>Future Use</h3>
-		<p>When ready to use frozen eggs:</p>
-		<ul>
-			<li>Eggs are thawed (85-95% survival rate)</li>
-			<li>Fertilized with sperm via ICSI</li>
-			<li>Embryos cultured and transferred</li>
-			<li>Additional cost: $4,000-$8,000 for thaw + transfer cycle</li>
-		</ul>
-
-		<h2>Sperm Freezing (Sperm Cryopreservation)</h2>
-
-		<h3>Who Should Consider Sperm Freezing</h3>
-		<ul>
-			<li><strong>Before cancer treatment:</strong> Chemotherapy, radiation, surgery</li>
-			<li><strong>Before vasectomy:</strong> As backup</li>
-			<li><strong>Military deployment or work travel</strong></li>
-			<li><strong>Gender transition</strong></li>
-			<li><strong>Declining sperm quality</strong></li>
-			<li><strong>Before high-risk activities</strong></li>
-		</ul>
-
-		<h3>The Process</h3>
-		<ol>
-			<li>Provide sample at clinic or sperm bank</li>
-			<li>Sample analyzed for count, motility, morphology</li>
-			<li>Sample divided into vials and frozen</li>
-			<li>Stored in liquid nitrogen indefinitely</li>
-		</ol>
-
-		<h3>Costs</h3>
-		<table>
-			<tbody>
-				<tr>
-					<td>Initial freezing and analysis</td>
-					<td>$300-$1,000</td>
-				</tr>
-				<tr>
-					<td>Annual storage</td>
-					<td>$200-$500/year</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<div class="success-box">
-			<strong>Good news:</strong> Sperm freezing is simpler and less expensive than egg freezing. Sperm survive freezing well with 50-75% post-thaw survival. One sample can produce multiple vials for multiple attempts.
-		</div>
-
-		<h2>Embryo Freezing</h2>
-
-		<h3>Why Freeze Embryos</h3>
-		<ul>
-			<li><strong>During IVF:</strong> Extra embryos from a cycle</li>
-			<li><strong>Before medical treatment:</strong> Higher success rates than egg freezing alone</li>
-			<li><strong>For couples:</strong> When both partners' gametes are available</li>
-			<li><strong>Genetic testing:</strong> While waiting for PGT results</li>
-		</ul>
-
-		<h3>Success Rates</h3>
-		<p>Embryo freezing has the highest success rates of all fertility preservation methods:</p>
-		<ul>
-			<li>95-99% embryo survival after thaw</li>
-			<li>Success rates based on age at time of embryo creation</li>
-			<li>Same success rates as fresh embryos when thawed</li>
-		</ul>
-
-		<h3>Costs</h3>
-		<table>
-			<tbody>
-				<tr>
-					<td>IVF cycle (to create embryos)</td>
-					<td>$12,000-$17,000</td>
-				</tr>
-				<tr>
-					<td>Medications</td>
-					<td>$3,000-$6,000</td>
-				</tr>
-				<tr>
-					<td>Embryo freezing</td>
-					<td>$1,000-$2,000</td>
-				</tr>
-				<tr>
-					<td>Annual storage</td>
-					<td>$500-$1,000/year</td>
-				</tr>
-				<tr>
-					<td>Future FET cycle</td>
-					<td>$3,000-$5,000</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<h2>Ovarian Tissue Freezing</h2>
-		<div class="card">
-			<h3>Experimental Option</h3>
-			<p>Ovarian tissue is surgically removed, frozen, and later re-implanted. This option is:</p>
-			<ul>
-				<li>Used primarily for prepubescent girls before cancer treatment</li>
-				<li>An option when there's no time for egg freezing</li>
-				<li>Still considered experimental at some centers</li>
-				<li>Has resulted in live births when tissue is reimplanted</li>
-			</ul>
-		</div>
-
-		<h2>Insurance Coverage</h2>
-		<ul>
-			<li><strong>Medical fertility preservation:</strong> Many states require coverage before cancer treatment</li>
-			<li><strong>Elective freezing:</strong> Rarely covered; some employers offer this benefit</li>
-			<li>Check your specific plan details</li>
-		</ul>
-
-		<h2>How Long Can Cells Be Stored?</h2>
-		<ul>
-			<li>Eggs, sperm, and embryos can be stored indefinitely in liquid nitrogen</li>
-			<li>Babies have been born from embryos frozen 20+ years</li>
-			<li>No evidence of declining quality over time in storage</li>
-		</ul>
-
-		<h2>Considerations</h2>
-
-		<div class="warning-box">
-			<strong>Important:</strong> Freezing eggs or embryos does not guarantee a future baby. It's best thought of as insurance - improving your chances, but not a certainty.
-		</div>
-
-		<h3>Questions to Consider</h3>
-		<ul>
-			<li>How many eggs/embryos should I bank?</li>
-			<li>What happens if I don't use them?</li>
-			<li>What's my clinic's thaw survival rate?</li>
-			<li>What are the storage costs long-term?</li>
-			<li>If freezing embryos: What happens in case of divorce or death?</li>
-		</ul>
-
-		<p><a href="/treatments/">← Back to Treatment Options</a></p>
 	</section>
 </Layout>
 
 <style>
-	.page-header {
-		background: #edf2f7;
+	.hero-mini {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
 		padding: 3rem 0;
+		margin-bottom: 0;
+	}
+
+	.hero-mini .container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+	}
+
+	.breadcrumb {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 0.875rem;
+		margin-bottom: 1rem;
+		opacity: 0.9;
+		flex-wrap: wrap;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.hero-mini h1 {
+		font-size: 2.5rem;
+		margin: 0 0 0.75rem;
+		font-weight: 700;
+	}
+
+	.hero-mini > .container > p {
+		font-size: 1.25rem;
+		margin: 0;
+		opacity: 0.95;
+	}
+
+	.content-section {
+		padding: 3rem 0;
+	}
+
+	.content-section .container {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+	}
+
+	.intro-box {
+		background: linear-gradient(135deg, #f0f4ff 0%, #e8f4f8 100%);
+		border-radius: 16px;
+		padding: 2rem;
+		margin-bottom: 3rem;
+		border-left: 4px solid #667eea;
+	}
+
+	.intro-box h2 {
+		margin: 0 0 1rem;
+		color: #1a202c;
+		font-size: 1.5rem;
+	}
+
+	.intro-box p {
+		margin: 0;
+		color: #4a5568;
+		font-size: 1.1rem;
+		line-height: 1.7;
+	}
+
+	.section-title {
+		font-size: 1.75rem;
+		color: #1a202c;
+		margin: 2.5rem 0 1.5rem;
+		padding-bottom: 0.5rem;
+		border-bottom: 2px solid #e2e8f0;
+	}
+
+	.preservation-card {
+		background: white;
+		border-radius: 16px;
+		padding: 2rem;
+		margin-bottom: 2rem;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+		position: relative;
+	}
+
+	.preservation-card.main {
+		border: 2px solid #667eea;
+	}
+
+	.preservation-card.simple {
+		border: 2px solid #48bb78;
+	}
+
+	.preservation-card.experimental {
+		border: 2px solid #ed8936;
+		padding-top: 2.5rem;
+	}
+
+	.experimental-badge {
+		position: absolute;
+		top: -12px;
+		left: 1.5rem;
+		background: #ed8936;
+		color: white;
+		padding: 0.35rem 0.75rem;
+		border-radius: 4px;
+		font-size: 0.8rem;
+		font-weight: 600;
+	}
+
+	.card-icon {
+		width: 60px;
+		height: 60px;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.75rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.preservation-card.simple .card-icon {
+		background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+	}
+
+	.who-should, .process-section, .costs-section, .future-use, .age-table, .success-highlight {
+		margin-bottom: 1.5rem;
+	}
+
+	.who-should h3, .process-section h3, .costs-section h3, .future-use h3, .age-table h3, .success-highlight h3 {
+		font-size: 1.1rem;
+		color: #2d3748;
+		margin: 0 0 0.75rem;
+	}
+
+	.reasons-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.reason-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.75rem;
+		background: #f7fafc;
+		border-radius: 8px;
+	}
+
+	.reason-item .label {
+		background: #667eea;
+		color: white;
+		padding: 0.25rem 0.5rem;
+		border-radius: 4px;
+		font-size: 0.75rem;
+		font-weight: 600;
+		min-width: 80px;
+		text-align: center;
+	}
+
+	.reason-item.elective .label {
+		background: #48bb78;
+	}
+
+	.reason-item .text {
+		color: #4a5568;
+		font-size: 0.9rem;
+	}
+
+	.uses-grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.use-item {
+		background: #f0f4ff;
+		color: #4c51bf;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+	}
+
+	.callout-box {
+		display: flex;
+		gap: 1rem;
+		padding: 1.5rem;
+		border-radius: 12px;
+		margin-bottom: 1.5rem;
+	}
+
+	.callout-box.warning {
+		background: linear-gradient(135deg, #fef5e7 0%, #fff9e6 100%);
+		border-left: 4px solid #ed8936;
+	}
+
+	.callout-box.success {
+		background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%);
+		border-left: 4px solid #48bb78;
+	}
+
+	.callout-box.important {
+		border-width: 2px;
+		border-style: solid;
+		border-color: #ed8936;
+		border-left-width: 4px;
+	}
+
+	.callout-box.inline {
+		margin-bottom: 1.5rem;
+	}
+
+	.callout-icon {
+		font-size: 1.5rem;
+		line-height: 1;
+	}
+
+	.callout-content h4 {
+		margin: 0 0 0.5rem;
+		font-size: 1rem;
+	}
+
+	.callout-box.warning .callout-content h4 {
+		color: #744210;
+	}
+
+	.callout-box.success .callout-content h4 {
+		color: #22543d;
+	}
+
+	.callout-content p {
+		margin: 0;
+		font-size: 0.95rem;
+	}
+
+	.callout-box.warning .callout-content p {
+		color: #744210;
+	}
+
+	.callout-box.success .callout-content p {
+		color: #276749;
+	}
+
+	.table-container {
+		overflow-x: auto;
+	}
+
+	.age-table table {
+		width: 100%;
+		border-collapse: collapse;
+		background: white;
+		border-radius: 12px;
+		overflow: hidden;
+	}
+
+	.age-table thead {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	}
+
+	.age-table th {
+		padding: 1rem;
+		text-align: left;
+		color: white;
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+
+	.age-table td {
+		padding: 1rem;
+		border-bottom: 1px solid #e2e8f0;
+		color: #4a5568;
+		font-size: 0.9rem;
+	}
+
+	.age-table tr:last-child td {
+		border-bottom: none;
+	}
+
+	.age-table tr.optimal {
+		background: #f0fff4;
+	}
+
+	.rate {
+		padding: 0.25rem 0.5rem;
+		border-radius: 4px;
+		font-size: 0.85rem;
+		font-weight: 500;
+	}
+
+	.rate.excellent {
+		background: #c6f6d5;
+		color: #22543d;
+	}
+
+	.rate.good {
+		background: #9ae6b4;
+		color: #22543d;
+	}
+
+	.rate.moderate {
+		background: #feebc8;
+		color: #744210;
+	}
+
+	.rate.low {
+		background: #fed7d7;
+		color: #742a2a;
+	}
+
+	.table-note {
+		font-size: 0.85rem;
+		color: #718096;
+		font-style: italic;
+		margin: 0.5rem 0 0;
+	}
+
+	.process-steps {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.step {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.step-num {
+		width: 32px;
+		height: 32px;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		font-size: 0.9rem;
+		flex-shrink: 0;
+	}
+
+	.step-content {
+		flex: 1;
+		padding: 0.5rem 0;
+	}
+
+	.step-content strong {
+		display: block;
+		color: #1a202c;
+		font-size: 0.95rem;
+	}
+
+	.step-content span {
+		font-size: 0.85rem;
+		color: #718096;
+	}
+
+	.simple-steps {
+		margin: 0;
+		padding-left: 1.5rem;
+		color: #4a5568;
+	}
+
+	.simple-steps li {
+		margin-bottom: 0.5rem;
+		font-size: 0.95rem;
+	}
+
+	.cost-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.cost-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.75rem;
+		background: #f7fafc;
+		border-radius: 8px;
+	}
+
+	.cost-item.total {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		font-weight: 600;
+	}
+
+	.cost-item .name {
+		color: inherit;
+	}
+
+	.cost-item .price {
+		font-weight: 600;
+	}
+
+	.cost-item:not(.total) .price {
+		color: #667eea;
+	}
+
+	.future-use p {
+		margin: 0 0 0.5rem;
+		color: #4a5568;
+	}
+
+	.future-use ul {
+		margin: 0;
+		padding-left: 1.5rem;
+		color: #4a5568;
+	}
+
+	.future-use li {
+		margin-bottom: 0.35rem;
+		font-size: 0.95rem;
+	}
+
+	.highlight {
+		background: #c6f6d5;
+		color: #22543d;
+		padding: 0.15rem 0.4rem;
+		border-radius: 4px;
+		font-weight: 500;
+	}
+
+	.success-highlight {
+		background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%);
+		border-radius: 12px;
+		padding: 1.5rem;
+		border-left: 4px solid #48bb78;
+	}
+
+	.success-highlight p {
+		margin: 0 0 1rem;
+		color: #276749;
+	}
+
+	.success-stats {
+		display: flex;
+		gap: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	@media (max-width: 600px) {
+		.success-stats {
+			flex-direction: column;
+			gap: 1rem;
+		}
+	}
+
+	.stat {
+		text-align: center;
+	}
+
+	.stat .value {
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		color: #38a169;
+	}
+
+	.stat .label {
+		font-size: 0.85rem;
+		color: #276749;
+	}
+
+	.success-highlight .note {
+		margin: 0;
+		font-size: 0.85rem;
+		color: #276749;
+		font-style: italic;
+	}
+
+	.insurance-info {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 		margin-bottom: 2rem;
 	}
 
-	.page-header h1 {
-		margin: 0 0 0.5rem;
+	.insurance-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+		padding: 1rem 1.25rem;
+		background: white;
+		border-radius: 10px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 	}
 
-	.page-header p {
+	.insurance-item .icon {
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		flex-shrink: 0;
+	}
+
+	.insurance-item.covered .icon {
+		background: #c6f6d5;
+		color: #22543d;
+	}
+
+	.insurance-item.not-covered .icon {
+		background: #fed7d7;
+		color: #742a2a;
+	}
+
+	.insurance-item .content h4 {
+		margin: 0 0 0.25rem;
+		font-size: 1rem;
+		color: #1a202c;
+	}
+
+	.insurance-item .content p {
 		margin: 0;
-		color: var(--color-text-light);
-		font-size: 1.125rem;
+		font-size: 0.9rem;
+		color: #718096;
+	}
+
+	.insurance-note {
+		text-align: center;
+		color: #718096;
+		font-size: 0.9rem;
+	}
+
+	.storage-info {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	@media (max-width: 768px) {
+		.storage-info {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.storage-fact {
+		background: white;
+		border-radius: 12px;
+		padding: 1.25rem;
+		text-align: center;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	}
+
+	.storage-fact .icon {
+		font-size: 2rem;
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+
+	.storage-fact p {
+		margin: 0;
+		font-size: 0.95rem;
+		color: #4a5568;
+	}
+
+	.questions-section h3 {
+		font-size: 1.1rem;
+		color: #2d3748;
+		margin: 0 0 1rem;
+	}
+
+	.questions-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+		margin-bottom: 3rem;
+	}
+
+	.question-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		background: white;
+		padding: 1rem 1.25rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	}
+
+	.q-icon {
+		width: 28px;
+		height: 28px;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		font-size: 0.9rem;
+		flex-shrink: 0;
+	}
+
+	.question-item span:last-child {
+		color: #4a5568;
+		font-size: 0.95rem;
+	}
+
+	.nav-footer {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		padding-top: 2rem;
+		border-top: 2px solid #e2e8f0;
+		margin-top: 2rem;
+	}
+
+	.nav-prev, .nav-next {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 1.5rem;
+		background: white;
+		border-radius: 12px;
+		text-decoration: none;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		transition: all 0.2s ease;
+	}
+
+	.nav-prev:hover, .nav-next:hover {
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+		transform: translateY(-2px);
+	}
+
+	.nav-next {
+		text-align: right;
+		margin-left: auto;
+	}
+
+	.nav-label {
+		font-size: 0.75rem;
+		color: #718096;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	.nav-title {
+		font-size: 1rem;
+		color: #667eea;
+		font-weight: 600;
+	}
+
+	@media (max-width: 768px) {
+		.hero-mini h1 {
+			font-size: 1.875rem;
+		}
+
+		.hero-mini > .container > p {
+			font-size: 1.1rem;
+		}
 	}
 </style>

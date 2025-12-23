@@ -3,381 +3,1220 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout title="Recurrent Pregnancy Loss" description="Understanding recurrent pregnancy loss including miscarriage statistics, causes, diagnostic testing, and treatment options after multiple miscarriages.">
-	<section class="page-header">
+	<section class="hero-mini">
 		<div class="container">
+			<nav class="breadcrumb">
+				<a href="/">Home</a>
+				<span>→</span>
+				<a href="/treatments/">Treatments</a>
+				<span>→</span>
+				<span>Recurrent Loss</span>
+			</nav>
 			<h1>Recurrent Pregnancy Loss</h1>
 			<p>Understanding, testing, and treatment options after multiple miscarriages.</p>
 		</div>
 	</section>
 
-	<section class="content-container">
-		<h2>Miscarriage: How Common Is It?</h2>
-		<p>Miscarriage is far more common than many people realize. Understanding these statistics can help reduce the isolation and stigma many couples feel.</p>
+	<section class="content-section">
+		<div class="container">
+			<div class="intro-box">
+				<p>Miscarriage is far more common than many people realize, affecting up to 26% of all pregnancies. Understanding these statistics and the causes of recurrent loss can help reduce isolation, guide treatment decisions, and provide hope for future pregnancies.</p>
+			</div>
 
-		<div class="card stats-card">
-			<h3>Miscarriage Statistics</h3>
-			<table>
-				<tbody>
-					<tr>
-						<td>All clinically recognized pregnancies ending in miscarriage</td>
-						<td><strong>10-15%</strong></td>
-					</tr>
-					<tr>
-						<td>All pregnancies (including very early/unrecognized)</td>
-						<td><strong>~26%</strong></td>
-					</tr>
-					<tr>
-						<td>Miscarriages occurring in first trimester</td>
-						<td><strong>80%</strong></td>
-					</tr>
-					<tr>
-						<td>Miscarriages caused by chromosomal abnormalities</td>
-						<td><strong>50-60%</strong></td>
-					</tr>
-					<tr>
-						<td>Global miscarriages per year</td>
-						<td><strong>23 million</strong> (44 per minute)</td>
-					</tr>
-				</tbody>
-			</table>
+			<h2>Miscarriage Statistics</h2>
+
+			<div class="stats-grid">
+				<div class="stat-card">
+					<div class="stat-icon">📊</div>
+					<div class="stat-number">10-15%</div>
+					<div class="stat-label">Clinically recognized pregnancies</div>
+					<div class="stat-detail">End in miscarriage</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-icon">📈</div>
+					<div class="stat-number">~26%</div>
+					<div class="stat-label">All pregnancies</div>
+					<div class="stat-detail">Including very early losses</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-icon">⏰</div>
+					<div class="stat-number">80%</div>
+					<div class="stat-label">First trimester</div>
+					<div class="stat-detail">When most miscarriages occur</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-icon">🧬</div>
+					<div class="stat-number">50-60%</div>
+					<div class="stat-label">Chromosomal cause</div>
+					<div class="stat-detail">Primary cause of loss</div>
+				</div>
+			</div>
+
+			<div class="callout callout-info">
+				<span class="callout-icon">🌍</span>
+				<div class="callout-content">
+					<strong>Global Impact:</strong> An estimated 23 million miscarriages occur worldwide each year—that's 44 per minute. You are not alone.
+				</div>
+			</div>
+
 			<p class="citation">Sources: <a href="https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/11/early-pregnancy-loss" target="_blank" rel="noopener">ACOG Practice Bulletin</a>, <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00682-6/abstract" target="_blank" rel="noopener">The Lancet 2021</a></p>
-		</div>
 
-		<h3>Miscarriage Risk by Age</h3>
-		<table>
-			<thead>
-				<tr>
-					<th>Age</th>
-					<th>Miscarriage Risk</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Under 30</td>
-					<td>~10%</td>
-				</tr>
-				<tr>
-					<td>30-34</td>
-					<td>~12%</td>
-				</tr>
-				<tr>
-					<td>35-39</td>
-					<td>~18%</td>
-				</tr>
-				<tr>
-					<td>40-44</td>
-					<td>~34%</td>
-				</tr>
-				<tr>
-					<td>Over 45</td>
-					<td>~53%</td>
-				</tr>
-			</tbody>
-		</table>
-		<p class="citation">Source: <a href="https://www.ncbi.nlm.nih.gov/books/NBK532992/" target="_blank" rel="noopener">NCBI StatPearls - Miscarriage</a></p>
+			<h2>Miscarriage Risk by Age</h2>
 
-		<h3>Risk Decreases as Pregnancy Progresses</h3>
-		<ul>
-			<li><strong>Before heartbeat detected:</strong> 10-20% risk</li>
-			<li><strong>After heartbeat seen (6-7 weeks):</strong> Risk drops to &lt;5%</li>
-			<li><strong>After 12 weeks:</strong> Risk drops to 1-2%</li>
-			<li><strong>After 20 weeks:</strong> Less than 1%</li>
-		</ul>
+			<div class="table-container">
+				<table class="styled-table">
+					<thead>
+						<tr>
+							<th>Age</th>
+							<th>Miscarriage Risk</th>
+							<th>Notes</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Under 30</strong></td>
+							<td>~10%</td>
+							<td>Lowest risk period</td>
+						</tr>
+						<tr>
+							<td><strong>30-34</strong></td>
+							<td>~12%</td>
+							<td>Slight increase</td>
+						</tr>
+						<tr>
+							<td><strong>35-39</strong></td>
+							<td>~18%</td>
+							<td>Moderate increase</td>
+						</tr>
+						<tr>
+							<td><strong>40-44</strong></td>
+							<td>~34%</td>
+							<td>Significant increase</td>
+						</tr>
+						<tr>
+							<td><strong>Over 45</strong></td>
+							<td>~53%</td>
+							<td>Highest risk</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-		<h2>What is Recurrent Pregnancy Loss?</h2>
-		<p>Recurrent pregnancy loss (RPL) is defined by ASRM as <strong>two or more</strong> pregnancy losses before 20 weeks gestation. It affects <strong>2-4% of couples</strong> trying to conceive.</p>
+			<p class="citation">Source: <a href="https://www.ncbi.nlm.nih.gov/books/NBK532992/" target="_blank" rel="noopener">NCBI StatPearls - Miscarriage</a></p>
 
-		<div class="card stats-card">
-			<h3>Recurrent Loss Statistics</h3>
-			<table>
-				<tbody>
-					<tr>
-						<td>Couples experiencing 2+ consecutive losses</td>
-						<td><strong>2-4%</strong></td>
-					</tr>
-					<tr>
-						<td>Couples experiencing 3+ consecutive losses</td>
-						<td><strong>0.5-1%</strong></td>
-					</tr>
-					<tr>
-						<td>Cases where a cause is identified</td>
-						<td><strong>50-60%</strong></td>
-					</tr>
-					<tr>
-						<td>Cases remaining unexplained</td>
-						<td><strong>40-50%</strong></td>
-					</tr>
-					<tr>
-						<td>Success rate in next pregnancy (unexplained RPL)</td>
-						<td><strong>60-75%</strong></td>
-					</tr>
-				</tbody>
-			</table>
+			<h3>Risk Decreases as Pregnancy Progresses</h3>
+
+			<div class="progress-timeline">
+				<div class="progress-item">
+					<div class="progress-dot high-risk"></div>
+					<div class="progress-content">
+						<span class="progress-stage">Before heartbeat</span>
+						<span class="progress-risk">10-20% risk</span>
+					</div>
+				</div>
+				<div class="progress-item">
+					<div class="progress-dot medium-risk"></div>
+					<div class="progress-content">
+						<span class="progress-stage">After heartbeat (6-7 weeks)</span>
+						<span class="progress-risk">&lt;5% risk</span>
+					</div>
+				</div>
+				<div class="progress-item">
+					<div class="progress-dot low-risk"></div>
+					<div class="progress-content">
+						<span class="progress-stage">After 12 weeks</span>
+						<span class="progress-risk">1-2% risk</span>
+					</div>
+				</div>
+				<div class="progress-item">
+					<div class="progress-dot very-low-risk"></div>
+					<div class="progress-content">
+						<span class="progress-stage">After 20 weeks</span>
+						<span class="progress-risk">&lt;1% risk</span>
+					</div>
+				</div>
+			</div>
+
+			<h2>What is Recurrent Pregnancy Loss?</h2>
+
+			<div class="definition-box">
+				<h3>ASRM Definition</h3>
+				<p>Recurrent pregnancy loss (RPL) is defined as <strong>two or more</strong> pregnancy losses before 20 weeks gestation. It affects <strong>2-4% of couples</strong> trying to conceive.</p>
+			</div>
+
+			<div class="stats-grid stats-grid-3">
+				<div class="stat-card">
+					<div class="stat-number">2-4%</div>
+					<div class="stat-label">Experience 2+ losses</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">0.5-1%</div>
+					<div class="stat-label">Experience 3+ losses</div>
+				</div>
+				<div class="stat-card highlight">
+					<div class="stat-number">60-75%</div>
+					<div class="stat-label">Success in next pregnancy</div>
+					<div class="stat-detail">(with unexplained RPL)</div>
+				</div>
+			</div>
+
+			<div class="callout callout-warning">
+				<span class="callout-icon">⏱️</span>
+				<div class="callout-content">
+					<strong>When to seek evaluation:</strong> ASRM recommends a full RPL workup after 2 consecutive losses, especially if you're over 35. Don't wait for a third loss to get answers.
+				</div>
+			</div>
+
 			<p class="citation">Sources: <a href="https://www.asrm.org/practice-guidance/practice-committee-documents/evaluation-and-treatment-of-recurrent-pregnancy-loss-a-committee-opinion-2012/" target="_blank" rel="noopener">ASRM Committee Opinion</a>, <a href="https://www.ncbi.nlm.nih.gov/books/NBK554460/" target="_blank" rel="noopener">NCBI StatPearls - RPL</a></p>
+
+			<h2>Causes of Recurrent Loss</h2>
+
+			<p>When miscarriage tissue is tested along with standard RPL workup, a cause can be identified in <strong>over 90%</strong> of cases. The most common cause is chromosomal abnormality in the embryo.</p>
+
+			<div class="table-container">
+				<table class="styled-table causes-table">
+					<thead>
+						<tr>
+							<th>Category</th>
+							<th>Cause</th>
+							<th>Frequency</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="category-genetic">
+							<td><span class="category-badge genetic">Genetic</span></td>
+							<td>Embryo aneuploidy (random chromosomal errors)</td>
+							<td><strong>50-60%</strong> of losses</td>
+						</tr>
+						<tr class="category-genetic">
+							<td><span class="category-badge genetic">Genetic</span></td>
+							<td>Parental balanced translocation</td>
+							<td>2-5% of couples</td>
+						</tr>
+						<tr class="category-uterine">
+							<td><span class="category-badge uterine">Uterine</span></td>
+							<td>Uterine septum</td>
+							<td>3-5%</td>
+						</tr>
+						<tr class="category-uterine">
+							<td><span class="category-badge uterine">Uterine</span></td>
+							<td>Fibroids (submucosal)</td>
+							<td>5-10%</td>
+						</tr>
+						<tr class="category-uterine">
+							<td><span class="category-badge uterine">Uterine</span></td>
+							<td>Asherman's syndrome (scarring)</td>
+							<td>5%</td>
+						</tr>
+						<tr class="category-blood">
+							<td><span class="category-badge blood">Thrombophilia</span></td>
+							<td>Antiphospholipid syndrome (APS)</td>
+							<td>5-15%</td>
+						</tr>
+						<tr class="category-blood">
+							<td><span class="category-badge blood">Thrombophilia</span></td>
+							<td>Inherited clotting disorders</td>
+							<td>5-10%</td>
+						</tr>
+						<tr class="category-endocrine">
+							<td><span class="category-badge endocrine">Endocrine</span></td>
+							<td>Thyroid dysfunction</td>
+							<td>5-10%</td>
+						</tr>
+						<tr class="category-endocrine">
+							<td><span class="category-badge endocrine">Endocrine</span></td>
+							<td>Uncontrolled diabetes</td>
+							<td>Variable</td>
+						</tr>
+						<tr class="category-endocrine">
+							<td><span class="category-badge endocrine">Endocrine</span></td>
+							<td>Low progesterone / luteal phase defect</td>
+							<td>Debated</td>
+						</tr>
+						<tr class="category-immune">
+							<td><span class="category-badge immune">Immune</span></td>
+							<td>Natural killer cell abnormalities</td>
+							<td>Controversial</td>
+						</tr>
+						<tr class="category-unknown">
+							<td><span class="category-badge unknown">Unknown</span></td>
+							<td>No identifiable cause</td>
+							<td>40-50%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<p class="citation">Sources: <a href="https://www.asrm.org/practice-guidance/practice-committee-documents/evaluation-and-treatment-of-recurrent-pregnancy-loss-a-committee-opinion-2012/" target="_blank" rel="noopener">ASRM Committee Opinion on RPL</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/29538673/" target="_blank" rel="noopener">Human Reproduction 2018</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3824507/" target="_blank" rel="noopener">PMC - Chromosomal Abnormalities in RPL</a></p>
+
+			<div class="callout callout-info">
+				<span class="callout-icon">🔬</span>
+				<div class="callout-content">
+					<strong>POC Testing:</strong> When products of conception (miscarriage tissue) are tested with chromosomal microarray, <strong>67%</strong> show a genetic abnormality—most commonly trisomy (79% of abnormalities). This testing can provide answers and guide treatment.
+				</div>
+			</div>
+
+			<h2>RPL Testing Workup</h2>
+
+			<h3>Standard Testing (Recommended)</h3>
+
+			<div class="testing-grid">
+				<div class="testing-card">
+					<div class="testing-header">
+						<span class="testing-icon">🧬</span>
+						<h4>Genetic Testing</h4>
+					</div>
+					<ul>
+						<li><strong>Karyotype (both partners):</strong> Blood test for balanced translocations or chromosomal rearrangements</li>
+						<li><strong>POC testing:</strong> Genetic analysis of miscarriage tissue</li>
+					</ul>
+					<div class="testing-cost">
+						<span class="cost-label">Typical Cost:</span>
+						<span class="cost-amount">$200-$500 per karyotype; $500-$1,500 for POC</span>
+					</div>
+				</div>
+
+				<div class="testing-card">
+					<div class="testing-header">
+						<span class="testing-icon">🔍</span>
+						<h4>Uterine Evaluation</h4>
+					</div>
+					<ul>
+						<li><strong>Transvaginal ultrasound:</strong> Basic uterine assessment</li>
+						<li><strong>Saline sonogram (SIS):</strong> Enhanced cavity visualization</li>
+						<li><strong>Hysteroscopy:</strong> Direct visualization and treatment</li>
+						<li><strong>MRI:</strong> If anomaly suspected</li>
+					</ul>
+					<div class="testing-cost">
+						<span class="cost-label">Typical Cost:</span>
+						<span class="cost-amount">$300-$1,000 imaging; $2,000-$10,000 hysteroscopy</span>
+					</div>
+				</div>
+
+				<div class="testing-card">
+					<div class="testing-header">
+						<span class="testing-icon">🩸</span>
+						<h4>Blood Clotting Panel</h4>
+					</div>
+					<ul>
+						<li><strong>Antiphospholipid antibodies:</strong> Lupus anticoagulant, anticardiolipin, beta-2 glycoprotein</li>
+						<li><strong>Factor V Leiden</strong></li>
+						<li><strong>Prothrombin gene mutation</strong></li>
+						<li><strong>Protein C, S, Antithrombin III</strong></li>
+					</ul>
+					<div class="testing-cost">
+						<span class="cost-label">Typical Cost:</span>
+						<span class="cost-amount">$500-$2,000</span>
+					</div>
+				</div>
+
+				<div class="testing-card">
+					<div class="testing-header">
+						<span class="testing-icon">⚗️</span>
+						<h4>Hormonal Testing</h4>
+					</div>
+					<ul>
+						<li><strong>TSH and thyroid antibodies</strong></li>
+						<li><strong>Prolactin</strong></li>
+						<li><strong>Hemoglobin A1C</strong> (diabetes screening)</li>
+						<li><strong>Day 3 FSH, estradiol, AMH</strong></li>
+						<li><strong>Progesterone</strong> (mid-luteal phase)</li>
+					</ul>
+					<div class="testing-cost">
+						<span class="cost-label">Typical Cost:</span>
+						<span class="cost-amount">$200-$800</span>
+					</div>
+				</div>
+			</div>
+
+			<h3>Additional Testing (Case-by-Case)</h3>
+
+			<div class="additional-tests">
+				<div class="test-item">
+					<strong>Endometrial biopsy</strong>
+					<span>Check for chronic endometritis (infection)</span>
+				</div>
+				<div class="test-item">
+					<strong>Sperm DNA fragmentation</strong>
+					<span>If male factor suspected</span>
+				</div>
+				<div class="test-item">
+					<strong>ERA (Endometrial Receptivity Analysis)</strong>
+					<span>Timing of implantation window</span>
+				</div>
+				<div class="test-item">
+					<strong>Immunological panels</strong>
+					<span>NK cells, cytokines (controversial)</span>
+				</div>
+			</div>
+
+			<div class="callout callout-warning">
+				<span class="callout-icon">⚠️</span>
+				<div class="callout-content">
+					<strong>Note on immune testing:</strong> Testing for natural killer cells, cytokines, and other immune factors is controversial. Many reproductive immunology treatments lack strong evidence. Discuss thoroughly with your doctor before pursuing expensive immune protocols.
+				</div>
+			</div>
+
+			<h2>Treatment Options</h2>
+
+			<h3>Treatments for Identified Causes</h3>
+
+			<div class="treatment-cards">
+				<div class="treatment-card">
+					<div class="treatment-header aps">
+						<h4>Antiphospholipid Syndrome (APS)</h4>
+						<span class="success-badge">70-80% success</span>
+					</div>
+					<div class="treatment-body">
+						<p><strong>Treatment:</strong> Low-dose aspirin (81mg daily) + heparin or Lovenox injections throughout pregnancy</p>
+						<p class="contrast-note">Without treatment: 10-20% live birth rate</p>
+						<div class="treatment-cost">$100-$500/month</div>
+					</div>
+				</div>
+
+				<div class="treatment-card">
+					<div class="treatment-header uterine">
+						<h4>Uterine Abnormalities</h4>
+						<span class="success-badge">Varies by condition</span>
+					</div>
+					<div class="treatment-body">
+						<p><strong>Treatment:</strong> Surgical correction via hysteroscopy</p>
+						<ul>
+							<li>Septum resection</li>
+							<li>Fibroid removal (myomectomy)</li>
+							<li>Adhesion removal (for Asherman's)</li>
+						</ul>
+						<div class="treatment-cost">$5,000-$15,000</div>
+					</div>
+				</div>
+
+				<div class="treatment-card">
+					<div class="treatment-header genetic">
+						<h4>Parental Chromosomal Translocation</h4>
+						<span class="success-badge">Significantly reduces risk</span>
+					</div>
+					<div class="treatment-body">
+						<p><strong>Treatment:</strong> IVF with PGT-SR (preimplantation genetic testing for structural rearrangements)</p>
+						<p>Tests embryos before transfer to select those with normal chromosomes.</p>
+						<div class="treatment-cost">$20,000-$35,000/cycle</div>
+					</div>
+				</div>
+
+				<div class="treatment-card">
+					<div class="treatment-header thyroid">
+						<h4>Thyroid Dysfunction</h4>
+						<span class="success-badge">Goal: TSH &lt;2.5</span>
+					</div>
+					<div class="treatment-body">
+						<p><strong>Treatment:</strong> Thyroid medication (levothyroxine) to normalize TSH levels during pregnancy</p>
+						<div class="treatment-cost">$10-$50/month</div>
+					</div>
+				</div>
+			</div>
+
+			<h3>Empiric Treatments (When Cause Unknown)</h3>
+
+			<div class="empiric-grid">
+				<div class="empiric-card">
+					<h4>Progesterone Supplementation</h4>
+					<p>Vaginal or intramuscular progesterone starting after ovulation or positive test.</p>
+					<div class="evidence-note">
+						<strong>Evidence:</strong> PRISM trial showed benefit for women with bleeding in early pregnancy and history of loss
+					</div>
+					<div class="empiric-cost">$50-$300/month</div>
+				</div>
+
+				<div class="empiric-card">
+					<h4>Baby Aspirin (81mg)</h4>
+					<p>Often prescribed empirically even without diagnosed APS.</p>
+					<div class="evidence-note">
+						<strong>Evidence:</strong> Low risk, may have modest benefit
+					</div>
+					<div class="empiric-cost">~$10/month</div>
+				</div>
+
+				<div class="empiric-card">
+					<h4>IVF with PGT-A</h4>
+					<p>Testing embryos for chromosomal abnormalities before transfer.</p>
+					<div class="evidence-note">
+						<strong>Evidence:</strong> Can reduce miscarriage rate per transfer, especially for women over 35
+					</div>
+					<div class="empiric-cost">$20,000-$30,000</div>
+				</div>
+			</div>
+
+			<h2>When to Consider Other Options</h2>
+
+			<div class="options-grid">
+				<div class="option-card">
+					<h3>🥚 Donor Eggs</h3>
+					<p>Consider if:</p>
+					<ul>
+						<li>Multiple losses with chromosomally abnormal embryos</li>
+						<li>Advanced maternal age (40+) with RPL</li>
+						<li>PGT-A shows most/all embryos are abnormal</li>
+						<li>Diminished ovarian reserve</li>
+					</ul>
+					<a href="/treatments/third-party/" class="option-link">Learn about donor options →</a>
+				</div>
+
+				<div class="option-card">
+					<h3>🤰 Gestational Carrier</h3>
+					<p>Consider if:</p>
+					<ul>
+						<li>Uncorrectable uterine abnormality</li>
+						<li>Multiple losses despite normal embryos</li>
+						<li>Medical conditions making pregnancy dangerous</li>
+					</ul>
+					<a href="/treatments/third-party/" class="option-link">Learn about surrogacy →</a>
+				</div>
+			</div>
+
+			<h2>Emotional Support</h2>
+
+			<p>Recurrent loss is emotionally devastating. Taking care of your mental health is just as important as physical treatment.</p>
+
+			<div class="support-options">
+				<div class="support-item">
+					<span class="support-icon">💬</span>
+					<div>
+						<strong>Counseling</strong>
+						<p>Individual or couples therapy with someone experienced in pregnancy loss</p>
+					</div>
+				</div>
+				<div class="support-item">
+					<span class="support-icon">👥</span>
+					<div>
+						<strong>Support Groups</strong>
+						<p>RESOLVE, local pregnancy loss support groups, online communities</p>
+					</div>
+				</div>
+				<div class="support-item">
+					<span class="support-icon">⏸️</span>
+					<div>
+						<strong>Taking Breaks</strong>
+						<p>It's okay to pause between attempts—healing takes time</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="callout callout-success">
+				<span class="callout-icon">💚</span>
+				<div class="callout-content">
+					<strong>There is hope:</strong> Even after 3 unexplained losses, the chance of a successful next pregnancy is 60-75% without any treatment. With appropriate treatment for identified causes, success rates can be even higher.
+				</div>
+			</div>
+
+			<h2>Questions for Your Doctor</h2>
+
+			<div class="questions-list">
+				<div class="question-item">
+					<span class="question-number">1</span>
+					<span>What testing do you recommend based on my history?</span>
+				</div>
+				<div class="question-item">
+					<span class="question-number">2</span>
+					<span>Should we test the pregnancy tissue if another loss occurs?</span>
+				</div>
+				<div class="question-item">
+					<span class="question-number">3</span>
+					<span>Do you recommend any empiric treatments?</span>
+				</div>
+				<div class="question-item">
+					<span class="question-number">4</span>
+					<span>At what point would you recommend IVF with PGT?</span>
+				</div>
+				<div class="question-item">
+					<span class="question-number">5</span>
+					<span>Should I see a reproductive immunologist? (Ask for evidence-based perspective)</span>
+				</div>
+				<div class="question-item">
+					<span class="question-number">6</span>
+					<span>What's my prognosis for a successful pregnancy?</span>
+				</div>
+			</div>
+
+			<nav class="nav-footer">
+				<a href="/treatments/surgical/" class="nav-prev">
+					<span class="nav-direction">← Previous</span>
+					<span class="nav-title">Surgical Treatments</span>
+				</a>
+				<a href="/treatments/" class="nav-next">
+					<span class="nav-direction">All Treatments</span>
+					<span class="nav-title">View All Options →</span>
+				</a>
+			</nav>
 		</div>
-
-		<div class="info-box">
-			<strong>When to seek evaluation:</strong> ASRM recommends a full RPL workup after 2 consecutive losses, especially if you're over 35. Don't wait for a third loss to get answers.
-		</div>
-
-		<h2>Causes of Recurrent Loss</h2>
-		<p>When miscarriage tissue is tested along with standard RPL workup, a cause can be identified in <strong>over 90%</strong> of cases. The most common cause is chromosomal abnormality in the embryo.</p>
-
-		<table>
-			<thead>
-				<tr>
-					<th>Category</th>
-					<th>Cause</th>
-					<th>Frequency</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Genetic/Chromosomal</td>
-					<td>Embryo aneuploidy (random chromosomal errors)</td>
-					<td>50-60% of losses</td>
-				</tr>
-				<tr>
-					<td>Genetic/Chromosomal</td>
-					<td>Parental balanced translocation</td>
-					<td>2-5% of couples with RPL</td>
-				</tr>
-				<tr>
-					<td>Uterine</td>
-					<td>Uterine septum</td>
-					<td>3-5%</td>
-				</tr>
-				<tr>
-					<td>Uterine</td>
-					<td>Fibroids (submucosal)</td>
-					<td>5-10%</td>
-				</tr>
-				<tr>
-					<td>Uterine</td>
-					<td>Asherman's syndrome (scarring)</td>
-					<td>5%</td>
-				</tr>
-				<tr>
-					<td>Thrombophilia</td>
-					<td>Antiphospholipid syndrome (APS)</td>
-					<td>5-15%</td>
-				</tr>
-				<tr>
-					<td>Thrombophilia</td>
-					<td>Inherited clotting disorders</td>
-					<td>5-10%</td>
-				</tr>
-				<tr>
-					<td>Endocrine</td>
-					<td>Thyroid dysfunction</td>
-					<td>5-10%</td>
-				</tr>
-				<tr>
-					<td>Endocrine</td>
-					<td>Uncontrolled diabetes</td>
-					<td>Variable</td>
-				</tr>
-				<tr>
-					<td>Endocrine</td>
-					<td>Low progesterone / luteal phase defect</td>
-					<td>Debated</td>
-				</tr>
-				<tr>
-					<td>Immune</td>
-					<td>Natural killer cell abnormalities</td>
-					<td>Controversial</td>
-				</tr>
-				<tr>
-					<td>Unexplained</td>
-					<td>No identifiable cause</td>
-					<td>40-50%</td>
-				</tr>
-			</tbody>
-		</table>
-		<p class="citation">Sources: <a href="https://www.asrm.org/practice-guidance/practice-committee-documents/evaluation-and-treatment-of-recurrent-pregnancy-loss-a-committee-opinion-2012/" target="_blank" rel="noopener">ASRM Committee Opinion on RPL</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/29538673/" target="_blank" rel="noopener">Human Reproduction 2018</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3824507/" target="_blank" rel="noopener">PMC - Chromosomal Abnormalities in RPL</a></p>
-
-		<div class="info-box">
-			<strong>POC Testing:</strong> When products of conception (miscarriage tissue) are tested with chromosomal microarray, <strong>67%</strong> show a genetic abnormality—most commonly trisomy (79% of abnormalities). This testing can provide answers and guide treatment.
-		</div>
-
-		<h2>RPL Testing Workup</h2>
-
-		<h3>Standard Testing (Recommended)</h3>
-		<div class="card">
-			<h4>Genetic Testing</h4>
-			<ul>
-				<li><strong>Karyotype (both partners):</strong> Blood test to check for balanced translocations or other chromosomal rearrangements</li>
-				<li><strong>Products of conception (POC) testing:</strong> Genetic analysis of miscarriage tissue to determine if chromosomal abnormality caused the loss</li>
-			</ul>
-			<p><strong>Cost:</strong> $200-$500 per karyotype; $500-$1,500 for POC testing</p>
-		</div>
-
-		<div class="card">
-			<h4>Uterine Evaluation</h4>
-			<ul>
-				<li><strong>Transvaginal ultrasound:</strong> Basic uterine assessment</li>
-				<li><strong>Saline sonogram (SIS):</strong> Saline-enhanced ultrasound to see uterine cavity</li>
-				<li><strong>Hysteroscopy:</strong> Direct visualization and treatment of uterine abnormalities</li>
-				<li><strong>MRI:</strong> If uterine anomaly suspected</li>
-			</ul>
-			<p><strong>Cost:</strong> $300-$1,000 for imaging; $2,000-$10,000 for hysteroscopy</p>
-		</div>
-
-		<div class="card">
-			<h4>Blood Clotting Panel</h4>
-			<ul>
-				<li><strong>Antiphospholipid antibodies:</strong> Lupus anticoagulant, anticardiolipin, beta-2 glycoprotein (tested twice, 12 weeks apart)</li>
-				<li><strong>Factor V Leiden</strong></li>
-				<li><strong>Prothrombin gene mutation</strong></li>
-				<li><strong>Protein C, Protein S, Antithrombin III</strong></li>
-			</ul>
-			<p><strong>Cost:</strong> $500-$2,000</p>
-		</div>
-
-		<div class="card">
-			<h4>Hormonal Testing</h4>
-			<ul>
-				<li><strong>TSH and thyroid antibodies</strong></li>
-				<li><strong>Prolactin</strong></li>
-				<li><strong>Hemoglobin A1C</strong> (diabetes screening)</li>
-				<li><strong>Day 3 FSH, estradiol, AMH</strong> (ovarian reserve)</li>
-				<li><strong>Progesterone</strong> (mid-luteal phase)</li>
-			</ul>
-			<p><strong>Cost:</strong> $200-$800</p>
-		</div>
-
-		<h3>Additional Testing (Case-by-Case)</h3>
-		<ul>
-			<li><strong>Endometrial biopsy:</strong> Check for chronic endometritis (infection)</li>
-			<li><strong>Sperm DNA fragmentation:</strong> If male factor suspected</li>
-			<li><strong>ERA (Endometrial Receptivity Analysis):</strong> Timing of implantation window</li>
-			<li><strong>Immunological panels:</strong> NK cells, cytokines (controversial, not universally recommended)</li>
-		</ul>
-
-		<div class="warning-box">
-			<strong>Note on immune testing:</strong> Testing for natural killer cells, cytokines, and other immune factors is controversial. Many reproductive immunology treatments lack strong evidence. Discuss thoroughly with your doctor before pursuing expensive immune protocols.
-		</div>
-
-		<h2>Treatment Options</h2>
-
-		<h3>Based on Identified Cause</h3>
-
-		<div class="card">
-			<h4>Antiphospholipid Syndrome (APS)</h4>
-			<p><strong>Treatment:</strong> Low-dose aspirin (81mg daily) + heparin or Lovenox injections throughout pregnancy</p>
-			<p><strong>Success rate:</strong> 70-80% live birth rate with treatment (vs. 10-20% without)</p>
-			<p><strong>Cost:</strong> $100-$500/month for medications</p>
-		</div>
-
-		<div class="card">
-			<h4>Uterine Abnormalities</h4>
-			<p><strong>Treatment:</strong> Surgical correction via hysteroscopy</p>
-			<ul>
-				<li>Septum resection</li>
-				<li>Fibroid removal (myomectomy)</li>
-				<li>Adhesion removal (for Asherman's)</li>
-			</ul>
-			<p><strong>Success rate:</strong> Varies by condition; septum removal significantly improves outcomes</p>
-			<p><strong>Cost:</strong> $5,000-$15,000</p>
-		</div>
-
-		<div class="card">
-			<h4>Parental Chromosomal Translocation</h4>
-			<p><strong>Treatment:</strong> IVF with PGT-SR (preimplantation genetic testing for structural rearrangements)</p>
-			<p>This tests embryos before transfer to select those with normal chromosomes.</p>
-			<p><strong>Success rate:</strong> Significantly reduces miscarriage risk</p>
-			<p><strong>Cost:</strong> $20,000-$35,000 per IVF cycle with testing</p>
-		</div>
-
-		<div class="card">
-			<h4>Thyroid Dysfunction</h4>
-			<p><strong>Treatment:</strong> Thyroid medication (levothyroxine) to normalize TSH</p>
-			<p><strong>Goal:</strong> TSH below 2.5 mIU/L during pregnancy</p>
-			<p><strong>Cost:</strong> $10-$50/month</p>
-		</div>
-
-		<h3>Empiric Treatments (When Cause Unknown)</h3>
-
-		<div class="card">
-			<h4>Progesterone Supplementation</h4>
-			<p>Vaginal or intramuscular progesterone starting after ovulation or positive pregnancy test.</p>
-			<p><strong>Evidence:</strong> PRISM trial showed benefit for women with bleeding in early pregnancy and history of loss</p>
-			<p><strong>Cost:</strong> $50-$300/month</p>
-		</div>
-
-		<div class="card">
-			<h4>Baby Aspirin (81mg)</h4>
-			<p>Often prescribed empirically even without diagnosed APS.</p>
-			<p><strong>Evidence:</strong> Low risk, may have modest benefit</p>
-			<p><strong>Cost:</strong> ~$10/month</p>
-		</div>
-
-		<div class="card">
-			<h4>IVF with PGT-A</h4>
-			<p>Testing embryos for chromosomal abnormalities before transfer to reduce miscarriage from aneuploidy.</p>
-			<p><strong>Evidence:</strong> Can reduce miscarriage rate per transfer, especially for women over 35</p>
-			<p><strong>Cost:</strong> $20,000-$30,000</p>
-		</div>
-
-		<h2>When to Consider Other Options</h2>
-
-		<h3>Donor Eggs</h3>
-		<p>Consider if:</p>
-		<ul>
-			<li>Multiple losses with chromosomally abnormal embryos</li>
-			<li>Advanced maternal age (40+) with RPL</li>
-			<li>PGT-A shows most/all embryos are abnormal</li>
-			<li>Diminished ovarian reserve</li>
-		</ul>
-
-		<h3>Gestational Carrier (Surrogate)</h3>
-		<p>Consider if:</p>
-		<ul>
-			<li>Uncorrectable uterine abnormality</li>
-			<li>Multiple losses despite normal embryos (possible implantation or uterine factor)</li>
-			<li>Medical conditions making pregnancy dangerous</li>
-		</ul>
-
-		<h2>Emotional Support</h2>
-		<p>Recurrent loss is emotionally devastating. Consider:</p>
-		<ul>
-			<li><strong>Counseling:</strong> Individual or couples therapy with someone experienced in pregnancy loss</li>
-			<li><strong>Support groups:</strong> RESOLVE, local pregnancy loss support groups</li>
-			<li><strong>Time:</strong> It's okay to take breaks between attempts</li>
-		</ul>
-
-		<div class="success-box">
-			<strong>There is hope:</strong> Even after 3 unexplained losses, the chance of a successful next pregnancy is 60-75% without any treatment. With appropriate treatment for identified causes, success rates can be even higher.
-		</div>
-
-		<h2>Questions for Your Doctor</h2>
-		<ul>
-			<li>What testing do you recommend based on my history?</li>
-			<li>Should we test the pregnancy tissue if another loss occurs?</li>
-			<li>Do you recommend any empiric treatments?</li>
-			<li>At what point would you recommend IVF with PGT?</li>
-			<li>Should I see a reproductive immunologist? (Ask for evidence-based perspective)</li>
-			<li>What's my prognosis for a successful pregnancy?</li>
-		</ul>
-
-		<p><a href="/treatments/">← Back to Treatment Options</a></p>
 	</section>
 </Layout>
 
 <style>
-	.page-header {
-		background: #edf2f7;
+	.hero-mini {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
 		padding: 3rem 0;
-		margin-bottom: 2rem;
 	}
 
-	.page-header h1 {
+	.breadcrumb {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 1rem;
+		font-size: 0.9rem;
+		opacity: 0.9;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.hero-mini h1 {
 		margin: 0 0 0.5rem;
+		font-size: 2.5rem;
 	}
 
-	.page-header p {
+	.hero-mini p {
 		margin: 0;
-		color: var(--color-text-light);
-		font-size: 1.125rem;
+		font-size: 1.25rem;
+		opacity: 0.9;
+	}
+
+	.content-section {
+		padding: 3rem 0;
+	}
+
+	.intro-box {
+		background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+		border-left: 4px solid #667eea;
+		padding: 1.5rem;
+		margin-bottom: 2.5rem;
+		border-radius: 0 8px 8px 0;
+		font-size: 1.1rem;
+	}
+
+	.intro-box p {
+		margin: 0;
+	}
+
+	h2 {
+		color: #1a202c;
+		margin: 2.5rem 0 1.5rem;
+		padding-bottom: 0.5rem;
+		border-bottom: 2px solid #667eea;
+	}
+
+	h3 {
+		color: #2d3748;
+		margin: 2rem 0 1rem;
+	}
+
+	/* Stats Grid */
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.stats-grid-3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.stat-card {
+		background: white;
+		border-radius: 12px;
+		padding: 1.5rem;
+		text-align: center;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		border: 1px solid #e2e8f0;
+	}
+
+	.stat-card.highlight {
+		background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+		color: white;
+		border: none;
+	}
+
+	.stat-icon {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-number {
+		font-size: 2rem;
+		font-weight: 700;
+		color: #667eea;
+	}
+
+	.stat-card.highlight .stat-number {
+		color: white;
+	}
+
+	.stat-label {
+		font-size: 0.95rem;
+		color: #4a5568;
+		margin-top: 0.25rem;
+	}
+
+	.stat-card.highlight .stat-label {
+		color: rgba(255,255,255,0.9);
+	}
+
+	.stat-detail {
+		font-size: 0.85rem;
+		color: #718096;
+		margin-top: 0.25rem;
+	}
+
+	.stat-card.highlight .stat-detail {
+		color: rgba(255,255,255,0.8);
+	}
+
+	/* Callout Boxes */
+	.callout {
+		display: flex;
+		gap: 1rem;
+		padding: 1.25rem;
+		border-radius: 8px;
+		margin: 1.5rem 0;
+	}
+
+	.callout-icon {
+		font-size: 1.5rem;
+		flex-shrink: 0;
+	}
+
+	.callout-content {
+		flex: 1;
+	}
+
+	.callout-info {
+		background: #ebf8ff;
+		border: 1px solid #90cdf4;
+	}
+
+	.callout-warning {
+		background: #fffaf0;
+		border: 1px solid #fbd38d;
+	}
+
+	.callout-success {
+		background: #f0fff4;
+		border: 1px solid #9ae6b4;
+	}
+
+	.citation {
+		font-size: 0.85rem;
+		color: #718096;
+		margin: 1rem 0;
+	}
+
+	.citation a {
+		color: #667eea;
+	}
+
+	/* Tables */
+	.table-container {
+		overflow-x: auto;
+		margin: 1.5rem 0;
+	}
+
+	.styled-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 0.95rem;
+	}
+
+	.styled-table thead {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+	}
+
+	.styled-table th {
+		padding: 1rem;
+		text-align: left;
+		font-weight: 600;
+	}
+
+	.styled-table td {
+		padding: 1rem;
+		border-bottom: 1px solid #e2e8f0;
+	}
+
+	.styled-table tbody tr:hover {
+		background: #f8fafc;
+	}
+
+	/* Category Badges */
+	.category-badge {
+		display: inline-block;
+		padding: 0.25rem 0.75rem;
+		border-radius: 20px;
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+
+	.category-badge.genetic {
+		background: #e9d8fd;
+		color: #553c9a;
+	}
+
+	.category-badge.uterine {
+		background: #fed7e2;
+		color: #97266d;
+	}
+
+	.category-badge.blood {
+		background: #fed7d7;
+		color: #c53030;
+	}
+
+	.category-badge.endocrine {
+		background: #fefcbf;
+		color: #975a16;
+	}
+
+	.category-badge.immune {
+		background: #c6f6d5;
+		color: #276749;
+	}
+
+	.category-badge.unknown {
+		background: #e2e8f0;
+		color: #4a5568;
+	}
+
+	/* Progress Timeline */
+	.progress-timeline {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		margin: 1.5rem 0;
+		padding-left: 1rem;
+	}
+
+	.progress-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.75rem;
+		background: white;
+		border-radius: 8px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	}
+
+	.progress-dot {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		flex-shrink: 0;
+	}
+
+	.high-risk { background: #fc8181; }
+	.medium-risk { background: #f6ad55; }
+	.low-risk { background: #68d391; }
+	.very-low-risk { background: #48bb78; }
+
+	.progress-content {
+		display: flex;
+		justify-content: space-between;
+		flex: 1;
+	}
+
+	.progress-stage {
+		font-weight: 500;
+	}
+
+	.progress-risk {
+		color: #718096;
+	}
+
+	/* Definition Box */
+	.definition-box {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		padding: 1.5rem;
+		border-radius: 12px;
+		margin: 1.5rem 0;
+	}
+
+	.definition-box h3 {
+		color: white;
+		margin: 0 0 0.75rem;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		opacity: 0.9;
+	}
+
+	.definition-box p {
+		margin: 0;
+		font-size: 1.1rem;
+	}
+
+	/* Testing Grid */
+	.testing-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.testing-card {
+		background: white;
+		border-radius: 12px;
+		padding: 1.5rem;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		border: 1px solid #e2e8f0;
+	}
+
+	.testing-header {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-bottom: 1rem;
+	}
+
+	.testing-icon {
+		font-size: 1.5rem;
+	}
+
+	.testing-header h4 {
+		margin: 0;
+		color: #2d3748;
+	}
+
+	.testing-card ul {
+		margin: 0;
+		padding-left: 1.25rem;
+	}
+
+	.testing-card li {
+		margin-bottom: 0.5rem;
+		font-size: 0.95rem;
+	}
+
+	.testing-cost {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid #e2e8f0;
+		font-size: 0.9rem;
+	}
+
+	.cost-label {
+		color: #718096;
+	}
+
+	.cost-amount {
+		color: #2d3748;
+		font-weight: 500;
+	}
+
+	/* Additional Tests */
+	.additional-tests {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1rem;
+		margin: 1.5rem 0;
+	}
+
+	.test-item {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		background: #f8fafc;
+		border-radius: 8px;
+		border-left: 3px solid #667eea;
+	}
+
+	.test-item strong {
+		color: #2d3748;
+		margin-bottom: 0.25rem;
+	}
+
+	.test-item span {
+		color: #718096;
+		font-size: 0.9rem;
+	}
+
+	/* Treatment Cards */
+	.treatment-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.treatment-card {
+		background: white;
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		border: 1px solid #e2e8f0;
+	}
+
+	.treatment-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 1.25rem;
+		color: white;
+	}
+
+	.treatment-header.aps {
+		background: linear-gradient(135deg, #fc8181 0%, #f56565 100%);
+	}
+
+	.treatment-header.uterine {
+		background: linear-gradient(135deg, #f687b3 0%, #ed64a6 100%);
+	}
+
+	.treatment-header.genetic {
+		background: linear-gradient(135deg, #b794f4 0%, #9f7aea 100%);
+	}
+
+	.treatment-header.thyroid {
+		background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
+	}
+
+	.treatment-header h4 {
+		margin: 0;
+		font-size: 1.1rem;
+	}
+
+	.success-badge {
+		background: rgba(255,255,255,0.2);
+		padding: 0.25rem 0.75rem;
+		border-radius: 20px;
+		font-size: 0.8rem;
+	}
+
+	.treatment-body {
+		padding: 1.25rem;
+	}
+
+	.treatment-body ul {
+		margin: 0.5rem 0;
+		padding-left: 1.25rem;
+	}
+
+	.contrast-note {
+		color: #718096;
+		font-size: 0.9rem;
+		font-style: italic;
+	}
+
+	.treatment-cost {
+		margin-top: 1rem;
+		padding-top: 0.75rem;
+		border-top: 1px solid #e2e8f0;
+		color: #667eea;
+		font-weight: 600;
+	}
+
+	/* Empiric Grid */
+	.empiric-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.empiric-card {
+		background: white;
+		border-radius: 12px;
+		padding: 1.5rem;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		border: 1px solid #e2e8f0;
+	}
+
+	.empiric-card h4 {
+		margin: 0 0 0.75rem;
+		color: #2d3748;
+	}
+
+	.evidence-note {
+		background: #f0fff4;
+		padding: 0.75rem;
+		border-radius: 6px;
+		margin-top: 1rem;
+		font-size: 0.9rem;
+		color: #276749;
+	}
+
+	.empiric-cost {
+		margin-top: 1rem;
+		color: #667eea;
+		font-weight: 600;
+	}
+
+	/* Options Grid */
+	.options-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.option-card {
+		background: white;
+		border-radius: 12px;
+		padding: 1.5rem;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		border: 1px solid #e2e8f0;
+	}
+
+	.option-card h3 {
+		margin: 0 0 1rem;
+		font-size: 1.25rem;
+	}
+
+	.option-card ul {
+		margin: 0.5rem 0 1rem;
+		padding-left: 1.25rem;
+	}
+
+	.option-link {
+		color: #667eea;
+		font-weight: 500;
+		text-decoration: none;
+	}
+
+	.option-link:hover {
+		text-decoration: underline;
+	}
+
+	/* Support Options */
+	.support-options {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+	}
+
+	.support-item {
+		display: flex;
+		gap: 1rem;
+		align-items: flex-start;
+		padding: 1.25rem;
+		background: #f8fafc;
+		border-radius: 8px;
+	}
+
+	.support-icon {
+		font-size: 1.5rem;
+		flex-shrink: 0;
+	}
+
+	.support-item strong {
+		display: block;
+		color: #2d3748;
+		margin-bottom: 0.25rem;
+	}
+
+	.support-item p {
+		margin: 0;
+		color: #718096;
+		font-size: 0.95rem;
+	}
+
+	/* Questions List */
+	.questions-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+		margin: 1.5rem 0;
+	}
+
+	.question-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 1rem;
+		background: white;
+		border-radius: 8px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	}
+
+	.question-number {
+		width: 28px;
+		height: 28px;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 600;
+		font-size: 0.9rem;
+		flex-shrink: 0;
+	}
+
+	/* Navigation Footer */
+	.nav-footer {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 2px solid #e2e8f0;
+		gap: 1rem;
+	}
+
+	.nav-prev, .nav-next {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 1.5rem;
+		background: white;
+		border-radius: 8px;
+		text-decoration: none;
+		border: 1px solid #e2e8f0;
+		transition: all 0.2s;
+	}
+
+	.nav-prev:hover, .nav-next:hover {
+		border-color: #667eea;
+		box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+	}
+
+	.nav-next {
+		text-align: right;
+	}
+
+	.nav-direction {
+		font-size: 0.85rem;
+		color: #718096;
+	}
+
+	.nav-title {
+		color: #667eea;
+		font-weight: 600;
+	}
+
+	@media (max-width: 768px) {
+		.hero-mini h1 {
+			font-size: 2rem;
+		}
+
+		.stats-grid-3 {
+			grid-template-columns: 1fr;
+		}
+
+		.progress-content {
+			flex-direction: column;
+			gap: 0.25rem;
+		}
+
+		.nav-footer {
+			flex-direction: column;
+		}
+
+		.nav-next {
+			text-align: left;
+		}
 	}
 </style>
